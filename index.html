@@ -1400,9 +1400,9 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
   // ── Clinic N (PT/OT) special case: enters from EAST face, approached from hallway via x=456 ──
   if (isF2 && destId==='clinicN') {
     if (entry==='er'||entry==='polk'||entry==='damen') {
-      navStepEN={a:'Turn RIGHT out of the elevator and walk East down the hallway.',d:'Walk past Clinic L (which is on your right) then Turn LEFT into the hallway with bathroom signage. You will see the clinic entrance to Physical and Occupational Therapy on your left.',i:'↪️',lm:'Turn RIGHT East — turn LEFT at Clinic L — Clinic N PT/OT on your left'};
-      navStepES={a:'Gira a la DERECHA al salir del elevador y camina al Este por el pasillo.',d:'Pasa Clinica L (que esta a tu derecha) y luego gira a la IZQUIERDA en el pasillo con letreros de baño. Veras la entrada de Fisioterapia y Terapia Ocupacional a tu izquierda.',i:'↪️',lm:'DERECHA al Este — IZQUIERDA en Clinica L — Clinica N PT/OT a tu izquierda'};
-      navStepPL={a:'Skrecaj W PRAWO wychodzac z windy i idz na Wschod korytarzem.',d:'Minij Klinike L (po prawej stronie) i skrecaj W LEWO w korytarz z oznaczeniami lazienki. Zobaczysz wejscie do Fizjoterapii i Terapii Zajeciowej po lewej stronie.',i:'↪️',lm:'PRAWO na Wschod — LEWO przy Klinice L — Klinika N PT/OT po lewej'};
+      navStepEN={a:'Turn RIGHT out of the elevator and walk East down the hallway.',d:'Walk past CT Scan (which is on your right) then Turn LEFT into the hallway with bathroom signage. You will see the clinic entrance to Physical and Occupational Therapy on your left.',i:'↪️',lm:'Turn RIGHT East — turn LEFT across CT Scan — Clinic N PT/OT on your left'};
+      navStepES={a:'Gira a la DERECHA al salir del elevador y camina al Este por el pasillo.',d:'Pasa CT Scan (que esta a tu derecha) y luego gira a la IZQUIERDA en el pasillo con letreros de baño. Veras la entrada de Fisioterapia y Terapia Ocupacional a tu izquierda.',i:'↪️',lm:'DERECHA al Este — IZQUIERDA cruzando CT Scan — Clinica N PT/OT a tu izquierda'};
+      navStepPL={a:'Skrecaj W PRAWO wychodzac z windy i idz na Wschod korytarzem.',d:'Minij CT Scan (po prawej stronie) i skrecaj W LEWO w korytarz z oznaczeniami lazienki. Zobaczysz wejscie do Fizjoterapii i Terapii Zajeciowej po lewej stronie.',i:'↪️',lm:'PRAWO na Wschod — LEWO naprzeciwko CT Scan — Klinika N PT/OT po lewej'};
     } else if (entry==='garage') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Walk past Clinic M then turn RIGHT into the hallway. You will see the clinic entrance to Physical and Occupational Therapy (Clinic N).',i:'↩️',lm:'Turn LEFT West — turn RIGHT at Clinic M — Clinic N PT/OT ahead'};
       navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pasa Clinica M y gira a la DERECHA en el pasillo. Veras la entrada de la Clinica N — Fisioterapia y Terapia Ocupacional.',i:'↩️',lm:'IZQUIERDA al Oeste — DERECHA en Clinica M — Clinica N PT/OT adelante'};
@@ -1860,8 +1860,7 @@ function mku(id,fl,em,spec,nEN,nES,nPL,dEN,dES,dPL,lEN,lES,lPL){
  mku('womensHealth','4','👩‍⚕️',"Women's Health - Ob/Gyn","Women's Health",'Salud de la Mujer','Zdrowie Kobiet','4th Floor','Piso 4','Pietro 4','','',''),
  mku('laborDelivery','4','🍼','Labor and Delivery - Nursery - Maternity','Labor and Delivery','Labor y Parto','Porod i Oddzial Noworodkowy','4th Floor','Piso 4','Pietro 4','','',''),
  mku('pediatricClinic','4','🧒','Pediatric and Adolescent Clinic - PICU - Pediatric Ward','Pediatric and Adolescent Clinic','Clinica Pediatrica y Adolescentes','Klinika Pediatryczna i Mlodziezowa','4th Floor','Piso 4','Pietro 4','','','')
-].forEach(function(c){CLINICS.push(c);});
-// ── LOWER LEVEL ──
+].forEach(function(c){if(c.id==='clinicL')c.hidden=true;CLINICS.push(c);});
 (function(){
   function mriSteps(entry){
     var s1en,s1es,s1pl,elvEN,elvES,elvPL;
@@ -2430,3 +2429,4 @@ function setFont(n){
 }
 </script>
 </body>
+</html>
