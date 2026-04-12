@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -555,13 +555,14 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <rect x="266" y="97" width="497" height="184" rx="4" fill="#edf3f2" stroke="#8aadaa" stroke-width="2"/>
           <!-- Main corridor on 2nd floor at y=168 (raw) -->
           <rect x="266" y="155" width="497" height="26" fill="#c5e5e0" stroke="none"/>
-          <!-- Top room row (y=101-154): Clinic R, PT/OT, reception area, Clinic J, Clinic G -->
+          <!-- Top room row (y=101-154): Clinic R, Clinic N (PT/OT), reception area, Clinic J, Clinic G -->
           <rect x="295" y="101" width="70" height="54" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <text x="330" y="122" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="#222">Clinic R</text>
           <text x="330" y="132" text-anchor="middle" font-family="Nunito" font-size="6.5" fill="#555">Endoscopy</text>
           <rect x="392" y="107" width="64" height="48" fill="#fff" stroke="#999" stroke-width="1.8"/>
-          <text x="424" y="127" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="#222">PT / OT</text>
-          <text x="424" y="137" text-anchor="middle" font-family="Nunito" font-size="6.5" fill="#555">Speech</text>
+          <text x="424" y="122" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="#222">Clinic N</text>
+          <text x="424" y="132" text-anchor="middle" font-family="Nunito" font-size="6.5" fill="#555">PT / OT</text>
+          <text x="424" y="141" text-anchor="middle" font-family="Nunito" font-size="6" fill="#555">Speech</text>
           <!-- Reception + Main Elev: raw(482,101) -->
           <rect x="466" y="101" width="50" height="28" fill="#d8f0ec" stroke="#00786A" stroke-width="1.5"/>
           <text x="491" y="112" text-anchor="middle" font-family="Nunito" font-size="7" font-weight="900" fill="#004d44">2F Reception</text>
@@ -576,14 +577,14 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <rect id="rm2-clinicH" x="672" y="146" width="44" height="44" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <text x="694" y="165" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="#222">Clinic H</text>
           <text x="694" y="175" text-anchor="middle" font-family="Nunito" font-size="6.5" fill="#555">Nephrology</text>
-          <!-- Middle row at corridor y=161-184: CT, Clinic M, Clinic N -->
+          <!-- Middle row at corridor y=161-184: CT, Clinic M, Clinic L -->
           <rect x="399" y="161" width="59" height="23" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <text x="428" y="176" text-anchor="middle" font-family="Nunito" font-size="7.5" font-weight="900" fill="#222">CT Scan</text>
           <rect x="464" y="161" width="54" height="23" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <text x="491" y="172" text-anchor="middle" font-family="Nunito" font-size="7" font-weight="900" fill="#222">Clinic M</text>
           <text x="491" y="181" text-anchor="middle" font-family="Nunito" font-size="5.5" fill="#555">CT·IR·XR·US</text>
           <rect x="524" y="161" width="59" height="23" fill="#fff" stroke="#999" stroke-width="1.8"/>
-          <text x="554" y="176" text-anchor="middle" font-family="Nunito" font-size="7.5" font-weight="900" fill="#222">Clinic N</text>
+          <text x="554" y="176" text-anchor="middle" font-family="Nunito" font-size="7.5" font-weight="900" fill="#222">Clinic L</text>
           <!-- P/S East elevator on 2nd floor: raw(604,168) — by garage side, right of Clinic J -->
           <rect x="595" y="159" width="18" height="18" rx="3" fill="#d4f4e8" stroke="#007744" stroke-width="2"/>
           <text x="604" y="167" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#004422">P/S</text>
@@ -641,7 +642,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <polyline id="rt2-garage-clinicI"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 645,168 645,190"/>
           <polyline id="rt2-garage-clinicJ"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 558,168 558,155"/>
           <polyline id="rt2-garage-clinicM"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 466,168 466,161"/>
-          <polyline id="rt2-garage-clinicN"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 554,168"/>
+          <polyline id="rt2-garage-clinicL"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 554,168"/>
           <polyline id="rt2-garage-ctScan"         class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 428,168"/>
           <polyline id="rt2-garage-clinicK"    class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 597,168 597,190"/>
           <polyline id="rt2-garage-xray"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 543,168 543,190"/>
@@ -649,14 +650,14 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <polyline id="rt2-garage-clinicP"     class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 346,168 346,192"/>
           <polyline id="rt2-garage-clinicV"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 298,168 298,190"/>
           <polyline id="rt2-garage-clinicR"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 330,168 330,155"/>
-          <polyline id="rt2-garage-physicalTherapy" class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 456,168 456,131"/>
+          <polyline id="rt2-garage-clinicN" class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 456,168 456,131"/>
           <!-- Ogden/ER (Main Elev at 491,112): drop to y=168, then walk -->
           <polyline id="rt2-ogden-clinicG"         class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 644,172 644,154"/>
           <polyline id="rt2-ogden-clinicH"         class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 694,172"/>
           <polyline id="rt2-ogden-clinicI"         class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 645,172 645,190"/>
           <polyline id="rt2-ogden-clinicJ"         class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 558,172 558,155"/>
           <polyline id="rt2-ogden-clinicM"         class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,140 466,140 466,161"/>
-          <polyline id="rt2-ogden-clinicN"         class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 554,172"/>
+          <polyline id="rt2-ogden-clinicL"         class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 554,172"/>
           <polyline id="rt2-ogden-ctScan"          class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 428,172"/>
           <polyline id="rt2-ogden-clinicK"     class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 597,172 597,190"/>
           <polyline id="rt2-ogden-xray"            class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 543,172 543,190"/>
@@ -664,7 +665,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <polyline id="rt2-ogden-clinicP"      class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 346,172 346,192"/>
           <polyline id="rt2-ogden-clinicV"         class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,168 298,168 298,190"/>
           <polyline id="rt2-ogden-clinicR"         class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 330,172 330,155"/>
-          <polyline id="rt2-ogden-physicalTherapy" class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,131 456,131"/>
+          <polyline id="rt2-ogden-clinicN" class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,131 456,131"/>
           <!-- Neuro Testing routes (far west wall x=273, y=182) -->
           <polyline id="rt2-ogden-neuroTesting"  class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,168 273,168 273,182"/>
           <polyline id="rt2-garage-neuroTesting" class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 273,168 273,182"/>
@@ -684,10 +685,10 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <polyline id="rt2-er-clinicJ"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 558,168 558,155"/>
           <polyline id="rt2-er-clinicM"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 466,168 466,161"/>
           <polyline id="rt2-er-ctScan"            class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 428,168"/>
-          <polyline id="rt2-er-clinicN"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 554,168"/>
+          <polyline id="rt2-er-clinicL"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 554,168"/>
           <polyline id="rt2-er-clinicR"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 330,168 330,155"/>
           <polyline id="rt2-er-clinicV"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 298,168 298,190"/>
-          <polyline id="rt2-er-physicalTherapy"   class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 456,168 456,131"/>
+          <polyline id="rt2-er-clinicN"   class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 456,168 456,131"/>
           <polyline id="rt2-er-clinicP"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 346,168 346,192"/>
           <polyline id="rt2-er-clinicK"       class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 598,168 598,190"/>
           <polyline id="rt2-er-interventionalRad" class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 443,168 443,190"/>
@@ -697,7 +698,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <circle id="mk2-clinicI"          class="dring" cx="645" cy="217" r="12"/>
           <circle id="mk2-clinicJ"          class="dring" cx="558" cy="130" r="12"/>
           <circle id="mk2-clinicM"          class="dring" cx="466" cy="172" r="12"/>
-          <circle id="mk2-clinicN"          class="dring" cx="554" cy="172" r="12"/>
+          <circle id="mk2-clinicL"          class="dring" cx="554" cy="172" r="12"/>
           <circle id="mk2-ctScan"           class="dring" cx="428" cy="172" r="12"/>
           <circle id="mk2-clinicK"      class="dring" cx="597" cy="208" r="12"/>
           <circle id="mk2-xray"             class="dring" cx="543" cy="208" r="12"/>
@@ -705,7 +706,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <circle id="mk2-clinicP"       class="dring" cx="346" cy="218" r="12"/>
           <circle id="mk2-clinicV"          class="dring" cx="298" cy="208" r="12"/>
           <circle id="mk2-clinicR"          class="dring" cx="330" cy="127" r="12"/>
-          <circle id="mk2-physicalTherapy"  class="dring" cx="424" cy="130" r="12"/>
+          <circle id="mk2-clinicN"  class="dring" cx="424" cy="130" r="12"/>
           <circle id="mk2-respiratoryTherapy" class="dring" cx="280" cy="119" r="10"/>
           <circle id="mk2-sleepLab"           class="dring" cx="280" cy="153" r="10"/>
           <circle id="mk2-clinicV"             class="dring" cx="298" cy="208" r="13"/>
@@ -1378,7 +1379,7 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
   // Raw SVG x-positions: Main Elev=491, P/S East=604, P/S West=379
   // Destinations further right need a right turn, further left need a left turn
   var DEST_X={clinicG:644,clinicH:694,clinicI:645,clinicJ:558,clinicM:491,
-              clinicK:597,clinicP:346,clinicR:330,clinicV:298,physicalTherapy:424};
+              clinicK:597,clinicP:346,clinicR:330,clinicV:298,clinicN:424,clinicL:554};
   var dx=DEST_X[destId]||491;
 
   // Navigation step after exiting elevator — tailored per entry point
@@ -1396,21 +1397,21 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     checkInPL={a:'Podnieś sluchawke telefonu sciennego przy drzwiach.',d:'Podaj personelowi swoje imie i godzine wizyty. Zostaniesz wpuszczony.',i:'📞',lm:'📞 Telefon scienny — podaj imie i godzine wizyty'};
   }
 
-  // ── PT/OT special case: enters from EAST face, approached from hallway via x=456 ──
-  if (isF2 && destId==='physicalTherapy') {
+  // ── Clinic N (PT/OT) special case: enters from EAST face, approached from hallway via x=456 ──
+  if (isF2 && destId==='clinicN') {
     if (entry==='er'||entry==='polk'||entry==='damen') {
-      navStepEN={a:'Turn RIGHT out of the elevator and walk East down the hallway.',d:'Walk past Clinic N (CT Scan — which is on your right) then Turn LEFT into the hallway with bathroom signage. You will see the clinic entrance to Physical and Occupational Therapy on your left.',i:'↪️',lm:'Turn RIGHT East — turn LEFT at CT Scan — PT/OT on your left'};
-      navStepES={a:'Gira a la DERECHA al salir del elevador y camina al Este por el pasillo.',d:'Pasa Clinica N (CT Scan — que esta a tu derecha) y luego gira a la IZQUIERDA en el pasillo con letreros de baño. Veras la entrada de Fisioterapia y Terapia Ocupacional a tu izquierda.',i:'↪️',lm:'DERECHA al Este — IZQUIERDA en CT Scan — PT/OT a tu izquierda'};
-      navStepPL={a:'Skrecaj W PRAWO wychodzac z windy i idz na Wschod korytarzem.',d:'Minij Klinike N (CT Scan — po prawej stronie) i skrecaj W LEWO w korytarz z oznaczeniami lazienki. Zobaczysz wejscie do Fizjoterapii i Terapii Zajeciowej po lewej stronie.',i:'↪️',lm:'PRAWO na Wschod — LEWO przy CT Scan — PT/OT po lewej'};
+      navStepEN={a:'Turn RIGHT out of the elevator and walk East down the hallway.',d:'Walk past Clinic L (which is on your right) then Turn LEFT into the hallway with bathroom signage. You will see the clinic entrance to Physical and Occupational Therapy on your left.',i:'↪️',lm:'Turn RIGHT East — turn LEFT at Clinic L — Clinic N PT/OT on your left'};
+      navStepES={a:'Gira a la DERECHA al salir del elevador y camina al Este por el pasillo.',d:'Pasa Clinica L (que esta a tu derecha) y luego gira a la IZQUIERDA en el pasillo con letreros de baño. Veras la entrada de Fisioterapia y Terapia Ocupacional a tu izquierda.',i:'↪️',lm:'DERECHA al Este — IZQUIERDA en Clinica L — Clinica N PT/OT a tu izquierda'};
+      navStepPL={a:'Skrecaj W PRAWO wychodzac z windy i idz na Wschod korytarzem.',d:'Minij Klinike L (po prawej stronie) i skrecaj W LEWO w korytarz z oznaczeniami lazienki. Zobaczysz wejscie do Fizjoterapii i Terapii Zajeciowej po lewej stronie.',i:'↪️',lm:'PRAWO na Wschod — LEWO przy Klinice L — Klinika N PT/OT po lewej'};
     } else if (entry==='garage') {
-      navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Walk past Clinic M then turn RIGHT into the hallway. You will see the clinic entrance to Physical and Occupational Therapy.',i:'↩️',lm:'Turn LEFT West — turn RIGHT at Clinic M — PT/OT ahead'};
-      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pasa Clinica M y gira a la DERECHA en el pasillo. Veras la entrada de Fisioterapia y Terapia Ocupacional.',i:'↩️',lm:'IZQUIERDA al Oeste — DERECHA en Clinica M — PT/OT adelante'};
-      navStepPL={a:'Skrecaj W LEWO wychodzac z windy i idz na Zachod korytarzem.',d:'Teraz idziesz na Zachod. Minij Klinike M i skrecaj W PRAWO w korytarz. Zobaczysz wejscie do Fizjoterapii i Terapii Zajeciowej.',i:'↩️',lm:'LEWO na Zachod — PRAWO przy Klinice M — PT/OT przed toba'};
+      navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Walk past Clinic M then turn RIGHT into the hallway. You will see the clinic entrance to Physical and Occupational Therapy (Clinic N).',i:'↩️',lm:'Turn LEFT West — turn RIGHT at Clinic M — Clinic N PT/OT ahead'};
+      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pasa Clinica M y gira a la DERECHA en el pasillo. Veras la entrada de la Clinica N — Fisioterapia y Terapia Ocupacional.',i:'↩️',lm:'IZQUIERDA al Oeste — DERECHA en Clinica M — Clinica N PT/OT adelante'};
+      navStepPL={a:'Skrecaj W LEWO wychodzac z windy i idz na Zachod korytarzem.',d:'Teraz idziesz na Zachod. Minij Klinike M i skrecaj W PRAWO w korytarz. Zobaczysz wejscie do Kliniki N — Fizjoterapii i Terapii Zajeciowej.',i:'↩️',lm:'LEWO na Zachod — PRAWO przy Klinice M — Klinika N PT/OT przed toba'};
     } else {
       // Ogden — Main Elevator, exits facing South, turn RIGHT (west)
-      navStepEN={a:'Exit the elevator, walk to the Reception Desk, turn RIGHT at the hallway.',d:'Walk West down the hallway. You will see the clinic entrance to Physical and Occupational Therapy.',i:'↪️',lm:'Walk to Reception Desk — turn RIGHT West — PT/OT entrance ahead'};
-      navStepES={a:'Sal del elevador, camina hacia la Recepcion, gira a la DERECHA en el pasillo.',d:'Camina al Oeste por el pasillo. Veras la entrada de Fisioterapia y Terapia Ocupacional.',i:'↪️',lm:'Camina a la Recepcion — DERECHA al Oeste — entrada PT/OT adelante'};
-      navStepPL={a:'Wyjdz z windy, podejdz do Recepcji, skrecaj W PRAWO na korytarzu.',d:'Idz na Zachod korytarzem. Zobaczysz wejscie do Fizjoterapii i Terapii Zajeciowej.',i:'↪️',lm:'Podejdz do Recepcji — PRAWO na Zachod — wejscie PT/OT przed toba'};
+      navStepEN={a:'Exit the elevator, walk to the Reception Desk, turn RIGHT at the hallway.',d:'Walk West down the hallway. You will see the clinic entrance to Physical and Occupational Therapy (Clinic N).',i:'↪️',lm:'Walk to Reception Desk — turn RIGHT West — Clinic N PT/OT entrance ahead'};
+      navStepES={a:'Sal del elevador, camina hacia la Recepcion, gira a la DERECHA en el pasillo.',d:'Camina al Oeste por el pasillo. Veras la entrada de la Clinica N — Fisioterapia y Terapia Ocupacional.',i:'↪️',lm:'Camina a la Recepcion — DERECHA al Oeste — entrada Clinica N PT/OT adelante'};
+      navStepPL={a:'Wyjdz z windy, podejdz do Recepcji, skrecaj W PRAWO na korytarzu.',d:'Idz na Zachod korytarzem. Zobaczysz wejscie do Kliniki N — Fizjoterapii i Terapii Zajeciowej.',i:'↪️',lm:'Podejdz do Recepcji — PRAWO na Zachod — wejscie Kliniki N PT/OT przed toba'};
     }
   } else if (isF2 && (destId==='respiratoryTherapy' || destId==='sleepLab')) {
     var roomLabel = destId==='respiratoryTherapy' ? nameEN : nameEN;
@@ -1831,13 +1832,13 @@ function mku(id,fl,em,spec,nEN,nES,nPL,dEN,dES,dPL,lEN,lES,lPL){
  mku('clinicI','2','🦴','Orthopedics - Rheumatology - Plastics - Hand Surgery - Podiatry','Clinic I','Clinica I','Klinika I','2nd Floor','Piso 2','Pietro 2','in the East section of the floor, across Clinic G','en la seccion este del piso, frente a Clinica G','we wschodniej czesci, naprzeciwko Kliniki G'),
  mku('clinicJ','2','🩸','Dialysis','Clinic J - Dialysis','Clinica J - Dialisis','Klinika J - Dializa','2nd Floor','Piso 2','Pietro 2','on the East side of the floor','en el lado este del piso','po wschodniej stronie pietra'),
  mku('clinicM','2','🩻','Clinic M — CT Scan - Interventional Radiology/Special Procedures - X-Ray - Ultrasound','Clinic M','Clinica M','Klinika M','2nd Floor','Piso 2','Pietro 2','','',''),
- mku('clinicN','2','🏃','Physical Therapy - Occupational Therapy - Physical and Occupational Therapy','Clinic N — Physical and Occupational Therapy','Clinica N — Fisioterapia y Terapia Ocupacional','Klinika N — Fizjoterapia i Terapia Zajeciowa','2nd Floor','Piso 2','Pietro 2','','',''),
+ mku('clinicL','2','🏥','Clinic L','Clinic L','Clinica L','Klinika L','2nd Floor','Piso 2','Pietro 2','','',''),
+ mku('clinicN','2','🏃','Physical Therapy - Occupational Therapy - Speech and Language Pathology - PT/OT','Clinic N — Physical and Occupational Therapy','Clinica N — Fisioterapia y Terapia Ocupacional','Klinika N — Fizjoterapia i Terapia Zajeciowa','2nd Floor','Piso 2','Pietro 2','','',''),
  mku('clinicR','2','🫁','Endoscopy - Bronchoscopy - Fluoroscopy','Clinic R','Clinica R','Klinika R','2nd Floor','Piso 2','Pietro 2','on the West side of the floor','en el lado oeste del piso','po zachodniej stronie pietra'),
  mku('neuroTesting','2','🧠','Neurological Testing - EEG - EMG - Neuro Diagnostics','Neuro Testing','Pruebas Neurologicas','Badania Neurologiczne','2nd Floor','Piso 2','Pietro 2','','',''),
  mku('clinicV','2','💓','Cardiology Testing','Clinic V - Cardiology Testing','Clinica V - Pruebas Cardiologicas','Klinika V - Kardiologia','2nd Floor','Piso 2','Pietro 2','','',''),
  mku('respiratoryTherapy','2','🫁','Respiratory Therapy - Pulmonary Function - Pulmonary Rehabilitation','Respiratory Therapy','Terapia Respiratoria','Terapia Oddechowa','2nd Floor','Piso 2','Pietro 2','','',''),
  mku('sleepLab','2','😴','Sleep Study - Sleep Disorders - Sleep Center','Sleep Lab','Laboratorio del Sueno','Laboratorium Snu','2nd Floor','Piso 2','Pietro 2','','',''),
- mku('physicalTherapy','2','🏃','Physical Therapy - Occupational Therapy - Speech and Language Pathology','Physical and Occupational Therapy','Fisioterapia y Terapia Ocupacional','Fizjoterapia i Terapia Zajeciowa','2nd Floor','Piso 2','Pietro 2','','',''),
  mku('clinicP','2','☢️','Nuclear Medicine','Clinic P - Nuclear Medicine','Clinica P - Medicina Nuclear','Klinika P - Medycyna Nuklearna','2nd Floor','Piso 2','Pietro 2','','',''),
  mku('clinicK','2','🩺','Mammography - Breast Imaging','Clinic K - Mammography','Clinica K - Mamografia','Klinika K - Mammografia','2nd Floor','Piso 2','Pietro 2','','',''),
  mku('cardiacCathLab','3','🫀','Cardiac Catheterization Laboratory','Cardiac Cath Lab','Lab. Cateterismo Cardiaco','Pracownia Cewnikowania Serca','3rd Floor','Piso 3','Pietro 3','','',''),
@@ -2429,4 +2430,3 @@ function setFont(n){
 }
 </script>
 </body>
-</html>
