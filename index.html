@@ -1572,9 +1572,9 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     navStepPL={a:'Wyjdz z windy, podejdz do Recepcji 3. pietra, skrecaj W PRAWO na korytarzu.',d:'Po skrecie W PRAWO zobaczysz wejscie do Laboratorium Cewnikowania Serca przed soba.',i:'↪️',lm:'Podejdz do Recepcji — PRAWO na Zachod — wejscie do Lab. Cath przed toba'};
   } else if (!isF2 && destId==='sameDaySurgery') {
     // 3F Same Day Surgery: turn RIGHT past Reception → walk west → entrance on LEFT
-    navStepEN={a:'Exit the elevator, walk to the Reception Desk, turn RIGHT at the hallway.',d:'Walk west down the hallway. Same Day Surgery entrance will be on your LEFT.',i:'↪️',lm:'Walk to Reception Desk — turn RIGHT West — Same Day Surgery on your left'};
-    navStepES={a:'Sal del elevador, camina hacia la Recepcion del 3er Piso, gira a la DERECHA en el pasillo.',d:'Camina al oeste por el pasillo. La entrada de Cirugia del Mismo Dia estara a tu IZQUIERDA.',i:'↪️',lm:'Camina a la Recepcion — DERECHA al Oeste — Cirugia del Mismo Dia a tu izquierda'};
-    navStepPL={a:'Wyjdz z windy, podejdz do Recepcji 3. pietra, skrecaj W PRAWO na korytarzu.',d:'Idz na zachod korytarzem. Wejscie do Chirurgii Jednego Dnia bedzie po twojej LEWEJ stronie.',i:'↪️',lm:'Podejdz do Recepcji — PRAWO na Zachod — Chirurgia Jednego Dnia po lewej'};
+    navStepEN={a:'Exit the elevator, pass the 3rd Floor Reception Desk, then turn RIGHT at the hallway.',d:'Walk west down the hallway. Same Day Surgery entrance will be on your LEFT.',i:'↪️',lm:'Pass 3rd Floor Reception Desk — turn RIGHT West — Same Day Surgery on your left'};
+    navStepES={a:'Sal del elevador, pasa la Recepcion del 3er Piso, luego gira a la DERECHA en el pasillo.',d:'Camina al oeste por el pasillo. La entrada de Cirugia del Mismo Dia estara a tu IZQUIERDA.',i:'↪️',lm:'Pasa la Recepcion del 3er Piso — DERECHA al Oeste — Cirugia del Mismo Dia a tu izquierda'};
+    navStepPL={a:'Wyjdz z windy, minij Recepcje 3. pietra, nastepnie skrecaj W PRAWO na korytarzu.',d:'Idz na zachod korytarzem. Wejscie do Chirurgii Jednego Dnia bedzie po twojej LEWEJ stronie.',i:'↪️',lm:'Minij Recepcje 3. pietra — PRAWO na Zachod — Chirurgia Jednego Dnia po lewej'};
   } else if (!isF2 && destId==='mainOR') {
     // 3F Main OR: turn RIGHT past Reception → walk west → past Same Day Surgery → entrance on LEFT
     navStepEN={a:'Exit the elevator, pass the 3rd Floor Reception Desk, then turn RIGHT at the hallway.',d:'Walk west down the hallway. Pass Same Day Surgery on your left. The Main OR entrance will be the next door on your LEFT.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT West — Main OR on your left'};
@@ -1582,9 +1582,9 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     navStepPL={a:'Wyjdz z windy, minij Recepcje 3. pietra, potem skrecaj W PRAWO na korytarzu.',d:'Idz na zachod. Minij Chirurgie Jednego Dnia po lewej. Wejscie do Glownej Sali Operacyjnej bedzie nastepnymi drzwiami po twojej LEWEJ.',i:'↪️',lm:'Minij Recepcje — PRAWO na Zachod — Sala Operacyjna po lewej'};
   } else if (!isF2 && destId==='preProcTesting') {
     // 3F PPT: turn LEFT (east) → PPT entrance is in front of you
-    navStepEN={a:'Exit the elevator, pass the 3rd Floor Reception Desk, then turn LEFT.',d:'Pre-Procedure Testing (PPT) entrance is in front of you.',i:'↩️',lm:'Pass Reception Desk — turn LEFT — PPT entrance in front of you'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 3er Piso y gira a la IZQUIERDA.',d:'La entrada de Pruebas Pre-Procedimiento (PPT) esta frente a ti.',i:'↩️',lm:'Pasa la Recepcion — IZQUIERDA — entrada PPT frente a ti'};
-    navStepPL={a:'Wyjdz z windy, minij Recepcje 3. pietra, potem skrecaj W LEWO.',d:'Wejscie do Badan Przed Zabiegiem (PPT) jest przed toba.',i:'↩️',lm:'Minij Recepcje — LEWO — wejscie PPT przed toba'};
+    navStepEN={a:'Exit the elevator, walk to the Reception Desk, then turn LEFT.',d:'Pre-Procedure Testing (PPT) entrance is in front of you.',i:'↩️',lm:'Walk to Reception Desk — turn LEFT — PPT entrance in front of you'};
+    navStepES={a:'Sal del elevador, camina hacia la Recepcion del 3er Piso, luego gira a la IZQUIERDA.',d:'La entrada de Pruebas Pre-Procedimiento (PPT) esta frente a ti.',i:'↩️',lm:'Camina a la Recepcion — IZQUIERDA — entrada PPT frente a ti'};
+    navStepPL={a:'Wyjdz z windy, podejdz do Recepcji 3. pietra, nastepnie skrecaj W LEWO.',d:'Wejscie do Badan Przed Zabiegiem (PPT) jest przed toba.',i:'↩️',lm:'Podejdz do Recepcji — LEWO — wejscie PPT przed toba'};
   } else if (!isF2 && destId==='ccu') {
     navStepEN={a:'Exit the elevator, pass the 3rd Floor Reception Desk, then turn RIGHT at the hallway.',d:'Walk west down the hallway. CCU is at the far end of the floor and entrance will be on your RIGHT.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT at the hallway — CCU on your right'};
     navStepES={a:'Sal del elevador, pasa la Recepcion del 3er Piso y gira a la DERECHA en el pasillo.',d:'Camina al oeste. La CCU esta al final del pasillo y la entrada estara a tu DERECHA.',i:'↪️',lm:'Pasa la Recepcion — gira DERECHA en el pasillo — CCU a tu derecha'};
