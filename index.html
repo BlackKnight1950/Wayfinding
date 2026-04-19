@@ -1203,7 +1203,7 @@ var CLINICS=[
    es:[{a:'Entra por Urgencias.',i:'🚨'},{a:'Camina al este pasando Clinicas F, E, D y la Tienda.',i:'🚶',lm:'Pasa Clinicas F, E, D'},{a:'Clinica C esta despues, un poco retirada. Entra por el lado sur.',i:'🏥',lm:'📍 Despues de Clinica D, un poco retirada'},{a:'Registrate.',i:'✅'}],
    pl:[{a:'Wejdz przez IP do korytarza.',i:'🚨'},{a:'Idz na wschod, mijajac Kliniki F, E, D i sklep.',i:'🚶',lm:'Minij Kliniki F, E, D'},{a:'Klinika C jest nastepna, lekko cofnieta od pozostalych.',i:'🏥',lm:'📍 Po Klinice D, lekko cofnieta'},{a:'Zarejestruj sie.',i:'✅'}]}
 }},
-{id:'clinicD',floor:'1',emoji:'🏥',specialties:'Oral-Maxillo-Facial Surgery - ENT',
+{id:'clinicD',floor:'1',emoji:'🏥',specialties:'Oral-Maxillo-Facial Surgery - ENT - Family Planning/Reproductive Health',
  en:{name:'Clinic D',desc:'1st Floor'},es:{name:'Clinica D',desc:'Piso 1'},pl:{name:'Klinika D',desc:'Pietro 1'},zh:{name:'D診所',desc:'一樓'},
  steps:{
   ogden:{en:[{a:'Walk through the Ogden Street front doors into the lobby.',i:'🚪',lm:'You are in the Main Lobby'},{a:'Walk through the lobby and hallway.',d:'Pass the Snack Kiosk on your right. The Gift Shop will be on your left.',i:'⬆️',lm:'Snack Kiosk on right, Gift Shop on left'},{a:'Clinic D is the large room directly across from the Gift Shop.',d:'When you see the Gift Shop on your left, Clinic D is right there on your right.',i:'🏥',lm:'📍 Directly across from the Gift Shop'},{a:'Go inside and check in.',i:'✅'}],
@@ -1229,7 +1229,7 @@ var CLINICS=[
    es:[{a:'Entra por Urgencias.',i:'🚨'},{a:'Camina al este. Clinica F es la primera clinica.',i:'⬆️',lm:'Pasa Clinica F primero'},{a:'Clinica E es el siguiente cuarto despues de F.',i:'🏥',lm:'📍 Primer cuarto despues de Clinica F'},{a:'Entra y registrate.',d:'Di tu nombre y hora de cita.',i:'✅'}],
    pl:[{a:'Wejdz przez IP.',i:'🚨'},{a:'Idz na wschod. Klinika F to pierwsza klinika.',i:'⬆️',lm:'Najpierw minij Klinike F'},{a:'Klinika E jest zaraz po Klinice F.',i:'🏥',lm:'📍 Pierwszy pokoj po Klinice F'},{a:'Wejdz i zarejestruj sie.',d:'Podaj imie i godzine wizyty.',i:'✅'}]}
 }},
-{id:'clinicF',floor:'1',emoji:'🏥',specialties:'Amputee - Asthma - Minor Procedure - Pulmonary - Sleep Disorder - Occupational Medicine',
+{id:'clinicF',floor:'1',emoji:'🏥',specialties:'Amputee - Asthma - Minor Procedure - Pulmonary - Sleep Disorder - Occupational Medicine - Plastics',
  en:{name:'Clinic F',desc:'1st Floor'},es:{name:'Clinica F',desc:'Piso 1'},pl:{name:'Klinika F',desc:'Pietro 1'},zh:{name:'F診所',desc:'一樓'},
  steps:{
   ogden:{en:[{a:'Walk through the Ogden Street front doors.',i:'🚪',lm:'You are in the Main Lobby'},{a:'Walk to the RIGHT side of the lobby toward the Chapel.',d:'The Chapel is on the west side of the lobby, to your right as you face south.',i:'🚶',lm:'Head to the right — toward the Chapel'},{a:'Pass the Chapel on your right. Clinic F is directly across from the Chapel.',d:'Look for the Clinic F sign on the wall.',i:'🏥',lm:'📍 Directly across from the Chapel'},{a:'Go inside and check in.',i:'✅'}],
@@ -1931,39 +1931,39 @@ function mku(id,fl,em,spec,nEN,nES,nPL,dEN,dES,dPL,lEN,lES,lPL,nZH,dZH){
            polk:elvSteps('polk',fl,nEN,nES,nPL,lEN,lES,lPL,id),
            damen:elvSteps('damen',fl,nEN,nES,nPL,lEN,lES,lPL,id)}};
 }
-[mku('clinicG','2','🧠','Neurology - Neurosurgery - Musculoskeletal','Clinic G','Clinica G','Klinika G','2nd Floor','Piso 2','Pietro 2','at the far East end of the hallway','al extremo este del pasillo','na wschodnim koncu korytarza'),
- mku('clinicH','2','🫘','Nephrology','Clinic H','Clinica H','Klinika H','2nd Floor','Piso 2','Pietro 2','at the very far East end of the hallway past Clinic G','al extremo este del pasillo mas alla de Clinica G','na wschodnim koncu korytarza za Klinika G'),
- mku('clinicI','2','🦴','Orthopedics - Rheumatology - Plastics - Hand Surgery - Podiatry','Clinic I','Clinica I','Klinika I','2nd Floor','Piso 2','Pietro 2','in the East section of the floor, across Clinic G','en la seccion este del piso, frente a Clinica G','we wschodniej czesci, naprzeciwko Kliniki G'),
- mku('clinicJ','2','🩸','Dialysis','Clinic J - Dialysis','Clinica J - Dialisis','Klinika J - Dializa','2nd Floor','Piso 2','Pietro 2','on the East side of the floor','en el lado este del piso','po wschodniej stronie pietra'),
- mku('clinicM','2','🩻','Clinic M — CT Scan - Interventional Radiology/Special Procedures - X-Ray - Ultrasound','Clinic M','Clinica M','Klinika M','2nd Floor','Piso 2','Pietro 2','','',''),
- mku('clinicL','2','🏥','Clinic L','Clinic L','Clinica L','Klinika L','2nd Floor','Piso 2','Pietro 2','','',''),
- mku('clinicN','2','🏃','Physical Therapy - Occupational Therapy - Speech and Language Pathology - PT/OT','Clinic N — Physical and Occupational Therapy','Clinica N — Fisioterapia y Terapia Ocupacional','Klinika N — Fizjoterapia i Terapia Zajeciowa','2nd Floor','Piso 2','Pietro 2','','',''),
- mku('clinicR','2','🫁','Endoscopy - Bronchoscopy - Fluoroscopy','Clinic R','Clinica R','Klinika R','2nd Floor','Piso 2','Pietro 2','on the West side of the floor','en el lado oeste del piso','po zachodniej stronie pietra'),
- mku('neuroTesting','2','🧠','Neurological Testing - EEG - EMG - Neuro Diagnostics','Neuro Testing','Pruebas Neurologicas','Badania Neurologiczne','2nd Floor','Piso 2','Pietro 2','','',''),
- mku('clinicV','2','💓','Cardiology Testing','Clinic V - Cardiology Testing','Clinica V - Pruebas Cardiologicas','Klinika V - Kardiologia','2nd Floor','Piso 2','Pietro 2','','',''),
- mku('respiratoryTherapy','2','🫁','Respiratory Therapy - Pulmonary Function - Pulmonary Rehabilitation','Respiratory Therapy','Terapia Respiratoria','Terapia Oddechowa','2nd Floor','Piso 2','Pietro 2','','',''),
- mku('sleepLab','2','😴','Sleep Study - Sleep Disorders - Sleep Center','Sleep Lab','Laboratorio del Sueno','Laboratorium Snu','2nd Floor','Piso 2','Pietro 2','','',''),
- mku('clinicP','2','☢️','Nuclear Medicine','Clinic P - Nuclear Medicine','Clinica P - Medicina Nuclear','Klinika P - Medycyna Nuklearna','2nd Floor','Piso 2','Pietro 2','','',''),
- mku('clinicK','2','🩺','Mammography - Breast Imaging','Clinic K - Mammography','Clinica K - Mamografia','Klinika K - Mammografia','2nd Floor','Piso 2','Pietro 2','','',''),
- mku('cardiacCathLab','3','🫀','Cardiac Catheterization Laboratory','Cardiac Cath Lab','Lab. Cateterismo Cardiaco','Pracownia Cewnikowania Serca','3rd Floor','Piso 3','Pietro 3','','',''),
- mku('ccu','3','🏥','Coronary Care Unit','CCU - Coronary Care Unit','CCU - Unidad de Cuidados Coronarios','CCU - Oddzial Intensywnej Opieki Kardiologicznej','3rd Floor','Piso 3','Pietro 3','','',''),
- mku('micuA','3','🏥','Medical Intensive Care Unit A','MICU-A','MICU-A','MICU-A','3rd Floor','Piso 3','Pietro 3','','',''),
- mku('micuB','3','🏥','Medical Intensive Care Unit B','MICU-B','MICU-B','MICU-B','3rd Floor','Piso 3','Pietro 3','','',''),
- mku('sicu','3','🏥','Surgical Intensive Care Unit','SICU - Surgical ICU','SICU - UCI Quirurgica','SICU - Chirurgiczne OIT','3rd Floor','Piso 3','Pietro 3','','',''),
- mku('neuroICU','3','🧠','Neurological Intensive Care Unit','Neuro ICU','Neuro UCI','Neuro OIT','3rd Floor','Piso 3','Pietro 3','','',''),
- mku('bicu','3','🏥','Burn Intensive Care Unit','BICU - Burn ICU','BICU - UCI de Quemados','BICU - OIT Oparzeń','3rd Floor','Piso 3','Pietro 3','','',''),
- mku('sameDaySurgery','3','🔪','Same Day Surgery - Pre-Op - PACU','Same Day Surgery','Cirugia del Mismo Dia','Chirurgia Jednego Dnia','3rd Floor','Piso 3','Pietro 3','','',''),
- mku('preProcTesting','3','📋','Pre-Procedure Testing - Pre-Operative Evaluation','Pre-Procedure Testing (PPT)','Pruebas Pre-Procedimiento PPT','Badania Przed Zabiegiem PPT','3rd Floor','Piso 3','Pietro 3','','',''),
- mku('imcu4900','4','🏥','Intermediate Care Unit 4900','IMCU 4900','IMCU 4900','IMCU 4900','4th Floor','Piso 4','Pietro 4','','',''),
- mku('nursery','4','🍼','Nursery - Newborn Care','Nursery','Sala Cuna','Oddzial Noworodkowy','4th Floor','Piso 4','Pietro 4','','',''),
- mku('picu','4','🏥','Pediatric Intensive Care Unit','PICU - Pediatric ICU','PICU - UCI Pediatrica','PICU - Pediatryczne OIT','4th Floor','Piso 4','Pietro 4','','',''),
- mku('pedsWard','4','🧒','Pediatric Ward','Pediatric Ward','Pabellon Pediatrico','Oddzial Pediatryczny','4th Floor','Piso 4','Pietro 4','','',''),
- mku('imcu4800','4','🏥','Intermediate Care Unit 4800','IMCU 4800','IMCU 4800','IMCU 4800','4th Floor','Piso 4','Pietro 4','','',''),
- mku('room4800','4','🏥','Inpatient Unit 4800','Room 4800','Cuarto 4800','Sala 4800','4th Floor','Piso 4','Pietro 4','','',''),
- mku('burnStepDown','4','🔥','Burn Step Down Unit','Burn Step Down','Unidad de Transicion de Quemados','Oddzial Przejsciowy Oparzeń','4th Floor','Piso 4','Pietro 4','','',''),
- mku('womensHealth','4','👩‍⚕️',"Women's Health - Ob/Gyn","Women's Health",'Salud de la Mujer','Zdrowie Kobiet','4th Floor','Piso 4','Pietro 4','','',''),
- mku('laborDelivery','4','🍼','Labor and Delivery - Nursery - Maternity','Labor and Delivery','Labor y Parto','Porod i Oddzial Noworodkowy','4th Floor','Piso 4','Pietro 4','','',''),
- mku('pediatricClinic','4','🧒','Pediatric and Adolescent Clinic - PICU - Pediatric Ward','Pediatric and Adolescent Clinic','Clinica Pediatrica y Adolescentes','Klinika Pediatryczna i Mlodziezowa','4th Floor','Piso 4','Pietro 4','','','')
+[mku('clinicG','2','🧠','Neurology - Neurosurgery - Musculoskeletal','Clinic G','Clinica G','Klinika G','2nd Floor','Piso 2','Pietro 2','at the far East end of the hallway','al extremo este del pasillo','na wschodnim koncu korytarza','G診所 — 神經科','二樓'),
+ mku('clinicH','2','🫘','Nephrology','Clinic H','Clinica H','Klinika H','2nd Floor','Piso 2','Pietro 2','at the very far East end of the hallway past Clinic G','al extremo este del pasillo mas alla de Clinica G','na wschodnim koncu korytarza za Klinika G','H診所 — 腎科','二樓'),
+ mku('clinicI','2','🦴','Orthopedics - Rheumatology - Plastics - Hand Surgery - Podiatry','Clinic I','Clinica I','Klinika I','2nd Floor','Piso 2','Pietro 2','in the East section of the floor, across Clinic G','en la seccion este del piso, frente a Clinica G','we wschodniej czesci, naprzeciwko Kliniki G','I診所 — 骨科','二樓'),
+ mku('clinicJ','2','🩸','Dialysis','Clinic J - Dialysis','Clinica J - Dialisis','Klinika J - Dializa','2nd Floor','Piso 2','Pietro 2','on the East side of the floor','en el lado este del piso','po wschodniej stronie pietra','J診所 — 洗腎','二樓'),
+ mku('clinicM','2','🩻','Clinic M — CT Scan - Interventional Radiology/Special Procedures - X-Ray - Ultrasound','Clinic M','Clinica M','Klinika M','2nd Floor','Piso 2','Pietro 2','','','','M診所 — 放射科','二樓'),
+ mku('clinicL','2','🏥','Clinic L','Clinic L','Clinica L','Klinika L','2nd Floor','Piso 2','Pietro 2','','','','L診所','二樓'),
+ mku('clinicN','2','🏃','Physical Therapy - Occupational Therapy - Speech and Language Pathology - PT/OT','Clinic N — Physical and Occupational Therapy','Clinica N — Fisioterapia y Terapia Ocupacional','Klinika N — Fizjoterapia i Terapia Zajeciowa','2nd Floor','Piso 2','Pietro 2','','','','N診所 — 物理及職業治療','二樓'),
+ mku('clinicR','2','🫁','Endoscopy - Bronchoscopy - Fluoroscopy','Clinic R','Clinica R','Klinika R','2nd Floor','Piso 2','Pietro 2','on the West side of the floor','en el lado oeste del piso','po zachodniej stronie pietra','R診所 — 內視鏡','二樓'),
+ mku('neuroTesting','2','🧠','Neurological Testing - EEG - EMG - Neuro Diagnostics','Neuro Testing','Pruebas Neurologicas','Badania Neurologiczne','2nd Floor','Piso 2','Pietro 2','','','','神經測試','二樓'),
+ mku('clinicV','2','💓','Cardiology Testing','Clinic V - Cardiology Testing','Clinica V - Pruebas Cardiologicas','Klinika V - Kardiologia','2nd Floor','Piso 2','Pietro 2','','','','V診所 — 心臟測試','二樓'),
+ mku('respiratoryTherapy','2','🫁','Respiratory Therapy - Pulmonary Function - Pulmonary Rehabilitation','Respiratory Therapy','Terapia Respiratoria','Terapia Oddechowa','2nd Floor','Piso 2','Pietro 2','','','','呼吸治療','二樓'),
+ mku('sleepLab','2','😴','Sleep Study - Sleep Disorders - Sleep Center','Sleep Lab','Laboratorio del Sueno','Laboratorium Snu','2nd Floor','Piso 2','Pietro 2','','','','睡眠實驗室','二樓'),
+ mku('clinicP','2','☢️','Nuclear Medicine','Clinic P - Nuclear Medicine','Clinica P - Medicina Nuclear','Klinika P - Medycyna Nuklearna','2nd Floor','Piso 2','Pietro 2','','','','P診所 — 核子醫學','二樓'),
+ mku('clinicK','2','🩺','Mammography - Breast Imaging','Clinic K - Mammography','Clinica K - Mamografia','Klinika K - Mammografia','2nd Floor','Piso 2','Pietro 2','','','','K診所 — 乳房X光','二樓'),
+ mku('cardiacCathLab','3','🫀','Cardiac Catheterization Laboratory','Cardiac Cath Lab','Lab. Cateterismo Cardiaco','Pracownia Cewnikowania Serca','3rd Floor','Piso 3','Pietro 3','','','','心導管實驗室','三樓'),
+ mku('ccu','3','🏥','Coronary Care Unit','CCU - Coronary Care Unit','CCU - Unidad de Cuidados Coronarios','CCU - Oddzial Intensywnej Opieki Kardiologicznej','3rd Floor','Piso 3','Pietro 3','','','','CCU — 冠心病護理病房','三樓'),
+ mku('micuA','3','🏥','Medical Intensive Care Unit A','MICU-A','MICU-A','MICU-A','3rd Floor','Piso 3','Pietro 3','','','','MICU-A — 內科ICU','三樓'),
+ mku('micuB','3','🏥','Medical Intensive Care Unit B','MICU-B','MICU-B','MICU-B','3rd Floor','Piso 3','Pietro 3','','','','MICU-B — 內科ICU','三樓'),
+ mku('sicu','3','🏥','Surgical Intensive Care Unit','SICU - Surgical ICU','SICU - UCI Quirurgica','SICU - Chirurgiczne OIT','3rd Floor','Piso 3','Pietro 3','','','','SICU — 外科ICU','三樓'),
+ mku('neuroICU','3','🧠','Neurological Intensive Care Unit','Neuro ICU','Neuro UCI','Neuro OIT','3rd Floor','Piso 3','Pietro 3','','','','神經ICU','三樓'),
+ mku('bicu','3','🏥','Burn Intensive Care Unit','BICU - Burn ICU','BICU - UCI de Quemados','BICU - OIT Oparzeń','3rd Floor','Piso 3','Pietro 3','','','','BICU — 燒傷ICU','三樓'),
+ mku('sameDaySurgery','3','🔪','Same Day Surgery - Pre-Op - PACU','Same Day Surgery','Cirugia del Mismo Dia','Chirurgia Jednego Dnia','3rd Floor','Piso 3','Pietro 3','','','','日間手術','三樓'),
+ mku('preProcTesting','3','📋','Pre-Procedure Testing - Pre-Operative Evaluation','Pre-Procedure Testing (PPT)','Pruebas Pre-Procedimiento PPT','Badania Przed Zabiegiem PPT','3rd Floor','Piso 3','Pietro 3','','','','術前測試（PPT）','三樓'),
+ mku('imcu4900','4','🏥','Intermediate Care Unit 4900','IMCU 4900','IMCU 4900','IMCU 4900','4th Floor','Piso 4','Pietro 4','','','','IMCU 4900 — 中級護理','四樓'),
+ mku('nursery','4','🍼','Nursery - Newborn Care','Nursery','Sala Cuna','Oddzial Noworodkowy','4th Floor','Piso 4','Pietro 4','','','','嬰兒室','四樓'),
+ mku('picu','4','🏥','Pediatric Intensive Care Unit','PICU - Pediatric ICU','PICU - UCI Pediatrica','PICU - Pediatryczne OIT','4th Floor','Piso 4','Pietro 4','','','','PICU — 兒科ICU','四樓'),
+ mku('pedsWard','4','🧒','Pediatric Ward','Pediatric Ward','Pabellon Pediatrico','Oddzial Pediatryczny','4th Floor','Piso 4','Pietro 4','','','','兒科病房','四樓'),
+ mku('imcu4800','4','🏥','Intermediate Care Unit 4800','IMCU 4800','IMCU 4800','IMCU 4800','4th Floor','Piso 4','Pietro 4','','','','IMCU 4800 — 中級護理','四樓'),
+ mku('room4800','4','🏥','Inpatient Unit 4800','Room 4800','Cuarto 4800','Sala 4800','4th Floor','Piso 4','Pietro 4','','','','4800病房','四樓'),
+ mku('burnStepDown','4','🔥','Burn Step Down Unit','Burn Step Down','Unidad de Transicion de Quemados','Oddzial Przejsciowy Oparzeń','4th Floor','Piso 4','Pietro 4','','','','燒傷過渡病房','四樓'),
+ mku('womensHealth','4','👩‍⚕️',"Women's Health - Ob/Gyn","Women's Health",'Salud de la Mujer','Zdrowie Kobiet','4th Floor','Piso 4','Pietro 4','','','','女性健康科','四樓'),
+ mku('laborDelivery','4','🍼','Labor and Delivery - Nursery - Maternity','Labor and Delivery','Labor y Parto','Porod i Oddzial Noworodkowy','4th Floor','Piso 4','Pietro 4','','','','產房及分娩','四樓'),
+ mku('pediatricClinic','4','🧒','Pediatric and Adolescent Clinic - PICU - Pediatric Ward','Pediatric and Adolescent Clinic','Clinica Pediatrica y Adolescentes','Klinika Pediatryczna i Mlodziezowa','4th Floor','Piso 4','Pietro 4','','','','兒科及青少年診所','四樓')
 ].forEach(function(c){if(c.id==='clinicL')c.hidden=true;CLINICS.push(c);});
 (function(){
   function mriSteps(entry){
@@ -2021,15 +2021,18 @@ function mku(id,fl,em,spec,nEN,nES,nPL,dEN,dES,dPL,lEN,lES,lPL,nZH,dZH){
     steps:{ogden:mriSteps('ogden'),garage:mriSteps('garage'),er:mriSteps('er'),polk:mriSteps('polk'),damen:mriSteps('damen')}});
 })();
 // ── PROFESSIONAL BUILDING (PB) CLINICS ──
-[mku('ophthalmology','1','👁️','Ophthalmology Clinic — PB 1st Floor','Ophthalmology Clinic','Clinica de Oftalmologia','Klinika Okulistyczna','PB 1st Floor','PB Piso 1','PB Pietro 1','','',''),
- mku('dentalClinic','1','🦷','Dental Clinic — PB 1st Floor','Dental Clinic','Clinica Dental','Klinika Dentystyczna','PB 1st Floor','PB Piso 1','PB Pietro 1','','',''),
- mku('oncologyServices','pb2','🎗️','Oncology Services — PB 2nd Floor','Oncology Services','Servicios de Oncologia','Onkologia','PB 2nd Floor','PB Piso 2','PB Pietro 2','','',''),
- mku('infusionCenter','pb2','💉','Infusion Center — PB 2nd Floor','Infusion Center','Centro de Infusion','Centrum Infuzji','PB 2nd Floor','PB Piso 2','PB Pietro 2','','',''),
- mku('generalMedicineClinic','pb3','🩺','General Medicine Clinic — PB 3rd Floor','General Medicine Clinic','Clinica de Medicina General','Klinika Medycyny Ogolnej','PB 3rd Floor','PB Piso 3','PB Pietro 3','','',''),
- mku('geriatricClinic','pb3','👴','Geriatric Clinic — PB 3rd Floor','Geriatric Clinic','Clinica Geriatrica','Klinika Geriatryczna','PB 3rd Floor','PB Piso 3','PB Pietro 3','','',''),
- mku('lifestyleMedicine','pb3','🥗','Lifestyle Medicine — PB 3rd Floor','Lifestyle Medicine','Medicina de Estilo de Vida','Medycyna Stylu Zycia','PB 3rd Floor','PB Piso 3','PB Pietro 3','','',''),
- mku('dermatology','pb4','🔬','Dermatology — PB 4th Floor','Dermatology','Dermatologia','Dermatologia','PB 4th Floor','PB Piso 4','PB Pietro 4','','',''),
- mku('endocrinology','pb4','⚗️','Endocrinology — PB 4th Floor','Endocrinology','Endocrinologia','Endokrynologia','PB 4th Floor','PB Piso 4','PB Pietro 4','','','')
+[mku('ophthalmology','1','👁️','Ophthalmology Clinic — PB 1st Floor','Ophthalmology Clinic','Clinica de Oftalmologia','Klinika Okulistyczna','PB 1st Floor','PB Piso 1','PB Pietro 1','','','','眼科診所','PB一樓'),
+ mku('dentalClinic','1','🦷','Dental Clinic — PB 1st Floor','Dental Clinic','Clinica Dental','Klinika Dentystyczna','PB 1st Floor','PB Piso 1','PB Pietro 1','','','','牙科診所','PB一樓'),
+ mku('oncologyServices','pb2','🎗️','Oncology Services — PB 2nd Floor','Oncology Services','Servicios de Oncologia','Onkologia','PB 2nd Floor','PB Piso 2','PB Pietro 2','','','','腫瘤科服務','PB二樓'),
+ mku('infusionCenter','pb2','💉','Infusion Center — PB 2nd Floor','Infusion Center','Centro de Infusion','Centrum Infuzji','PB 2nd Floor','PB Piso 2','PB Pietro 2','','','','輸液中心','PB二樓'),
+ mku('palliativeCare','pb2','🕊️','Palliative Care — PB 2nd Floor','Palliative Care','Cuidados Paliativos','Opieka Paliatywna','PB 2nd Floor','PB Piso 2','PB Pietro 2','','','','紓緩治療','PB二樓'),
+ mku('generalMedicineClinic','pb3','🩺','General Medicine Clinic — PB 3rd Floor','General Medicine Clinic','Clinica de Medicina General','Klinika Medycyny Ogolnej','PB 3rd Floor','PB Piso 3','PB Pietro 3','','','','普通內科診所','PB三樓'),
+ mku('geriatricClinic','pb3','👴','Geriatric Clinic — PB 3rd Floor','Geriatric Clinic','Clinica Geriatrica','Klinika Geriatryczna','PB 3rd Floor','PB Piso 3','PB Pietro 3','','','','老人科診所','PB三樓'),
+ mku('lifestyleMedicine','pb3','🥗','Lifestyle Medicine — PB 3rd Floor','Lifestyle Medicine','Medicina de Estilo de Vida','Medycyna Stylu Zycia','PB 3rd Floor','PB Piso 3','PB Pietro 3','','','','生活方式醫學','PB三樓'),
+ mku('dermatology','pb4','🔬','Dermatology — PB 4th Floor','Dermatology','Dermatologia','Dermatologia','PB 4th Floor','PB Piso 4','PB Pietro 4','','','','皮膚科','PB四樓'),
+ mku('endocrinology','pb4','⚗️','Endocrinology — PB 4th Floor','Endocrinology','Endocrinologia','Endokrynologia','PB 4th Floor','PB Piso 4','PB Pietro 4','','','','內分泌科','PB四樓'),
+ mku('generalSurgeryPB','pb4','🔪','General Surgery — PB 4th Floor','General Surgery','Cirugía General','Chirurgia Ogólna','PB 4th Floor','PB Piso 4','PB Pietro 4','','','','普外科（一般外科）','PB四樓'),
+ mku('plasticsSurgeryPB','pb4','✂️','Plastics Surgery — PB 4th Floor','Plastics Surgery','Cirugía Plástica','Chirurgia Plastyczna','PB 4th Floor','PB Piso 4','PB Pietro 4','','','','整形外科','PB四樓')
 ].forEach(function(c){CLINICS.push(c);});
 
 // ═══ POLK/DAMEN STEPS for floor-1 hardcoded clinics ═══
