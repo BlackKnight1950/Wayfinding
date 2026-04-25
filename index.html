@@ -214,7 +214,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
     <div class="tips">
       <div class="tip"><div class="ico">🗺️</div><p id="tip1">Follow the orange line on the map to find your way.</p></div>
       <div class="tip"><div class="ico">🛗</div><p id="tip2">For clinics/services in Stroger Hospital, P/S East &amp; West elevators serve floors 1–2 only. For 3rd or 4th floor clinics, all patients must use the Main Elevator.</p></div>
-      <div class="tip"><div class="ico">ℹ️</div><p id="tip3">Helpdesk is in the Main Lobby near the Ogden entrance.</p></div>
+      <div class="tip"><div class="ico">ℹ️</div><p id="tip3">Mostrador de Ayuda is in the Main Lobby near the Ogden entrance.</p></div>
       <div class="tip"><div class="ico">🅿️</div><p id="tip4">Came by car? Use the side door from the Parking Garage.</p></div>
       <div class="tip"><div class="ico">📋</div><p id="tip5">For clinics/services in PB 2nd–4th floors, go to the Self Check-in Kiosks on PB 1st Floor before getting on the PB Elevator.</p></div>
     </div>
@@ -313,7 +313,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <!-- Service elevator -->
           <rect x="270" y="136" width="16" height="12" rx="2" fill="#e0e0e0" stroke="#888" stroke-width="1"/>
           <text x="278" y="145" text-anchor="middle" font-family="Nunito" font-size="5" fill="#555">SVC</text>
-          <!-- Helpdesk -->
+          <!-- Mostrador de Ayuda -->
           <rect x="258" y="126" width="14" height="11" rx="2" fill="#fff0cc" stroke="#c8a000" stroke-width="1.5"/>
           <text x="265" y="134" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#7a5500">Help</text>
           <!-- Snack Kiosk -->
@@ -612,7 +612,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <rect x="370" y="159" width="18" height="18" rx="3" fill="#d4f4e8" stroke="#007744" stroke-width="2"/>
           <text x="379" y="167" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#004422">P/S</text>
           <text x="379" y="174" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#004422">WEST</text>
-          <!-- Bottom row (y=190-245): Clinic V, Nuclear Med, HIS Helpdesk, Interv. Rad, Obs, X-Ray, Mammo, Clinic I -->
+          <!-- Bottom row (y=190-245): Clinic V, Nuclear Med, HIS Mostrador de Ayuda, Interv. Rad, Obs, X-Ray, Mammo, Clinic I -->
           <rect id="rm2-clinicV" x="279" y="190" width="39" height="36" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <text x="298" y="205" text-anchor="middle" font-family="Nunito" font-size="7" font-weight="900" fill="#222">Clinic V</text>
           <text x="298" y="214" text-anchor="middle" font-family="Nunito" font-size="5.5" fill="#555">Cardio Test</text>
@@ -1080,7 +1080,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
   <!-- HELP -->
   <div class="help-sec" id="help-sec">
     <div class="sec-lbl" id="sec-help">NEED HELP?</div>
-    <div class="help-item"><div class="help-ic">ℹ️</div><div><h3 id="help-h1">Helpdesk</h3><p id="help-p1">In the Main Lobby, 1st Floor — Staff available 7AM-9PM daily</p></div></div>
+    <div class="help-item"><div class="help-ic">ℹ️</div><div><h3 id="help-h1">Mostrador de Ayuda</h3><p id="help-p1">In the Main Lobby, 1st Floor — Staff available 7AM-9PM daily</p></div></div>
     <div class="help-item"><div class="help-ic">🛗</div><div><h3 id="help-h2">Elevator Guide</h3><p id="help-p2">Main elevator: floors 1-4 (all patients). Patient/Staff East (by garage) and West: floors 1-2 only. For 3rd and 4th floor clinics, all patients — including those entering from the garage or ER — must use the Main Elevator. Service elevators: staff badge required.</p></div></div>
     <div class="help-item"><div class="help-ic">♿</div><div><h3 id="help-h3">Accessibility</h3><p id="help-p3">Wheelchair and assistance: Call (312) 864-6000</p></div></div>
     <div class="help-item"><div class="help-ic">🌐</div><div><h3 id="help-h4">Interpreter Services</h3><p id="help-p4">Interpreters in various languages are available in person, phone, and devices</p></div></div>
@@ -1129,17 +1129,17 @@ var CLINICS=[
  en:{name:'Clinic A',desc:'1st Floor'},es:{name:'Clínica A',desc:'Piso 1'},pl:{name:'Poradnia A',desc:'I piętro'},zh:{name:'A診所',desc:'一樓'},
  steps:{
   ogden:{en:[
-   {a:'Walk through the front doors on Ogden Street.',d:'You will enter the Hospital Main Lobby. The Helpdesk is straight ahead.',i:'🚪',lm:'You are in the Main Lobby'},
+   {a:'Walk through the front doors on Ogden Street.',d:'You will enter the Hospital Main Lobby. The Mostrador de Ayuda is straight ahead.',i:'🚪',lm:'You are in the Main Lobby'},
    {a:'Walk through the lobby toward the hallway.',d:'Pass the Snack Kiosk on your right. The Gift Shop will be on your left. Turn LEFT into the hallway heading East.',i:'⬆️',lm:'Snack Kiosk on right, Gift Shop on left — Turn LEFT East'},
    {a:'Walk east along the hallway all the way to the far end.',d:'Pass Clinic F, Clinic E, Clinic D, Clinic C, and Clinic B.',i:'🚶',lm:'Walk east — Clinic A is at the far end'},
    {a:'Clinic A is the last room at the far East end.',d:'Look for the Clinic A - Cardiology sign on the wall.',i:'🏥',lm:'📍 Last room at the far East end'},
    {a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'}
   ],es:[
-   {a:'Entra por las puertas de la Calle Ogden.',d:'Estaras en el Lobby Principal. El mostrador de ayuda esta frente a ti.',i:'🚪',lm:'Estas en el Lobby Principal'},
-   {a:'Camina por el lobby hacia el pasillo.',d:'Pasa el Kiosko a tu derecha. La Tienda de Regalos estara a tu izquierda. Gira a la IZQUIERDA al pasillo rumbo al Este.',i:'⬆️',lm:'Kiosko a la derecha, Tienda a la izquierda — Gira IZQUIERDA al Este'},
-   {a:'Camina al este por el pasillo hasta el final.',d:'Pasa Clínica F, E, D, C y B.',i:'🚶',lm:'Camina al este — Clínica A esta al fondo'},
-   {a:'Clínica A es el ultimo cuarto al extremo Este.',d:'Busca el letrero Clínica A - Cardiologia en la pared.',i:'🏥',lm:'📍 Ultimo cuarto al extremo Este'},
-   {a:'Entra y regístrate.',d:'Di tu nombre y hora de cita.',i:'✅'}
+   {a:'Entre por las puertas de la Calle Ogden.',d:'Estarás en el Lobby Principal. El mostrador de ayuda esta frente a ti.',i:'🚪',lm:'Estás en el Lobby Principal'},
+   {a:'Camine por el lobby hacia el pasillo.',d:'Pase el Puesto de Café a tu derecha. La Tienda de Regalos estará a tu izquierda. Gire a la IZQUIERDA al pasillo rumbo al Este.',i:'⬆️',lm:'Puesto de Café a la derecha, Tienda a la izquierda — Gira IZQUIERDA al Este'},
+   {a:'Siga por el pasillo hacia el este hasta el final.',d:'Pasa Clínica F, E, D, C y B.',i:'🚶',lm:'Camine hacia el este — Clínica A está al fondo'},
+   {a:'Clínica A es el último cuarto al extremo Este.',d:'Busque el letrero Clínica A - Cardiología en la pared.',i:'🏥',lm:'📍 Último cuarto al extremo Este'},
+   {a:'¡Llegó a su destino! Por favor regístrese en la recepción.',d:'Indique su nombre y hora de cita.',i:'✅'}
   ],pl:[
    {a:'Wejdź przez główne drzwi od ulicy Ogden.',d:'Wejdźiesz do Głównego Holu. Punkt informacyjny jest przed tobą.',i:'🚪',lm:'Jesteś w głównym holu'},
    {a:'Idź przez hol w kierunku korytarza.',d:'Miń Kiosk po prawej stronie. Sklep z Upominkami będzie po lewej stronie. Skręcaj W LEWO w korytarz w kierunku Wschódu.',i:'⬆️',lm:'Kiosk po prawej, Sklep po lewej — Skręcaj LEWO na Wschód'},
@@ -1158,9 +1158,9 @@ var CLINICS=[
    {a:'Clinic A is the first room on your LEFT as you enter.',d:'Look for the Clinic A - Cardiology sign right away.',i:'🏥',lm:'📍 First room on your left'},
    {a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'}
   ],es:[
-   {a:'Entra por la puerta lateral del Estacionamiento.',d:'Camina al pasillo.',i:'🅿️'},
-   {a:'Clínica A es el primer cuarto a tu IZQUIERDA al entrar.',d:'Busca el letrero Clínica A - Cardiologia de inmediato.',i:'🏥',lm:'📍 Primer cuarto a tu izquierda'},
-   {a:'Entra y regístrate.',d:'Di tu nombre y hora de cita.',i:'✅'}
+   {a:'Entre por la puerta lateral del Estacionamiento.',d:'Camina al pasillo.',i:'🅿️'},
+   {a:'Clínica A es el primer cuarto a tu IZQUIERDA al entrar.',d:'Busque el letrero Clínica A — Cardiología.',i:'🏥',lm:'📍 Primer cuarto a tu izquierda'},
+   {a:'¡Llegó a su destino! Por favor regístrese en la recepción.',d:'Indique su nombre y hora de cita.',i:'✅'}
   ],pl:[
    {a:'Wejdź przez boczne drzwi od garażu.',d:'Wejdź do korytarza.',i:'🅿️'},
    {a:'Poradnia A to pierwszy pokój po LEWEJ przy wejściu.',d:'Szukaj tabliczki Poradnia A - Kardiologia od razu.',i:'🏥',lm:'📍 Pierwszy pokój po lewej'},
@@ -1176,10 +1176,10 @@ var CLINICS=[
    {a:'Clinic A is at the far East end of the hallway.',d:'Walk east past Clinic F, Clinic E, D, C, and B. Clinic A is the last room on your RIGHT.',i:'🏥',lm:'📍 Far East end — last room'},
    {a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'}
   ],es:[
-   {a:'Entra por la entrada de Urgencias.',d:'Camina al este por urgencias al pasillo.',i:'🚨'},
-   {a:'Pasa Clínica F, la Tienda de Regalos, luego Clinicas E, D, C y B.',d:'Sigue hasta el final.',i:'🚶',lm:'Pasa todas las clinicas hasta el final'},
-   {a:'Clínica A esta al extremo Este del pasillo.',d:'Camina al este pasando Clínica F, Tienda, Clínica E, D, C y B. Clínica A es el ultimo cuarto a tu izquierda.',i:'🏥',lm:'📍 Extremo Este — ultimo cuarto'},
-   {a:'Entra y regístrate.',i:'✅'}
+   {a:'Entre por la entrada de Urgencias.',d:'Camine hacia el este por urgencias al pasillo.',i:'🚨'},
+   {a:'Pasa Clínica F, la Tienda de Regalos, luego Clinicas E, D, C y B.',d:'Siga hasta el final.',i:'🚶',lm:'Pase todas las clínicas hasta el final'},
+   {a:'Clínica A está al extremo Este del pasillo.',d:'Camine hacia el este pasando Clínica F, Tienda, Clínica E, D, C y B. Clínica A es el último cuarto a tu izquierda.',i:'🏥',lm:'📍 Extremo Este — último cuarto'},
+   {a:'¡Llegó a su destino! Por favor regístrese en la recepción.',i:'✅'}
   ],pl:[
    {a:'Wejdź przez wejście Izby Przyjec.',d:'Idź na wschód przez IP do korytarza klinik.',i:'🚨'},
    {a:'Miń Poradnię F, Sklep, potem Poradni E, D, C i B.',d:'Idź aż do konca.',i:'🚶',lm:'Miń wszystkie kliniki do konca'},
@@ -1196,15 +1196,15 @@ var CLINICS=[
  en:{name:'Clinic B',desc:'1st Floor'},es:{name:'Clínica B',desc:'Piso 1'},pl:{name:'Poradnia B',desc:'I piętro'},zh:{name:'B診所',desc:'一樓'},
  steps:{
   ogden:{en:[{a:'Walk through the Ogden Street front doors.',i:'🚪',lm:'You are in the Main Lobby'},{a:'Walk through the lobby toward the hallway.',d:'Pass the Snack Kiosk on your right. The Gift Shop will be on your left. Turn LEFT into the hallway heading East.',i:'⬆️',lm:'Snack Kiosk on right, Gift Shop on left — Turn LEFT East'},{a:'Walk east down the hallway. Clinic B is the second-to-last room.',d:'Walk past Clinic F, E, D, and C. Clinic B is right before Clinic A at the far end.',i:'🏥',lm:'📍 Second-to-last room — just before Clinic A'},{a:'Go inside and check in.',i:'✅'}],
-   es:[{a:'Entra por las puertas de Ogden.',i:'🚪',lm:'Estas en el Lobby Principal'},{a:'Camina por el lobby hacia el pasillo.',d:'Pasa el Kiosko a tu derecha. La Tienda de Regalos estara a tu izquierda. Gira a la IZQUIERDA al pasillo rumbo al Este.',i:'⬆️',lm:'Kiosko a la derecha, Tienda a la izquierda — Gira IZQUIERDA al Este'},{a:'Camina al este. Clínica B es el penultimo cuarto.',d:'Pasa Clínica F, E, D y C. Clínica B esta justo antes de Clínica A al fondo.',i:'🏥',lm:'📍 Penultimo cuarto — justo antes de Clínica A'},{a:'Entra y regístrate.',i:'✅'}],
+   es:[{a:'Entre por las puertas de Ogden.',i:'🚪',lm:'Estás en el Lobby Principal'},{a:'Siga por el pasillo hacia el este.',d:'Pase el Puesto de Café a tu derecha. La Tienda de Regalos estará a tu izquierda. Continúa hacia el este.',i:'⬆️',lm:'Puesto de Café a la derecha, Tienda a la izquierda — sigue al este'},{a:'Clínica B está cerca del final del pasillo, antes de Clínica A.',d:'Pase las Clínicas F, E, D y C. Clínica B es el penúltimo consultorio al fondo.',i:'🏥',lm:'📍 Penúltimo consultorio — antes de Clínica A'},{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',i:'✅'}],
    pl:[{a:'Wejdź przez drzwi od Ogden.',i:'🚪',lm:'Jesteś w głównym holu'},{a:'Idź przez hol w kierunku korytarza.',d:'Miń Kiosk po prawej stronie. Sklep z Upominkami będzie po lewej stronie. Skręcaj W LEWO w korytarz w kierunku Wschódu.',i:'⬆️',lm:'Kiosk po prawej, Sklep po lewej — Skręcaj LEWO na Wschód'},{a:'Idź na wschód. Poradnia B to przedostatni pokój.',d:'Miń Poradni F, E, D i C. Poradnia B jest tuz przed Poradnia A na końcu.',i:'🏥',lm:'📍 Przedostatni pokój — tuz przed Poradnia A'},{a:'Wejdź i zarejestruj się.',i:'✅'}],
    zh:[{a:'從Ogden街正門進入。',i:'🚪',lm:'您在主大堂'},{a:'穿過大堂走向走廊。',d:'右邊是小食亭，左邊是禮品店。向左轉進入向東的走廊。',i:'⬆️',lm:'小食亭在右、禮品店在左 — 向左轉朝東'},{a:'向東走。B診所是倒數第二個房間。',d:'經過F、E、D和C診所，B診所在A診所之前。',i:'🏥',lm:'📍 倒數第二個房間 — 緊接A診所之前'},{a:'進入並辦理登記手續。',i:'✅'}]},
   garage:{en:[{a:'Enter from the Parking Garage.',i:'🅿️'},{a:'Clinic B is the second room on your LEFT.',d:'It is right next to Clinic A.',i:'🏥',lm:'📍 Second room on your left'},{a:'Go inside and check in.',i:'✅'}],
-   es:[{a:'Entra por el Estacionamiento.',i:'🅿️'},{a:'Clínica B es el segundo cuarto a tu IZQUIERDA.',i:'🏥',lm:'📍 Segundo cuarto a la izquierda'},{a:'Entra y regístrate.',i:'✅'}],
+   es:[{a:'Entre por el estacionamiento.',i:'🅿️'},{a:'Siga por el pasillo hacia el este. Clínica B está cerca del final del pasillo, antes de Clínica A.',d:'Pase las Clínicas F, E, D y C.',i:'🏥',lm:'📍 Cerca del final del pasillo — antes de Clínica A'},{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',i:'✅'}],
    pl:[{a:'Wejdź przez garaż.',i:'🅿️'},{a:'Poradnia B to drugi pokój po LEWEJ.',i:'🏥',lm:'📍 Drugi pokój po lewej'},{a:'Wejdź i zarejestruj się.',i:'✅'}],
    zh:[{a:'從停車場側門進入。',i:'🅿️'},{a:'B診所是左邊第二個房間。',i:'🏥',lm:'📍 左邊第二個房間'},{a:'進入並辦理登記手續。',i:'✅'}]},
   er:{en:[{a:'Walk through the ER entrance.',i:'🚨'},{a:'Walk through the ER and hallway past all clinics.',d:'Clinic B is the second-to-last room.',i:'🚶',lm:'Walk to the second-to-last room'},{a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'}],
-   es:[{a:'Entra por Urgencias.',i:'🚨'},{a:'Camina por el pasillo pasando todas las clinicas.',d:'Clínica B es el penultimo cuarto.',i:'🚶',lm:'Ve al penultimo cuarto'},{a:'Entra y regístrate.',d:'Di tu nombre y hora de cita.',i:'✅'}],
+   es:[{a:'Entre por Urgencias.',i:'🚨'},{a:'Camine por el pasillo pasando todas las clínicas.',d:'Clínica B es el penúltimo cuarto.',i:'🚶',lm:'Ve al penúltimo cuarto'},{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',d:'Indique su nombre y hora de cita.',i:'✅'}],
    pl:[{a:'Wejdź przez IP.',i:'🚨'},{a:'Idź przez korytarz mijając wszystkie kliniki.',d:'Poradnia B to przedostatni pokój.',i:'🚶',lm:'Idź do przedostatniego pokóju'},{a:'Wejdź i zarejestruj się.',d:'Podaj imię i godzinę wizyty.',i:'✅'}],
    zh:[{a:'從急症室入口進入。',i:'🚨'},{a:'沿走廊經過所有診所。',d:'B診所是倒數第二個房間。',i:'🚶',lm:'走到倒數第二個房間'},{a:'進入並辦理登記手續。',d:'告訴工作人員您的姓名和預約時間。',i:'✅'}]}
 }},
@@ -1212,15 +1212,15 @@ var CLINICS=[
  en:{name:'Clinic C',desc:'1st Floor'},es:{name:'Clínica C',desc:'Piso 1'},pl:{name:'Poradnia C',desc:'I piętro'},zh:{name:'C診所',desc:'一樓'},
  steps:{
   ogden:{en:[{a:'Walk through the Ogden Street front doors into the lobby.',i:'🚪',lm:'You are in the Main Lobby'},{a:'Walk through the lobby. The Gift Shop will be on your left. Turn LEFT into the hallway heading East.',i:'⬆️',lm:'Gift Shop on your left — Turn LEFT East'},{a:'Just past the Gift Shop, look for Clinic C. It is set slightly back from the other rooms.',i:'🏥',lm:'📍 Just past the Gift Shop, slightly set back'},{a:'Go inside and check in.',i:'✅'}],
-   es:[{a:'Entra por Ogden al lobby.',i:'🚪',lm:'Estas en el Lobby Principal'},{a:'Pasa la Tienda de Regalos a tu derecha.',i:'⬆️',lm:'Pasa la Tienda de Regalos'},{a:'Justo despues de la Tienda, busca Clínica C. Esta un poco retirada.',i:'🏥',lm:'📍 Justo despues de la Tienda, un poco retirada'},{a:'Entra y regístrate.',i:'✅'}],
+   es:[{a:'Entre por Ogden al lobby.',i:'🚪',lm:'Estás en el Lobby Principal'},{a:'Pase la Tienda de Regalos a tu derecha.',i:'⬆️',lm:'Pase la Tienda de Regalos'},{a:'Justo después de la Tienda, busque la Clínica C. Esta un poco retirada.',i:'🏥',lm:'📍 Justo después de la Tienda, un poco retirada'},{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',i:'✅'}],
    pl:[{a:'Wejdź przez Ogden do holu.',i:'🚪',lm:'Jesteś w głównym holu'},{a:'Miń sklep po prawej.',i:'⬆️',lm:'Miń sklep z upominkami'},{a:'Zaraz za sklepem szukaj Poradni C. Jest lekko cofnieta.',i:'🏥',lm:'📍 Zaraz za sklepem, lekko cofnieta'},{a:'Wejdź i zarejestruj się.',i:'✅'}],
    zh:[{a:'從Ogden街正門進入大堂。',i:'🚪',lm:'您在主大堂'},{a:'向左轉進入走廊。禮品店在您左側。',i:'⬆️',lm:'禮品店在左 — 向左轉朝東'},{a:'剛過禮品店，找C診所。它比其他房間稍微靠後。',i:'🏥',lm:'📍 剛過禮品店，稍微靠後'},{a:'進入並辦理登記手續。',i:'✅'}]},
   garage:{en:[{a:'Enter from the Parking Garage.',i:'🅿️'},{a:'Walk left into the hallway. Pass Clinic A and Clinic B.',i:'🚶',lm:'Walk past Clinics A and B'},{a:'Clinic C is the next room — it is set slightly back from Clinics A and B.',i:'🏥',lm:'📍 Slightly set back after Clinic B'},{a:'Go inside and check in.',i:'✅'}],
-   es:[{a:'Entra por el Estacionamiento.',i:'🅿️'},{a:'Camina a la izquierda. Pasa Clinicas A y B.',i:'🚶',lm:'Pasa Clinicas A y B'},{a:'Clínica C es el siguiente cuarto, un poco retirado.',i:'🏥',lm:'📍 Un poco retirado despues de B'},{a:'Entra y regístrate.',i:'✅'}],
+   es:[{a:'Entre por el estacionamiento.',i:'🅿️'},{a:'Camina a la izquierda. Pase las Clínicas A y B.',i:'🚶',lm:'Pase las Clínicas A y B'},{a:'Clínica C es el siguiente cuarto, un poco retirado.',i:'🏥',lm:'📍 Un poco retirado después de B'},{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',i:'✅'}],
    pl:[{a:'Wejdź przez garaż.',i:'🅿️'},{a:'Idź w lewo. Miń Poradni A i B.',i:'🚶',lm:'Miń Poradni A i B'},{a:'Poradnia C jest następna — lekko cofnieta.',i:'🏥',lm:'📍 Lekko cofnieta za Poradnia B'},{a:'Wejdź i zarejestruj się.',i:'✅'}],
    zh:[{a:'從停車場側門進入。',i:'🅿️'},{a:'向左走入走廊，經過A和B診所。',i:'🚶',lm:'經過A和B診所'},{a:'C診所是下一個房間，比A和B診所稍微靠後。',i:'🏥',lm:'📍 B診所後稍微靠後'},{a:'進入並辦理登記手續。',i:'✅'}]},
   er:{en:[{a:'Walk through the ER entrance into the hallway.',i:'🚨'},{a:'Walk east past Clinic F, the Gift Shop, Clinic E, and Clinic D.',i:'🚶',lm:'Walk past Clinics F, E, D'},{a:'Clinic C is the next room, slightly set back from the others.',i:'🏥',lm:'📍 After Clinic D, slightly set back'},{a:'Check in at the desk.',i:'✅'}],
-   es:[{a:'Entra por Urgencias.',i:'🚨'},{a:'Camina al este pasando Clinicas F, E, D y la Tienda.',i:'🚶',lm:'Pasa Clinicas F, E, D'},{a:'Clínica C esta despues, un poco retirada. Entra por el lado sur.',i:'🏥',lm:'📍 Despues de Clínica D, un poco retirada'},{a:'Registrate.',i:'✅'}],
+   es:[{a:'Entre por Urgencias.',i:'🚨'},{a:'Camine hacia el este pasando Clínicas F, E, D y la Tienda.',i:'🚶',lm:'Pase las Clínicas F, E, D'},{a:'Clínica C esta después, un poco retirada. Entra por el lado sur.',i:'🏥',lm:'📍 Después de Clínica D, un poco retirada'},{a:'Regístrate.',i:'✅'}],
    pl:[{a:'Wejdź przez IP do korytarza.',i:'🚨'},{a:'Idź na wschód, mijając Poradni F, E, D i sklep.',i:'🚶',lm:'Miń Poradni F, E, D'},{a:'Poradnia C jest następna, lekko cofnieta od pozostalych.',i:'🏥',lm:'📍 Po Klinice D, lekko cofnieta'},{a:'Zarejestruj się.',i:'✅'}],
    zh:[{a:'從急症室入口進入走廊。',i:'🚨'},{a:'向東經過F診所、禮品店、E和D診所。',i:'🚶',lm:'經過F、E、D診所'},{a:'C診所是下一個房間，比其他房間稍微靠後。',i:'🏥',lm:'📍 D診所之後，稍微靠後'},{a:'辦理登記手續。',i:'✅'}]}
 }},
@@ -1228,15 +1228,15 @@ var CLINICS=[
  en:{name:'Clinic D',desc:'1st Floor'},es:{name:'Clínica D',desc:'Piso 1'},pl:{name:'Poradnia D',desc:'I piętro'},zh:{name:'D診所',desc:'一樓'},
  steps:{
   ogden:{en:[{a:'Walk through the Ogden Street front doors into the lobby.',i:'🚪',lm:'You are in the Main Lobby'},{a:'Walk through the lobby and hallway.',d:'Pass the Snack Kiosk on your right. The Gift Shop will be on your left.',i:'⬆️',lm:'Snack Kiosk on right, Gift Shop on left'},{a:'Clinic D is the large room directly across from the Gift Shop.',d:'When you see the Gift Shop on your left, Clinic D is right there on your right.',i:'🏥',lm:'📍 Directly across from the Gift Shop'},{a:'Go inside and check in.',i:'✅'}],
-   es:[{a:'Entra por Ogden al lobby.',i:'🚪',lm:'Estas en el Lobby Principal'},{a:'Camina por el lobby y el pasillo.',d:'Pasa el Kiosko a tu derecha. La Tienda de Regalos estara a tu izquierda.',i:'⬆️',lm:'Kiosko a la derecha, Tienda a la izquierda'},{a:'Clínica D esta justo frente a la Tienda de Regalos.',d:'Cuando veas la Tienda a tu izquierda, Clínica D esta justo a tu derecha.',i:'🏥',lm:'📍 Justo frente a la Tienda de Regalos'},{a:'Entra y regístrate.',i:'✅'}],
+   es:[{a:'Entre por Ogden al lobby.',i:'🚪',lm:'Estás en el Lobby Principal'},{a:'Camine por el lobby y el pasillo.',d:'Pase el Puesto de Café a tu derecha. La Tienda de Regalos estará a tu izquierda.',i:'⬆️',lm:'Puesto de Café a la derecha, Tienda a la izquierda'},{a:'Clínica D está justo frente a la Tienda de Regalos.',d:'Cuando veas la Tienda a tu izquierda, Clínica D está justo a tu derecha.',i:'🏥',lm:'📍 Justo frente a la Tienda de Regalos'},{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',i:'✅'}],
    pl:[{a:'Wejdź przez Ogden do holu.',i:'🚪',lm:'Jesteś w głównym holu'},{a:'Idź przez hol.',d:'Kiosk jest po prawej stronie. Sklep z Upominkami jest po lewej stronie. Miń Sklep.',i:'⬆️',lm:'Kiosk po prawej, Sklep po lewej — miń go'},{a:'Poradnia D jest naprzeciwko sklepu z upominkami.',i:'🏥',lm:'📍 Naprzeciwko sklepu z upominkami'},{a:'Wejdź i zarejestruj się.',i:'✅'}],
    zh:[{a:'從Ogden街正門進入大堂。',i:'🚪',lm:'您在主大堂'},{a:'穿過大堂走向走廊。',d:'右邊是小食亭，左邊是禮品店。',i:'⬆️',lm:'小食亭在右、禮品店在左'},{a:'D診所就在禮品店正對面。',d:'看到左邊的禮品店，D診所就在右邊。',i:'🏥',lm:'📍 禮品店正對面'},{a:'進入並辦理登記手續。',i:'✅'}]},
   garage:{en:[{a:'Enter from the Parking Garage.',i:'🅿️'},{a:'Walk left past Clinics A, B, and C.',i:'🚶',lm:'Walk past Clinics A, B, C'},{a:'You will see the Gift Shop on your right. Clinic D is directly across from it.',i:'🏥',lm:'📍 Across from the Gift Shop'},{a:'Go inside and check in.',i:'✅'}],
-   es:[{a:'Entra por el Estacionamiento.',i:'🅿️'},{a:'Camina a la izquierda pasando Clinicas A, B y C.',i:'🚶',lm:'Pasa Clinicas A, B, C'},{a:'Veras la Tienda a tu derecha. Clínica D esta justo frente.',i:'🏥',lm:'📍 Frente a la Tienda de Regalos'},{a:'Entra y regístrate.',i:'✅'}],
+   es:[{a:'Entre por el estacionamiento.',i:'🅿️'},{a:'Camina a la izquierda pasando Clínicas A, B y C.',i:'🚶',lm:'Pase las Clínicas A, B, C'},{a:'Verás la Tienda a tu derecha. Clínica D está justo frente.',i:'🏥',lm:'📍 Frente a la Tienda de Regalos'},{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',i:'✅'}],
    pl:[{a:'Wejdź przez garaż.',i:'🅿️'},{a:'Idź w lewo, mijając Poradni A, B i C.',i:'🚶',lm:'Miń Poradni A, B, C'},{a:'Po prawej zobaczysz sklep. Poradnia D jest naprzeciwko.',i:'🏥',lm:'📍 Naprzeciwko sklepu z upominkami'},{a:'Wejdź i zarejestruj się.',i:'✅'}],
    zh:[{a:'從停車場側門進入。',i:'🅿️'},{a:'向左走，經過A、B和C診所。',i:'🚶',lm:'經過A、B、C診所'},{a:'右邊是禮品店，D診所就在其正對面。',i:'🏥',lm:'📍 禮品店正對面'},{a:'進入並辦理登記手續。',i:'✅'}]},
   er:{en:[{a:'Walk through the ER entrance.',i:'🚨'},{a:'Walk east through the hallway. Pass Clinic F.',i:'🚶',lm:'Pass Clinic F first'},{a:'Walk past the Gift Shop on your left. Clinic D is right there, just after the Gift Shop.',i:'🏥',lm:'📍 Right after the Gift Shop'},{a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'}],
-   es:[{a:'Entra por Urgencias.',i:'🚨'},{a:'Camina al este. Pasa Clínica F.',i:'🚶',lm:'Pasa Clínica F primero'},{a:'Pasa la Tienda a tu izquierda. Clínica D esta justo despues.',i:'🏥',lm:'📍 Justo despues de la Tienda'},{a:'Entra y regístrate.',d:'Di tu nombre y hora de cita.',i:'✅'}],
+   es:[{a:'Entre por Urgencias.',i:'🚨'},{a:'Camine hacia el este. Pasa Clínica F.',i:'🚶',lm:'Pase la Clínica F primero'},{a:'Pase la Tienda a tu izquierda. Clínica D está justo después.',i:'🏥',lm:'📍 Justo después de la Tienda'},{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',d:'Indique su nombre y hora de cita.',i:'✅'}],
    pl:[{a:'Wejdź przez IP.',i:'🚨'},{a:'Idź na wschód. Miń Poradnię F.',i:'🚶',lm:'Najpierw miń Poradnię F'},{a:'Miń sklep po lewej. Poradnia D jest zaraz za nim.',i:'🏥',lm:'📍 Zaraz za sklepem z upominkami'},{a:'Wejdź i zarejestruj się.',d:'Podaj imię i godzinę wizyty.',i:'✅'}],
    zh:[{a:'從急症室入口進入。',i:'🚨'},{a:'向東走，經過F診所。',i:'🚶',lm:'先經過F診所'},{a:'在左邊經過禮品店。D診所就在禮品店之後。',i:'🏥',lm:'📍 禮品店之後'},{a:'進入並辦理登記手續。',d:'告訴工作人員您的姓名和預約時間。',i:'✅'}]}
 }},
@@ -1244,15 +1244,15 @@ var CLINICS=[
  en:{name:'Clinic E',desc:'1st Floor'},es:{name:'Clínica E',desc:'Piso 1'},pl:{name:'Poradnia E',desc:'I piętro'},zh:{name:'E診所',desc:'一樓'},
  steps:{
   ogden:{en:[{a:'Walk through the Ogden Street front doors.',i:'🚪',lm:'You are in the Main Lobby'},{a:'Walk through the lobby.',d:'The Snack Kiosk is on your right. The Gift Shop is on your left. Walk past the Gift Shop.',i:'⬆️',lm:'Snack Kiosk on right, Gift Shop on left — walk past it'},{a:'After passing the Gift Shop, turn RIGHT. Clinic E is the first room on your left.',d:'Look for the Clinic E sign.',i:'🏥',lm:'📍 First room on your left after turning right'},{a:'Go inside and check in.',i:'✅'}],
-   es:[{a:'Entra por Ogden.',i:'🚪',lm:'Estas en el Lobby Principal'},{a:'Camina por el lobby.',d:'El Kiosko esta a tu derecha. La Tienda de Regalos esta a tu izquierda. Pasa la Tienda.',i:'⬆️',lm:'Kiosko a la derecha, Tienda a la izquierda — pasala'},{a:'Despues de pasar la Tienda, gira a la DERECHA. Clínica E es el primer cuarto a tu izquierda.',d:'Busca el letrero Clínica E.',i:'🏥',lm:'📍 Primer cuarto a la izquierda al girar a la derecha'},{a:'Entra y regístrate.',i:'✅'}],
+   es:[{a:'Entre por Ogden.',i:'🚪',lm:'Estás en el Lobby Principal'},{a:'Camine por el lobby.',d:'El Puesto de Café está a tu derecha. La Tienda de Regalos está a tu izquierda. Pase la Tienda.',i:'⬆️',lm:'Puesto de Café a la derecha, Tienda a la izquierda — pasala'},{a:'Después de pasar la Tienda, gira a la DERECHA. Clínica E es el primer cuarto a tu izquierda.',d:'Busque el letrero Clínica E.',i:'🏥',lm:'📍 Primer cuarto a la izquierda al girar a la derecha'},{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',i:'✅'}],
    pl:[{a:'Wejdź przez Ogden.',i:'🚪',lm:'Jesteś w głównym holu'},{a:'Idź przez hol.',d:'Kiosk jest po prawej stronie. Sklep z Upominkami jest po lewej stronie. Miń Sklep.',i:'⬆️',lm:'Kiosk po prawej, Sklep po lewej — miń go'},{a:'Po minieciem Sklepu skręcaj W PRAWO. Poradnia E jest pierwszym pokójem po lewej stronie.',d:'Szukaj tabliczki Poradnia E.',i:'🏥',lm:'📍 Pierwszy pokój po lewej po skreceniu w prawo'},{a:'Wejdź i zarejestruj się.',i:'✅'}],
    zh:[{a:'從Ogden街正門進入。',i:'🚪',lm:'您在主大堂'},{a:'穿過大堂。',d:'右邊是小食亭，左邊是禮品店。走過禮品店。',i:'⬆️',lm:'小食亭在右、禮品店在左 — 走過禮品店'},{a:'走過禮品店後，向右轉。E診所是左邊第一個房間。',d:'找「E診所」標牌。',i:'🏥',lm:'📍 向右轉後左邊第一個房間'},{a:'進入並辦理登記手續。',i:'✅'}]},
   garage:{en:[{a:'Enter from the Parking Garage.',i:'🅿️'},{a:'Walk left past Clinics A, B, C, and D.',i:'🚶',lm:'Walk past Clinics A, B, C, D'},{a:'Clinic E is on your left after passing the Gift Shop on your right and Clinic D on your left.',d:'Look for the Clinic E sign.',i:'🏥',lm:'📍 On your left — after Gift Shop right, Clinic D left'},{a:'Go inside and check in.',i:'✅'}],
-   es:[{a:'Entra por el Estacionamiento.',i:'🅿️'},{a:'Pasa Clinicas A, B, C y D.',i:'🚶',lm:'Pasa Clinicas A, B, C, D'},{a:'Clínica E esta a tu izquierda despues de pasar la Tienda de Regalos a tu derecha y Clínica D a tu izquierda.',d:'Busca el letrero Clínica E.',i:'🏥',lm:'📍 A tu izquierda — Tienda a la derecha, Clínica D a la izquierda'},{a:'Entra y regístrate.',i:'✅'}],
+   es:[{a:'Entre por el estacionamiento.',i:'🅿️'},{a:'Pase las Clínicas A, B, C y D.',i:'🚶',lm:'Pase las Clínicas A, B, C, D'},{a:'Clínica E está a tu izquierda después de pasar la Tienda de Regalos a tu derecha y Clínica D a tu izquierda.',d:'Busque el letrero Clínica E.',i:'🏥',lm:'📍 A tu izquierda — Tienda a la derecha, Clínica D a la izquierda'},{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',i:'✅'}],
    pl:[{a:'Wejdź przez garaż.',i:'🅿️'},{a:'Miń Poradni A, B, C i D.',i:'🚶',lm:'Miń Poradni A, B, C, D'},{a:'Poradnia E jest po lewej stronie po minieciem Sklepu z Upominkami po prawej i Poradni D po lewej.',d:'Szukaj tabliczki Poradnia E.',i:'🏥',lm:'📍 Po lewej — Sklep po prawej, Poradnia D po lewej'},{a:'Wejdź i zarejestruj się.',i:'✅'}],
    zh:[{a:'從停車場側門進入。',i:'🅿️'},{a:'向左走，經過A、B、C和D診所。',i:'🚶',lm:'經過A、B、C、D診所'},{a:'E診所在左邊，過了右邊的禮品店和左邊的D診所之後。',d:'找「E診所」標牌。',i:'🏥',lm:'📍 左邊 — 禮品店在右、D診所在左之後'},{a:'進入並辦理登記手續。',i:'✅'}]},
   er:{en:[{a:'Walk through the ER entrance.',i:'🚨'},{a:'Walk east into the clinic hallway. Clinic F is the first clinic you see.',i:'⬆️',lm:'Pass Clinic F first'},{a:'Clinic E is the very next room after Clinic F.',i:'🏥',lm:'📍 First room after Clinic F'},{a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'}],
-   es:[{a:'Entra por Urgencias.',i:'🚨'},{a:'Camina al este. Clínica F es la primera clinica.',i:'⬆️',lm:'Pasa Clínica F primero'},{a:'Clínica E es el siguiente cuarto despues de F.',i:'🏥',lm:'📍 Primer cuarto despues de Clínica F'},{a:'Entra y regístrate.',d:'Di tu nombre y hora de cita.',i:'✅'}],
+   es:[{a:'Entre por Urgencias.',i:'🚨'},{a:'Camine hacia el este. Clínica F es la primera clinica.',i:'⬆️',lm:'Pase la Clínica F primero'},{a:'Clínica E es el siguiente cuarto después de F.',i:'🏥',lm:'📍 Primer cuarto después de Clínica F'},{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',d:'Indique su nombre y hora de cita.',i:'✅'}],
    pl:[{a:'Wejdź przez IP.',i:'🚨'},{a:'Idź na wschód. Poradnia F to pierwsza klinika.',i:'⬆️',lm:'Najpierw miń Poradnię F'},{a:'Poradnia E jest zaraz po Klinice F.',i:'🏥',lm:'📍 Pierwszy pokój po Klinice F'},{a:'Wejdź i zarejestruj się.',d:'Podaj imię i godzinę wizyty.',i:'✅'}],
    zh:[{a:'從急症室入口進入。',i:'🚨'},{a:'向東走入診所走廊。F診所是第一個診所。',i:'⬆️',lm:'先經過F診所'},{a:'E診所緊接在F診所之後。',i:'🏥',lm:'📍 F診所之後第一個房間'},{a:'進入並辦理登記手續。',d:'告訴工作人員您的姓名和預約時間。',i:'✅'}]}
 }},
@@ -1260,15 +1260,15 @@ var CLINICS=[
  en:{name:'Clinic F',desc:'1st Floor'},es:{name:'Clínica F',desc:'Piso 1'},pl:{name:'Poradnia F',desc:'I piętro'},zh:{name:'F診所',desc:'一樓'},
  steps:{
   ogden:{en:[{a:'Walk through the Ogden Street front doors.',i:'🚪',lm:'You are in the Main Lobby'},{a:'Walk to the RIGHT side of the lobby toward the Chapel.',d:'The Chapel is on the west side of the lobby, to your right as you face south.',i:'🚶',lm:'Head to the right — toward the Chapel'},{a:'Pass the Chapel on your right. Clinic F is directly across from the Chapel.',d:'Look for the Clinic F sign on the wall.',i:'🏥',lm:'📍 Directly across from the Chapel'},{a:'Go inside and check in.',i:'✅'}],
-   es:[{a:'Entra por Ogden.',i:'🚪',lm:'Estas en el Lobby Principal'},{a:'Camina hacia el lado DERECHO del lobby, hacia la Capilla.',d:'La Capilla esta en el lado oeste del lobby, a tu derecha cuando miras al sur.',i:'🚶',lm:'Ve a la derecha — hacia la Capilla'},{a:'Pasa la Capilla a tu derecha. Clínica F esta justo frente a la Capilla.',d:'Busca el letrero Clínica F en la pared.',i:'🏥',lm:'📍 Justo frente a la Capilla'},{a:'Entra y regístrate.',i:'✅'}],
+   es:[{a:'Entre por Ogden.',i:'🚪',lm:'Estás en el Lobby Principal'},{a:'Camine hacia el lado DERECHO del lobby, hacia la Capilla.',d:'La Capilla está en el lado oeste del lobby, a tu derecha cuando miras al sur.',i:'🚶',lm:'Vaya a la derecha — hacia la Capilla'},{a:'Pase la Capilla a tu derecha. Clínica F está justo frente a la Capilla.',d:'Busque el letrero Clínica F en la pared.',i:'🏥',lm:'📍 Justo frente a la Capilla'},{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',i:'✅'}],
    pl:[{a:'Wejdź przez Ogden.',i:'🚪',lm:'Jesteś w głównym holu'},{a:'Idź w PRAWO przez hol w kierunku Kaplicy.',d:'Kaplica jest po zachodniej stronie holu, po twojej prawej gdy idziesz na poludnie.',i:'🚶',lm:'Idź w prawo — w kierunku Kaplicy'},{a:'Miń Kaplice po prawej stronie. Poradnia F jest naprzeciwko Kaplicy.',d:'Szukaj tabliczki Poradnia F na ścianie.',i:'🏥',lm:'📍 Naprzeciwko Kaplicy'},{a:'Wejdź i zarejestruj się.',i:'✅'}],
    zh:[{a:'從Ogden街正門進入。',i:'🚪',lm:'您在主大堂'},{a:'向右走穿過大堂，朝向小教堂方向。',d:'小教堂在大堂西側，您面向南時右邊。',i:'🚶',lm:'向右走 — 朝小教堂方向'},{a:'經過右邊的小教堂。F診所就在小教堂正對面。',d:'找牆上的「F診所」標牌。',i:'🏥',lm:'📍 小教堂正對面'},{a:'進入並辦理登記手續。',i:'✅'}]},
   garage:{en:[{a:'Enter from the Parking Garage.',i:'🅿️'},{a:'Turn LEFT and walk all the way to the opposite end of the building.',d:'Walk past ALL the clinics and the Gift Shop.',i:'⬅️',lm:'Turn LEFT and walk to the far end'},{a:'Clinic F is the very last room, right next to the Emergency Room.',i:'🏥',lm:'📍 Very last room at the far end'},{a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'}],
-   es:[{a:'Entra por el Estacionamiento.',i:'🅿️'},{a:'Gira a la IZQUIERDA y camina hasta el extremo opuesto.',d:'Pasa TODAS las clinicas y la Tienda.',i:'⬅️',lm:'Gira a la IZQUIERDA y camina al fondo'},{a:'Clínica F es el ultimo cuarto, junto a Urgencias.',i:'🏥',lm:'📍 Ultimo cuarto al fondo'},{a:'Entra y regístrate.',d:'Di tu nombre y hora de cita.',i:'✅'}],
+   es:[{a:'Entre por el estacionamiento.',i:'🅿️'},{a:'Gire a la IZQUIERDA y camina hasta el extremo opuesto.',d:'Pase TODAS las clínicas y la Tienda.',i:'⬅️',lm:'Gire a la IZQUIERDA y camina al fondo'},{a:'Clínica F es el último cuarto, junto a Urgencias.',i:'🏥',lm:'📍 Último cuarto al fondo'},{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',d:'Indique su nombre y hora de cita.',i:'✅'}],
    pl:[{a:'Wejdź przez garaż.',i:'🅿️'},{a:'Skręcaj W LEWO i idź na drugi koniec budynku.',d:'Miń WSZYSTKIE kliniki i sklep.',i:'⬅️',lm:'Skręcaj W LEWO i idź do konca'},{a:'Poradnia F to ostatni pokój, przy IP.',i:'🏥',lm:'📍 Ostatni pokój na końcu'},{a:'Wejdź i zarejestruj się.',d:'Podaj imię i godzinę wizyty.',i:'✅'}],
    zh:[{a:'從停車場側門進入。',i:'🅿️'},{a:'向左轉，走到大樓另一端。',d:'經過所有診所和禮品店。',i:'⬅️',lm:'向左轉走到盡頭'},{a:'F診所是最後一個房間，緊靠急症室。',i:'🏥',lm:'📍 盡頭最後一個房間'},{a:'進入並辦理登記手續。',d:'告訴工作人員您的姓名和預約時間。',i:'✅'}]},
   er:{en:[{a:'Walk through the Emergency Room entrance.',i:'🚨'},{a:'Walk east through the ER toward the clinic hallway.',i:'⬆️'},{a:'Clinic F is the very first clinic room as soon as you leave the ER area.',i:'🏥',lm:'📍 First room leaving the ER'},{a:'Go inside and check in.',i:'✅'}],
-   es:[{a:'Entra por Urgencias.',i:'🚨'},{a:'Camina al este por urgencias hacia las clinicas.',i:'⬆️'},{a:'Clínica F es el primer consultorio al salir de urgencias.',i:'🏥',lm:'📍 Primer cuarto al salir de urgencias'},{a:'Entra y regístrate.',i:'✅'}],
+   es:[{a:'Entre por Urgencias.',i:'🚨'},{a:'Camine hacia el este por urgencias hacia las clínicas.',i:'⬆️'},{a:'Clínica F es el primer consultorio al salir de urgencias.',i:'🏥',lm:'📍 Primer cuarto al salir de urgencias'},{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',i:'✅'}],
    pl:[{a:'Wejdź przez IP.',i:'🚨'},{a:'Idź na wschód przez IP w kierunku klinik.',i:'⬆️'},{a:'Poradnia F to pierwszy gabinet zaraz po wyjsciu z IP.',i:'🏥',lm:'📍 Pierwszy gabinet po wyjsciu z IP'},{a:'Wejdź i zarejestruj się.',i:'✅'}],
    zh:[{a:'從急症室入口進入。',i:'🚨'},{a:'向東穿過急症室走向診所走廊。',i:'⬆️'},{a:'F診所是離開急症室後的第一個診所。',i:'🏥',lm:'📍 離開急症室後第一個房間'},{a:'進入並辦理登記手續。',i:'✅'}]}
 }},
@@ -1283,10 +1283,10 @@ var CLINICS=[
    {a:'Hand your prescription at the window.',i:'✅'}
   ],
    es:[
-   {a:'Entra por Ogden.',i:'🚪',lm:'Estas en el Lobby Principal'},
-   {a:'Camina por el lobby.',d:'El Kiosko esta a tu derecha. La Tienda esta a tu izquierda. Gira a la IZQUIERDA al pasillo rumbo al Este.',i:'⬆️',lm:'Kiosko a la derecha, Tienda a la izquierda — Gira IZQUIERDA al Este'},
-   {a:'Camina al este por el pasillo hasta el final.',d:'Pasa Clínica F, E, D, C y B.',i:'🚶',lm:'Camina al este — Farmacia al fondo'},
-   {a:'La Farmacia esta a tu izquierda, frente a Clínica A.',d:'Busca la ventanilla de Farmacia sobre el area de Clínica A.',i:'💊',lm:'📍 Extremo Este — Farmacia frente a Clínica A'},
+   {a:'Entre por Ogden.',i:'🚪',lm:'Estás en el Lobby Principal'},
+   {a:'Camine por el lobby.',d:'El Puesto de Café está a tu derecha. La Tienda está a tu izquierda. Gire a la IZQUIERDA al pasillo rumbo al Este.',i:'⬆️',lm:'Puesto de Café a la derecha, Tienda a la izquierda — Gira IZQUIERDA al Este'},
+   {a:'Siga por el pasillo hacia el este hasta el final.',d:'Pasa Clínica F, E, D, C y B.',i:'🚶',lm:'Camine hacia el este — Farmacia al fondo'},
+   {a:'La Farmacia está a tu izquierda, frente a Clínica A.',d:'Busque la ventanilla de Farmacia sobre el área de Clínica A.',i:'💊',lm:'📍 Extremo Este — Farmacia frente a Clínica A'},
    {a:'Entrega tu receta en la ventanilla.',i:'✅'}
   ],
    pl:[
@@ -1303,11 +1303,11 @@ var CLINICS=[
    {a:'在窗口遞上您的處方。',i:'✅'}
   ]},
   garage:{en:[{a:'Enter from the Parking Garage.',i:'🅿️'},{a:'The Pharmacy is right across from Clinic A - the first room on your right as you enter.',d:'Get ticket number before you sit in the waiting area.',i:'💊',lm:'📍 Across from Clinic A — on your right'},{a:'Hand your prescription at the window.',i:'✅'}],
-   es:[{a:'Entra por el Estacionamiento.',i:'🅿️'},{a:'La Farmacia esta justo frente a Clínica A - el primer cuarto a tu derecha al entrar.',d:'Busca la ventanilla de Farmacia sobre el area de Clínica A.',i:'💊',lm:'📍 Frente a Clínica A — a tu derecha'},{a:'Entrega tu receta.',i:'✅'}],
+   es:[{a:'Entre por el estacionamiento.',i:'🅿️'},{a:'La Farmacia está justo frente a Clínica A - el primer cuarto a tu derecha al entrar.',d:'Busque la ventanilla de Farmacia sobre el área de Clínica A.',i:'💊',lm:'📍 Frente a Clínica A — a tu derecha'},{a:'Entrega tu receta.',i:'✅'}],
    pl:[{a:'Wejdź przez garaż.',i:'🅿️'},{a:'Apteka jest naprzeciwko Poradni A - pierwszy pokój po prawej stronie przy wejściu.',d:'Szukaj okienka Apteki nad obszarem Poradni A.',i:'💊',lm:'📍 Naprzeciwko Poradni A — po prawej'},{a:'Podaj receptę w okienku.',i:'✅'}],
    zh:[{a:'從停車場側門進入。',i:'🅿️'},{a:'藥房就在A診所對面 — 進門右邊第一個房間。',d:'在A診所區域上方找藥房窗口。',i:'💊',lm:'📍 A診所對面 — 右邊'},{a:'在窗口遞上您的處方。',i:'✅'}]},
   er:{en:[{a:'Walk through the ER entrance.',i:'🚨'},{a:'Walk east through the hallway all the way to the far end.',d:'Pass Clinic F, the Gift Shop, and all other clinics.',i:'⬆️',lm:'Walk all the way to the far end'},{a:'The Pharmacy is at the very end, across from Clinic A - room on your left.',d:'Get ticket number before you sit in the waiting area.',i:'💊',lm:'📍 Far end — across Clinic A, on your left'},{a:'Hand your prescription at the window.',i:'✅'}],
-   es:[{a:'Entra por Urgencias.',i:'🚨'},{a:'Camina hasta el final del pasillo.',d:'Pasa todas las clinicas.',i:'⬆️',lm:'Camina hasta el fondo'},{a:'La Farmacia esta al final, frente a Clínica A - cuarto a tu izquierda.',d:'Busca la ventanilla de Farmacia sobre el area de Clínica A.',i:'💊',lm:'📍 Al fondo — frente a Clínica A, a tu izquierda'},{a:'Entrega tu receta.',i:'✅'}],
+   es:[{a:'Entre por Urgencias.',i:'🚨'},{a:'Camine hasta el final del pasillo.',d:'Pase todas las clínicas.',i:'⬆️',lm:'Camine hasta el fondo'},{a:'La Farmacia está al final, frente a Clínica A - cuarto a tu izquierda.',d:'Busque la ventanilla de Farmacia sobre el área de Clínica A.',i:'💊',lm:'📍 Al fondo — frente a Clínica A, a tu izquierda'},{a:'Entrega tu receta.',i:'✅'}],
    pl:[{a:'Wejdź przez IP.',i:'🚨'},{a:'Idź aż do konca korytarza.',d:'Miń wszystkie kliniki.',i:'⬆️',lm:'Idź aż do konca'},{a:'Apteka jest na końcu, naprzeciwko Poradni A - pokój po twojej lewej stronie.',d:'Szukaj okienka Apteki nad obszarem Poradni A.',i:'💊',lm:'📍 Na końcu — naprzeciwko Poradni A, po lewej'},{a:'Podaj receptę w okienku.',i:'✅'}],
    zh:[{a:'從急症室入口進入。',i:'🚨'},{a:'沿走廊一直走到最盡頭。',d:'經過所有診所。',i:'⬆️',lm:'走到最盡頭'},{a:'藥房在最盡頭，A診所對面，您左邊的房間。',d:'在A診所區域上方找藥房窗口。',i:'💊',lm:'📍 最盡頭 — A診所對面，左邊'},{a:'在窗口遞上您的處方。',i:'✅'}]}
 }},
@@ -1315,21 +1315,21 @@ var CLINICS=[
  en:{name:'Emergency Room',desc:'1st Floor'},es:{name:'Sala de Urgencias',desc:'Piso 1'},pl:{name:'Izba Przyjęć',desc:'I piętro'},zh:{name:'急症室',desc:'一樓'},
  steps:{
   ogden:{en:[{a:'Walk through the Ogden Street front doors.',i:'🚪',lm:'You are in the Main Lobby'},{a:'Follow the big RED EMERGENCY signs on the walls.',d:'They point to the left side of the building.',i:'🔴',lm:'Follow the RED signs on the walls'},{a:'Walk all the way past Clinic F to the Emergency Room at the far left.',i:'⬆️',lm:'Walk past Clinic F to the far left'},{a:'Go to the Triage desk right away.',d:'Tell the staff your name and why you are here.',i:'🚨',lm:'📍 Go straight to the Triage desk'}],
-   es:[{a:'Entra por Ogden.',i:'🚪',lm:'Estas en el Lobby Principal'},{a:'Sigue los grandes letreros ROJOS de URGENCIAS.',d:'Apuntan hacia el lado izquierdo.',i:'🔴',lm:'Sigue los letreros ROJOS'},{a:'Camina hasta Urgencias al extremo izquierdo.',i:'⬆️',lm:'Ve al extremo izquierdo'},{a:'Ve al mostrador de Triaje de inmediato.',d:'Di tu nombre y por que estas aqui.',i:'🚨',lm:'📍 Ve al mostrador de Triaje'}],
+   es:[{a:'Entre por Ogden.',i:'🚪',lm:'Estás en el Lobby Principal'},{a:'Siga los grandes letreros ROJOS de URGENCIAS.',d:'Apuntan hacia el lado izquierdo.',i:'🔴',lm:'Siga los letreros ROJOS'},{a:'Camine hasta Urgencias al extremo izquierdo.',i:'⬆️',lm:'Ve al extremo izquierdo'},{a:'Diríjase de inmediato al mostrador de Triaje.',d:'Indique su nombre y el motivo de su visita.',i:'🚨',lm:'📍 Ve al mostrador de Triaje'}],
    pl:[{a:'Wejdź przez Ogden.',i:'🚪',lm:'Jesteś w głównym holu'},{a:'Idź za duzymi CZERWONYMI znakami IP.',d:'Prowadzą na lewa strone.',i:'🔴',lm:'Idź za CZERWONYMI znakami'},{a:'Idź aż do IP na lewym końcu.',i:'⬆️',lm:'Idź na lewy koniec'},{a:'Idź natychmiast do okienka Triage.',d:'Powiedz personelowi swoje imię i cel wizyty.',i:'🚨',lm:'📍 Idź prosto do okienka Triage'}],
    zh:[{a:'從Ogden街正門進入。',i:'🚪',lm:'您在主大堂'},{a:'跟隨牆上的紅色「急症」標誌。',d:'標誌指向大樓左側。',i:'🔴',lm:'跟隨紅色標誌'},{a:'一直走過F診所到最左端的急症室。',i:'⬆️',lm:'走過F診所到最左端'},{a:'立即前往分診台。',d:'告訴工作人員您的姓名和求診原因。',i:'🚨',lm:'📍 直接前往分診台'}]},
   garage:{en:[{a:'Enter from the Parking Garage.',i:'🅿️'},{a:'Turn LEFT and walk all the way to the opposite end.',d:'Follow the RED EMERGENCY signs.',i:'⬅️',lm:'Turn LEFT — follow the RED signs'},{a:'The Emergency Room is at the very far left end.',d:'Go to the Triage desk and tell them why you are here.',i:'🚨',lm:'📍 Emergency Room at the far left end'}],
-   es:[{a:'Entra por el Estacionamiento.',i:'🅿️'},{a:'Gira a la IZQUIERDA y camina al extremo opuesto.',d:'Sigue los letreros ROJOS de URGENCIAS.',i:'⬅️',lm:'Gira IZQUIERDA — sigue los letreros ROJOS'},{a:'Urgencias esta al extremo izquierdo.',d:'Ve al Triaje y di por que estas aqui.',i:'🚨',lm:'📍 Urgencias al extremo izquierdo'}],
+   es:[{a:'Entre por el estacionamiento.',i:'🅿️'},{a:'Gire a la IZQUIERDA y camina al extremo opuesto.',d:'Siga los letreros ROJOS de URGENCIAS.',i:'⬅️',lm:'Gira IZQUIERDA — sigue los letreros ROJOS'},{a:'Urgencias está al extremo izquierdo.',d:'Ve al Triaje y di por qué estás aquí.',i:'🚨',lm:'📍 Urgencias al extremo izquierdo'}],
    pl:[{a:'Wejdź przez garaż.',i:'🅿️'},{a:'Skręcaj W LEWO i idź na drugi koniec.',d:'Idź za CZERWONYMI znakami IP.',i:'⬅️',lm:'Skręcaj W LEWO — idź za CZERWONYMI znakami'},{a:'IP jest na dalekim lewym końcu.',d:'Idź do Triage i powiedz cel wizyty.',i:'🚨',lm:'📍 IP na lewym końcu'}],
    zh:[{a:'從停車場側門進入。',i:'🅿️'},{a:'向左轉走到大樓另一端。',d:'跟隨紅色急症標誌。',i:'⬅️',lm:'向左轉 — 跟隨紅色標誌'},{a:'急症室在最左端。',d:'前往分診台告訴他們求診原因。',i:'🚨',lm:'📍 最左端的急症室'}]},
   er:{en:[{a:'You are already at the right place!',d:'Walk through the big red Emergency Room door.',i:'🚨'},{a:'Go straight to the Triage desk in front of you.',d:'Tell the staff your name and why you are here. They will help you right away.',i:'✅'}],
-   es:[{a:'Ya estas en el lugar correcto.',d:'Entra por la gran puerta roja.',i:'🚨'},{a:'Ve directo al mostrador de Triaje.',d:'Di tu nombre y por que estas aqui.',i:'✅'}],
+   es:[{a:'Ya estás en el lugar correcto.',d:'Entra por la gran puerta roja.',i:'🚨'},{a:'Diríjase directamente al mostrador de Triaje.',d:'Indique su nombre y el motivo de su visita.',i:'✅'}],
    pl:[{a:'Jesteś juz we właściwym miejscu.',d:'Wejdź przez duze czerwone drzwi.',i:'🚨'},{a:'Idź prosto do okienka Triage.',d:'Powiedz imię i cel wizyty.',i:'✅'}],
    zh:[{a:'您已在正確位置！',d:'穿過大紅色的急症室大門。',i:'🚨'},{a:'直接前往您面前的分診台。',d:'告訴工作人員您的姓名和求診原因，他們會立即幫助您。',i:'✅'}]}
 }}
 ,
 {id:'burnTrauma',floor:'1',emoji:'🔥',specialties:'Burn - Trauma - Critical Care',
- en:{name:'Burn/Trauma Clinic',desc:'1st Floor'},es:{name:'Clínica de Quemados y Trauma',desc:'Piso 1'},pl:{name:'Poradnia oparzeniowa i urazowa',desc:'I piętro'},zh:{name:'燒傷/創傷診所',desc:'一樓'},
+ en:{name:'Burn/Trauma Clinic',desc:'1st Floor'},es:{name:'Clínica de Quemaduras y Trauma',desc:'Piso 1'},pl:{name:'Poradnia oparzeniowa i urazowa',desc:'I piętro'},zh:{name:'燒傷/創傷診所',desc:'一樓'},
  steps:{
   ogden:{en:[
    {a:'Walk through the Ogden Street front doors.',i:'🚪',lm:'You are in the Main Lobby'},
@@ -1338,11 +1338,11 @@ var CLINICS=[
    {a:'The Burn/Trauma Clinic is in the far northwest corner.',d:'Look for the Burn/Trauma Clinic sign.',i:'🔥',lm:'📍 Northwest corner of the building'},
    {a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'}
   ],es:[
-   {a:'Entra por las puertas de la Calle Ogden.',i:'🚪',lm:'Estas en el Lobby Principal'},
-   {a:'Camina hacia la DERECHA del lobby en direccion oeste.',d:'Pasa la Capilla a tu derecha.',i:'⬆️',lm:'Ve a la derecha — camina al oeste pasando la Capilla'},
-   {a:'Continua al oeste pasando el area de Trauma/Triaje.',d:'La Clínica de Quemados y Trauma esta en la esquina noroeste del edificio, justo despues del Triaje.',i:'🚶',lm:'Camina al oeste pasando Trauma/Triaje'},
-   {a:'La Clínica de Quemados y Trauma esta en la esquina noroeste.',d:'Busca el letrero de la Clinica.',i:'🔥',lm:'📍 Esquina noroeste del edificio'},
-   {a:'Entra y regístrate.',d:'Di tu nombre y hora de cita.',i:'✅'}
+   {a:'Entre por las puertas de la Calle Ogden.',i:'🚪',lm:'Estás en el Lobby Principal'},
+   {a:'Camine hacia la DERECHA del lobby en direccion oeste.',d:'Pase la Capilla a tu derecha.',i:'⬆️',lm:'Vaya a la derecha — camina al oeste pasando la Capilla'},
+   {a:'Continúa al oeste pasando el área de Trauma/Triaje.',d:'La Clínica de Quemaduras y Trauma está en la esquina noroeste del edificio, justo después del Triaje.',i:'🚶',lm:'Camine hacia el oeste pasando Trauma/Triaje'},
+   {a:'La Clínica de Quemaduras y Trauma está en la esquina noroeste.',d:'Busque el letrero de la Clinica.',i:'🔥',lm:'📍 Esquina noroeste del edificio'},
+   {a:'¡Llegó a su destino! Por favor regístrese en la recepción.',d:'Indique su nombre y hora de cita.',i:'✅'}
   ],pl:[
    {a:'Wejdź przez główne drzwi od ulicy Ogden.',i:'🚪',lm:'Jesteś w głównym holu'},
    {a:'Idź w PRAWO przez hol w kierunku zachodnim.',d:'Miń Kaplice po prawej stronie.',i:'⬆️',lm:'Idź w prawo — na zachód obok Kaplicy'},
@@ -1362,10 +1362,10 @@ var CLINICS=[
    {a:'The Burn/Trauma Clinic is in the far northwest corner of the building.',d:'It is past the Trauma/Triage area, in the upper-left corner.',i:'🔥',lm:'📍 Far northwest corner — past Trauma/Triage'},
    {a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'}
   ],es:[
-   {a:'Entra por la puerta lateral del Estacionamiento.',d:'Camina al pasillo.',i:'🅿️'},
-   {a:'Gira a la IZQUIERDA y camina al oeste hasta el final del edificio.',d:'Pasa TODAS las clinicas, la Tienda, el area de Urgencias y el area de Trauma/Triaje.',i:'⬅️',lm:'Gira IZQUIERDA — camina al oeste hasta el final'},
-   {a:'La Clínica de Quemados y Trauma esta en la esquina noroeste del edificio.',d:'Esta pasando el area de Trauma/Triaje, en la esquina superior izquierda.',i:'🔥',lm:'📍 Esquina noroeste — pasando Trauma/Triaje'},
-   {a:'Entra y regístrate.',d:'Di tu nombre y hora de cita.',i:'✅'}
+   {a:'Entre por la puerta lateral del Estacionamiento.',d:'Camina al pasillo.',i:'🅿️'},
+   {a:'Gire a la IZQUIERDA y camina al oeste hasta el final del edificio.',d:'Pase TODAS las clínicas, la Tienda, el área de Urgencias y el área de Trauma/Triaje.',i:'⬅️',lm:'Gira IZQUIERDA — camina al oeste hasta el final'},
+   {a:'La Clínica de Quemaduras y Trauma está en la esquina noroeste del edificio.',d:'Está pasando el área de Trauma/Triaje, en la esquina superior izquierda.',i:'🔥',lm:'📍 Esquina noroeste — pasando Trauma/Triaje'},
+   {a:'¡Llegó a su destino! Por favor regístrese en la recepción.',d:'Indique su nombre y hora de cita.',i:'✅'}
   ],pl:[
    {a:'Wejdź przez boczne drzwi od Garazu.',d:'Wejdź do korytarza.',i:'🅿️'},
    {a:'Skręcaj W LEWO i idź na zachód do konca budynku.',d:'Miń WSZYSTKIE kliniki, Sklep, obszar IP i obszar Trauma/Triage.',i:'⬅️',lm:'Skręcaj LEWO — idź na zachód do konca'},
@@ -1382,9 +1382,9 @@ var CLINICS=[
    {a:'The Burn/Trauma Clinic is directly north of the ER entrance.',d:'Walk north along the west wall — the Burn/Trauma Clinic is in the corner just above the ER area.',i:'🔥',lm:'📍 North of the ER entrance — northwest corner'},
    {a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'}
   ],es:[
-   {a:'Entra por la entrada de Urgencias.',d:'Camina al este por el pasillo de Urgencias/Trauma.',i:'🚨'},
-   {a:'La Clínica de Quemados y Trauma esta directamente al norte de la entrada de Urgencias.',d:'Camina al norte a lo largo de la pared oeste — la Clínica está en la esquina justo encima del area de Urgencias.',i:'🔥',lm:'📍 Al norte de Urgencias — esquina noroeste'},
-   {a:'Entra y regístrate.',d:'Di tu nombre y hora de cita.',i:'✅'}
+   {a:'Entre por la entrada de Urgencias.',d:'Siga por el pasillo hacia el este de Urgencias/Trauma.',i:'🚨'},
+   {a:'La Clínica de Quemaduras y Trauma está directamente al norte de la entrada de Urgencias.',d:'Camine hacia el norte a lo largo de la pared oeste — la Clínica está en la esquina justo encima del área de Urgencias.',i:'🔥',lm:'📍 Al norte de Urgencias — esquina noroeste'},
+   {a:'¡Llegó a su destino! Por favor regístrese en la recepción.',d:'Indique su nombre y hora de cita.',i:'✅'}
   ],pl:[
    {a:'Wejdź przez wejście IP.',d:'Idź na wschód przez korytarz IP/Trauma.',i:'🚨'},
    {a:'Poradnia oparzeniowa i urazowa jest bezpośrednio na północ od wejścia IP.',d:'Idź na północ wzdłuż zachodniej ściany — poradnia jest w rogu tuż nad obszarem IP.',i:'🔥',lm:'📍 Na północ od IP — północno-zachodni rog'},
@@ -1417,8 +1417,8 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     elvDescEN='Turn LEFT and walk west down the hallway. The P/S EAST elevator is about halfway down, between Clinic B and the Gift Shop area. It goes to floors 1 and 2 only.';
     elvChipEN='P/S East Elevator - press floor 2';
     elvNameES='Elevador Paciente/Personal (Este)';
-    elvDescES='Gira a la IZQUIERDA y camina al oeste. El elevador P/S ESTE esta aproximadamente a la mitad del pasillo, entre Clínica B y la Tienda de Regalos. Solo va a pisos 1 y 2.';
-    elvChipES='Elevador P/S Este - presiona piso 2';
+    elvDescES='Gire a la IZQUIERDA y camina al oeste. El elevador P/S ESTE esta aproximadamente a la mitad del pasillo, entre Clínica B y la Tienda de Regalos. Solo va a pisos 1 y 2.';
+    elvChipES='Elevador Este - presiona piso 2';
     elvNamePL='Winda Pacjent/Personel (Wschódnia)';
     elvDescPL='Skręcaj W LEWO i idź na zachód. Zielona winda P/S WSCHODNIA jest mniej wiecej w polowie korytarza, miedzy Poradnia B a Sklepem z Upominkami. Jedźie tylko na piętra 1 i 2.';
     elvChipPL='Winda P/S Wschódnia - naciśnij piętro 2';
@@ -1433,10 +1433,10 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     elvNameES='Elevador Paciente/Personal (Oeste)';
     elvDescES=(entry==='polk'||entry==='damen')?
       'Camina al Norte por el pasillo del Edificio Profesional. Al final del pasillo, gira a la IZQUIERDA y sube al Elevador Paciente/Personal Oeste.':
-      'Camina al este por urgencias al pasillo principal. El elevador P/S OESTE esta a tu derecha justo antes de llegar a Clínica F. Solo va a pisos 1 y 2.';
+      'Camine hacia el este por urgencias al pasillo principal. El elevador P/S OESTE está a tu derecha justo antes de llegar a Clínica F. Solo va a pisos 1 y 2.';
     elvChipES=(entry==='polk'||entry==='damen')?
-      'Camina Norte → gira IZQUIERDA — Sube al Elevador P/S Oeste — Presiona 2':
-      'Elevador P/S Oeste - presiona piso 2';
+      'Camina Norte → gira IZQUIERDA — Sube al Elevador Oeste — Presiona 2':
+      'Elevador Oeste - presiona piso 2';
     elvNamePL='Winda Pacjent/Personel (Zachodnia)';
     elvDescPL=(entry==='polk'||entry==='damen')?
       'Idź na Północ przez korytarz Budynku Profesjonalnego. Na końcu korytarza skręcaj W LEWO i wejdz do Windy Pacjent/Personel Zachodnia.':
@@ -1468,7 +1468,7 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
 
   // Check-in step — can be overridden per destination
   var checkInEN={a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'};
-  var checkInES={a:'Entra y regístrate.',d:'Di tu nombre y hora de cita.',i:'✅'};
+  var checkInES={a:'¡Llegó a su destino! Por favor regístrese en la recepción.',d:'Indique su nombre y hora de cita.',i:'✅'};
   var checkInPL={a:'Wejdź i zarejestruj się.',d:'Podaj imię i godzinę wizyty.',i:'✅'};
 
   // Clinic V special check-in: wall phone entry
@@ -1482,16 +1482,16 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
   if (isF2 && destId==='clinicN') {
     if (entry==='er'||entry==='polk'||entry==='damen') {
       navStepEN={a:'Turn RIGHT out of the elevator and walk East down the hallway.',d:'Walk past CT Scan (which is on your right) then Turn LEFT into the hallway with bathroom signage. You will see the clinic entrance to Physical and Occupational Therapy on your left.',i:'↪️',lm:'Turn RIGHT East — turn LEFT across CT Scan — Clinic N PT/OT on your left'};
-      navStepES={a:'Gira a la DERECHA al salir del elevador y camina al Este por el pasillo.',d:'Pasa CT Scan (que esta a tu derecha) y luego gira a la IZQUIERDA en el pasillo con letreros de baño. Veras la entrada de Fisioterapia y Terapia Ocupacional a tu izquierda.',i:'↪️',lm:'DERECHA al Este — IZQUIERDA cruzando CT Scan — Clínica N PT/OT a tu izquierda'};
+      navStepES={a:'Gire a la DERECHA al salir del elevador y camina al Este por el pasillo.',d:'Pase CT Scan (que está a tu derecha) y luego gira a la IZQUIERDA en el pasillo con letreros de baño. Verá la entrada de Fisioterapia y Terapia Ocupacional a tu izquierda.',i:'↪️',lm:'DERECHA al Este — IZQUIERDA cruzando CT Scan — Clínica N PT/OT a tu izquierda'};
       navStepPL={a:'Skręcaj W PRAWO wychodząc z windy i idź na Wschód korytarzem.',d:'Miń CT Scan (po prawej stronie) i skręcaj W LEWO w korytarz z oznaczeniami lazienki. Zobaczysz wejście do Fizjoterapii i terapii zajęciowej po lewej stronie.',i:'↪️',lm:'PRAWO na Wschód — LEWO naprzeciwko CT Scan — Fizjoterapia i terapia zajęciowa (N) po lewej'};
     } else if (entry==='garage') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Walk past Clinic M then turn RIGHT into the hallway. You will see the clinic entrance to Physical and Occupational Therapy (Clinic N).',i:'↩️',lm:'Turn LEFT West — turn RIGHT at Clinic M — Clinic N PT/OT ahead'};
-      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pasa Clínica M y gira a la DERECHA en el pasillo. Veras la entrada de la Clínica N — Fisioterapia y Terapia Ocupacional.',i:'↩️',lm:'IZQUIERDA al Oeste — DERECHA en Clínica M — Clínica N PT/OT adelante'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pase la Clínica M y gira a la DERECHA en el pasillo. Verá la entrada de la Clínica N — Fisioterapia y Terapia Ocupacional.',i:'↩️',lm:'IZQUIERDA al Oeste — DERECHA en Clínica M — Clínica N PT/OT adelante'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Teraz idziesz na Zachód. Miń Poradnię M i skręcaj W PRAWO w korytarz. Zobaczysz wejście do fizjoterapii i terapii zajęciowej (N).',i:'↩️',lm:'LEWO na Zachód — PRAWO przy poradni M — Fizjoterapia (N) przed tobą'};
     } else {
       // Ogden — Main Elevator, exits facing South, turn RIGHT (west)
       navStepEN={a:'Exit the elevator, walk to the Reception Desk, turn RIGHT at the hallway.',d:'Walk West down the hallway. You will see the clinic entrance to Physical and Occupational Therapy (Clinic N).',i:'↪️',lm:'Walk to Reception Desk — turn RIGHT West — Clinic N PT/OT entrance ahead'};
-      navStepES={a:'Sal del elevador, camina hacia la Recepcion, gira a la DERECHA en el pasillo.',d:'Camina al Oeste por el pasillo. Veras la entrada de la Clínica N — Fisioterapia y Terapia Ocupacional.',i:'↪️',lm:'Camina a la Recepcion — DERECHA al Oeste — entrada Clínica N PT/OT adelante'};
+      navStepES={a:'Salga del elevador, camina hacia la Recepción, gira a la DERECHA en el pasillo.',d:'Camina al Oeste por el pasillo. Verá la entrada de la Clínica N — Fisioterapia y Terapia Ocupacional.',i:'↪️',lm:'Camina a la Recepción — DERECHA al Oeste — entrada Clínica N PT/OT adelante'};
       navStepPL={a:'Wyjdź z windy, podejdz do Recepcji, skręcaj W PRAWO na korytarzu.',d:'Idź na Zachód korytarzem. Zobaczysz wejście do fizjoterapii i terapii zajęciowej (N).',i:'↪️',lm:'Podejdz do Recepcji — PRAWO na Zachód — wejście Kliniki N PT/OT przed tobą'};
     }
   } else if (isF2 && (destId==='respiratoryTherapy' || destId==='sleepLab')) {
@@ -1500,104 +1500,104 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     var roomLabelPL = namePL;
     if (entry==='garage') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk past Mammography, then past the Patient/Staff Elevator West, then past Clinic R. '+nameEN+' is on your right.',i:'↩️',lm:'Turn LEFT West — pass P/S West, Clinic R — '+nameEN+' on right'};
-      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Pasa Mamografía, luego el Elevador P/S Oeste, luego Clínica R. '+nameES+' esta a tu derecha.',i:'↩️',lm:'IZQUIERDA al Oeste — pasa P/S Oeste, Clínica R — '+nameES+' a la derecha'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Pase Mamografía, luego el Elevador Oeste, luego Clínica R. '+nameES+' está a tu derecha.',i:'↩️',lm:'IZQUIERDA al Oeste — pasa P/S Oeste, Clínica R — '+nameES+' a la derecha'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Miń mammografię, potem windą P/S Zachodnia, potem Poradnię R. '+namePL+' jest po twojej prawej stronie.',i:'↩️',lm:'LEWO na Zachód — miń P/S Zachodnia, Poradnię R — '+namePL+' po prawej'};
     } else if (entry==='er'||entry==='polk'||entry==='damen') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk west past Clinic R. '+nameEN+' is on your right, just past Clinic R.',i:'↩️',lm:'Turn LEFT West — past Clinic R — '+nameEN+' on your right'};
-      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Camina al oeste pasando Clínica R. '+nameES+' esta a tu derecha, justo despues de Clínica R.',i:'↩️',lm:'IZQUIERDA al Oeste — pasa Clínica R — '+nameES+' a tu derecha'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Camine hacia el oeste pasando Clínica R. '+nameES+' está a tu derecha, justo después de Clínica R.',i:'↩️',lm:'IZQUIERDA al Oeste — pasa Clínica R — '+nameES+' a tu derecha'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód.',d:'Idź na zachód, mijając Poradnię R. '+namePL+' jest po twojej prawej stronie, tuż za pracownią R.',i:'↩️',lm:'LEWO na Zachód — miń Poradnię R — '+namePL+' po prawej'};
     } else {
       // Ogden — Main Elevator, exits South → turn RIGHT (west)
       navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn RIGHT at the hallway.',d:'Walk West down the hallway. Walk past the Patient/Staff Elevator West, then past Clinic R. '+nameEN+' is on your right.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT West — past Clinic R — '+nameEN+' on right'};
-      navStepES={a:'Sal del elevador, pasa la Recepcion y gira a la DERECHA en el pasillo.',d:'Camina al Oeste. Pasa el Elevador P/S Oeste, luego Clínica R. '+nameES+' esta a tu derecha.',i:'↪️',lm:'Pasa la Recepcion — DERECHA al Oeste — pasa Clínica R — '+nameES+' a tu derecha'};
+      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Camina al Oeste. Pase el Elevador Oeste, luego Clínica R. '+nameES+' está a tu derecha.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — pasa Clínica R — '+nameES+' a tu derecha'};
       navStepPL={a:'Wyjdź z windy, miń recepcję, potem skręcaj W PRAWO na korytarzu.',d:'Idź na Zachód korytarzem. Miń windą P/S Zachodnia, potem Poradnię R. '+namePL+' jest po twojej prawej stronie.',i:'↪️',lm:'Miń Recepcje — PRAWO na Zachód — miń Poradnię R — '+namePL+' po prawej'};
     }
   } else if (isF2 && destId==='clinicV') {
     // Clinic V: south of corridor, past Clinic R on right, Clinic V on your left
     if (entry==='garage') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk past Mammography, then past the Patient/Staff Elevator West, then past Clinic R on your right. Clinic V is on your left.',i:'↩️',lm:'Turn LEFT West — Clinic R on right — Clinic V on your left'};
-      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Pasa Mamografía, luego el Elevador P/S Oeste, luego Clínica R a tu derecha. Clínica V esta a tu izquierda.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a la derecha — Clínica V a la izquierda'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Pase Mamografía, luego el Elevador Oeste, luego Clínica R a tu derecha. Clínica V está a tu izquierda.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a la derecha — Clínica V a la izquierda'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Miń mammografię, windą P/S Zachodnia, potem Poradnię R po prawej. Poradnia kardiologiczna (V) jest po twojej lewej stronie.',i:'↩️',lm:'LEWO na Zachód — Pracownia R po prawej — Poradnia kardiologiczna (V) po lewej'};
     } else if (entry==='er'||entry==='polk'||entry==='damen') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk west past Clinic R on your right. Clinic V is on your left just past Clinic R.',i:'↩️',lm:'Turn LEFT West — Clinic R on right — Clinic V on your left'};
-      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Camina al oeste pasando Clínica R a tu derecha. Clínica V esta a tu izquierda justo despues de Clínica R.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a la derecha — Clínica V a la izquierda'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Camine hacia el oeste pasando Clínica R a tu derecha. Clínica V está a tu izquierda justo después de Clínica R.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a la derecha — Clínica V a la izquierda'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód.',d:'Idź na zachód, mijając Poradnię R po prawej. Poradnia kardiologiczna (V) jest po twojej lewej stronie tuż za pracownią R.',i:'↩️',lm:'LEWO na Zachód — Pracownia R po prawej — Poradnia kardiologiczna (V) po lewej'};
     } else {
       navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn RIGHT at the hallway.',d:'Walk West. Pass the Patient/Staff Elevator West, then Clinic R on your right. Clinic V is on your left.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT West — Clinic V on your left'};
-      navStepES={a:'Sal del elevador, pasa la Recepcion y gira a la DERECHA en el pasillo.',d:'Camina al Oeste. Pasa el Elevador P/S Oeste, luego Clínica R a tu derecha. Clínica V esta a tu izquierda.',i:'↪️',lm:'Pasa la Recepcion — DERECHA al Oeste — Clínica V a tu izquierda'};
+      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Camina al Oeste. Pase el Elevador Oeste, luego Clínica R a tu derecha. Clínica V está a tu izquierda.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — Clínica V a tu izquierda'};
       navStepPL={a:'Wyjdź z windy, miń recepcję, potem skręcaj W PRAWO na korytarzu.',d:'Idź na Zachód. Miń windą P/S Zachodnia, potem Poradnię R po prawej. Poradnia kardiologiczna (V) jest po twojej lewej stronie.',i:'↪️',lm:'Miń Recepcje — PRAWO na Zachód — Poradnia kardiologiczna (V) po lewej'};
     }
   } else if (isF2 && destId==='neuroTesting') {
     // Neuro Testing: far west wall, past Clinic V (south) and Sleep Lab (north)
     if (entry==='garage') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk past Mammography, the Patient/Staff Elevator West, and Clinic R on your right. Pass Clinic V on your left. Neuro Testing is at the very far end of the hallway on your left.',i:'↩️',lm:'Turn LEFT West — pass Clinic R, Clinic V — Neuro Testing at far end'};
-      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Pasa Mamografía, el Elevador P/S Oeste y Clínica R a tu derecha. Pasa Clínica V a tu izquierda. Neurologia de Pruebas esta al extremo oeste del pasillo a tu izquierda.',i:'↩️',lm:'IZQUIERDA al Oeste — pasa Clínica R, Clínica V — Neuro Testing al final'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Pase Mamografía, el Elevador Oeste y Clínica R a tu derecha. Pase la Clínica V a tu izquierda. Neurología de Pruebas está al extremo oeste del pasillo a tu izquierda.',i:'↩️',lm:'IZQUIERDA al Oeste — pasa Clínica R, Clínica V — Neuro Testing al final'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Miń mammografię, windę P/S Zachodnia i Poradnię R po prawej. Miń Poradnię V po lewej. Badania Neurologiczne są na samym końcu korytarza po lewej.',i:'↩️',lm:'LEWO na Zachód — miń Poradnię R, Poradnię V — Neuro Testing na końcu'};
     } else if (entry==='er'||entry==='polk'||entry==='damen') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk west past Clinic R on your right, then past Clinic V on your left. Neuro Testing is at the very far end of the hallway.',i:'↩️',lm:'Turn LEFT West — Clinic R right, Clinic V left — Neuro Testing at far end'};
-      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Pasa Clínica R a tu derecha, luego Clínica V a tu izquierda. Neurologia de Pruebas esta al extremo oeste del pasillo.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R derecha, Clínica V izquierda — al final'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Pase la Clínica R a tu derecha, luego Clínica V a tu izquierda. Neurología de Pruebas está al extremo oeste del pasillo.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R derecha, Clínica V izquierda — al final'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód.',d:'Miń Poradnię R po prawej, potem Poradnię V po lewej. Badania Neurologiczne są na samym końcu korytarza.',i:'↩️',lm:'LEWO na Zachód — Pracownia R po prawej, poradnia kardiologiczna (V) po lewej — Neuro Testing na końcu'};
     } else {
       navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn RIGHT at the hallway.',d:'Walk West. Pass the Patient/Staff Elevator West, then Clinic R on your right, then Clinic V on your left. Neuro Testing is at the very far end of the hallway.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT West — Neuro Testing at far end'};
-      navStepES={a:'Sal del elevador, pasa la Recepcion y gira a la DERECHA en el pasillo.',d:'Camina al Oeste. Pasa el Elevador P/S Oeste, Clínica R a tu derecha, Clínica V a tu izquierda. Neurologia de Pruebas esta al extremo oeste.',i:'↪️',lm:'Pasa la Recepcion — DERECHA al Oeste — Neuro Testing al final'};
+      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Camina al Oeste. Pase el Elevador Oeste, Clínica R a tu derecha, Clínica V a tu izquierda. Neurología de Pruebas está al extremo oeste.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — Neuro Testing al final'};
       navStepPL={a:'Wyjdź z windy, miń recepcję, potem skręcaj W PRAWO na korytarzu.',d:'Idź na Zachód. Miń windą P/S Zachodnia, Poradnię R po prawej, Poradnię V po lewej. Badania Neurologiczne są na samym końcu korytarza.',i:'↪️',lm:'Miń Recepcje — PRAWO na Zachód — Neuro Testing na końcu'};
     }
   } else if (isF2 && destId==='clinicR') {
     // Clinic R: from all entries, "Walk past P/S West elevator, Clinic R is on your right"
     if (entry==='garage') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Walk past Mammography, then past the Patient/Staff Elevator West. Clinic R is on your right.',i:'↩️',lm:'Turn LEFT West — Clinic R on your right past P/S West'};
-      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pasa Mamografía y luego el Elevador P/S Oeste. Clínica R esta a tu derecha.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a la derecha, pasando P/S Oeste'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pase Mamografía y luego el Elevador Oeste. Clínica R está a tu derecha.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a la derecha, pasando P/S Oeste'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Teraz idziesz na Zachód. Miń mammografię, potem windą P/S Zachodnia. Pracownia endoskopowa (R) jest po twojej prawej stronie.',i:'↩️',lm:'LEWO na Zachód — Pracownia R po prawej za windą P/S Zachodnia'};
     } else if (entry==='er'||entry==='polk'||entry==='damen') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Clinic R is on your right just past the P/S West elevator.',i:'↩️',lm:'Turn LEFT West — Clinic R on your right'};
-      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Ahora vas hacia el Oeste. Clínica R esta a tu derecha, justo despues del elevador P/S Oeste.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a tu derecha'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Ahora vas hacia el Oeste. Clínica R está a tu derecha, justo después del Elevador Oeste.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a tu derecha'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód.',d:'Teraz idziesz na Zachód. Pracownia endoskopowa (R) jest po twojej prawej stronie, tuż za Winda P/S Zachodnia.',i:'↩️',lm:'LEWO na Zachód — Pracownia R po prawej'};
     } else {
       // Ogden — Main Elevator, exits facing South → turn RIGHT (west)
       navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn RIGHT at the hallway.',d:'Walk West down the hallway. Walk past the Patient/Staff Elevator West. Clinic R is on your right.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT West — Clinic R on your right'};
-      navStepES={a:'Sal del elevador, pasa la Recepcion y gira a la DERECHA en el pasillo.',d:'Camina al Oeste por el pasillo. Pasa el Elevador P/S Oeste. Clínica R esta a tu derecha.',i:'↪️',lm:'Pasa la Recepcion — DERECHA al Oeste — Clínica R a tu derecha'};
+      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Camina al Oeste por el pasillo. Pase el Elevador Oeste. Clínica R está a tu derecha.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — Clínica R a tu derecha'};
       navStepPL={a:'Wyjdź z windy, miń recepcję, potem skręcaj W PRAWO na korytarzu.',d:'Idź na Zachód korytarzem. Miń windą P/S Zachodnia. Pracownia endoskopowa (R) jest po twojej prawej stronie.',i:'↪️',lm:'Miń Recepcje — PRAWO na Zachód — Pracownia R po prawej'};
     }
   } else if (isF2 && destId==='clinicM') {
     if (entry==='garage') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Walk past Mammography and Ultrasound. Clinic M is on your left.',i:'↩️',lm:'Turn LEFT West — past Mammography and Ultrasound — Clinic M on your left'};
-      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pasa Mamografía y Ultrasonido. Clínica M esta a tu izquierda.',i:'↩️',lm:'Gira IZQUIERDA — pasa Mamografía y Ultrasonido — Clínica M a tu izquierda'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pase Mamografía y Ultrasonido. Clínica M está a tu izquierda.',i:'↩️',lm:'Gira IZQUIERDA — pasa Mamografía y Ultrasonido — Clínica M a tu izquierda'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Teraz idziesz na Zachód. Miń mammografię i ultrasonografię. Pracownia M jest po twojej lewej stronie.',i:'↩️',lm:'Skręcaj LEWO — miń Mammografie i USG — Pracownia M po lewej'};
     } else if (entry==='er'||entry==='polk'||entry==='damen') {
       navStepEN={a:'Turn RIGHT out of the elevator and walk East down the hallway.',d:'You are now heading East. Walk past CT Scan. Clinic M is on your right.',i:'↪️',lm:'Turn RIGHT East — past CT Scan — Clinic M on your right'};
-      navStepES={a:'Gira a la DERECHA al salir del elevador y camina al Este por el pasillo.',d:'Ahora vas hacia el Este. Pasa CT Scan. Clínica M esta a tu derecha.',i:'↪️',lm:'Gira DERECHA — pasa CT Scan — Clínica M a tu derecha'};
+      navStepES={a:'Gire a la DERECHA al salir del elevador y camina al Este por el pasillo.',d:'Ahora vas hacia el Este. Pase CT Scan. Clínica M está a tu derecha.',i:'↪️',lm:'Gira DERECHA — pasa CT Scan — Clínica M a tu derecha'};
       navStepPL={a:'Skręcaj W PRAWO wychodząc z windy i idź na Wschód korytarzem.',d:'Teraz idziesz na Wschód. Miń CT Scan. Pracownia radiologiczna (M) jest po twojej prawej stronie.',i:'↪️',lm:'Skręcaj PRAWO — miń CT Scan — Pracownia M po prawej'};
     } else {
       navStepEN={a:'Exit the elevator, pass the 2nd Floor Reception Desk, then turn RIGHT at the hallway.',d:'Clinic M is on your LEFT.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT — Clinic M on your left'};
-      navStepES={a:'Sal del elevador, pasa la Recepcion del 2do Piso y gira a la DERECHA en el pasillo.',d:'Clínica M estara a tu IZQUIERDA.',i:'↪️',lm:'Pasa la Recepcion — gira DERECHA — Clínica M a tu izquierda'};
+      navStepES={a:'Salga del elevador, pasa la Recepción del 2do Piso y gira a la DERECHA en el pasillo.',d:'Clínica M estará a tu IZQUIERDA.',i:'↪️',lm:'Pasa la Recepción — gira DERECHA — Clínica M a tu izquierda'};
       navStepPL={a:'Wyjdź z windy, miń recepcję II piętra, potem skręcaj W PRAWO na korytarzu.',d:'Pracownia radiologiczna (M) będzie po twojej LEWEJ stronie.',i:'↪️',lm:'Miń recepcję — skręcaj PRAWO — Pracownia M po lewej'};
     }
   } else if (isF2 && destId==='clinicK') {
     if (entry==='garage') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Walk past Mammography. Clinic K - Mammography is on your left.',i:'↩️',lm:'Turn LEFT West — past Mammography — Clinic K on your left'};
-      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pasa Mamografía. Clínica K - Mamografía esta a tu izquierda.',i:'↩️',lm:'Gira IZQUIERDA — pasa Mamografía — Clínica K a tu izquierda'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pase Mamografía. Clínica K - Mamografía está a tu izquierda.',i:'↩️',lm:'Gira IZQUIERDA — pasa Mamografía — Clínica K a tu izquierda'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Teraz idziesz na Zachód. Miń mammografię. Mammografia (K) - Mammografia jest po twojej lewej stronie.',i:'↩️',lm:'Skręcaj LEWO — miń Mammografie — Mammografia (K) po lewej'};
     } else if (entry==='er'||entry==='polk'||entry==='damen') {
       navStepEN={a:'Turn RIGHT out of the elevator and walk East down the hallway.',d:'Walk East down the hallway. Walk past Clinic M. Clinic K - Mammography is on your right.',i:'↪️',lm:'Turn RIGHT East — past Clinic M — Clinic K on your right'};
-      navStepES={a:'Gira a la DERECHA al salir del elevador y camina al Este por el pasillo.',d:'Camina al Este. Pasa Clínica M. Clínica K - Mamografía esta a tu derecha.',i:'↪️',lm:'Gira DERECHA — pasa Clínica M — Clínica K a tu derecha'};
+      navStepES={a:'Gire a la DERECHA al salir del elevador y camina al Este por el pasillo.',d:'Camina al Este. Pase la Clínica M. Clínica K - Mamografía está a tu derecha.',i:'↪️',lm:'Gira DERECHA — pasa Clínica M — Clínica K a tu derecha'};
       navStepPL={a:'Skręcaj W PRAWO wychodząc z windy i idź na Wschód korytarzem.',d:'Idź na Wschód. Miń Poradnię M. Mammografia (K) - Mammografia jest po twojej prawej stronie.',i:'↪️',lm:'Skręcaj PRAWO — miń Poradnię M — Mammografia (K) po prawej'};
     } else {
       navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn LEFT at the hallway.',d:'Walk East down the hallway. Walk past Clinic M. Clinic K - Mammography is on your right.',i:'↩️',lm:'Pass Reception Desk — turn LEFT East — past Clinic M — Clinic K on your right'};
-      navStepES={a:'Sal del elevador, pasa la Recepcion y gira a la IZQUIERDA en el pasillo.',d:'Camina al Este. Pasa Clínica M. Clínica K - Mamografía esta a tu derecha.',i:'↩️',lm:'Pasa la Recepcion — IZQUIERDA al Este — pasa Clínica M — Clínica K a tu derecha'};
+      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la IZQUIERDA en el pasillo.',d:'Camina al Este. Pase la Clínica M. Clínica K - Mamografía está a tu derecha.',i:'↩️',lm:'Pasa la Recepción — IZQUIERDA al Este — pasa Clínica M — Clínica K a tu derecha'};
       navStepPL={a:'Wyjdź z windy, miń recepcję, potem skręcaj W LEWO na korytarzu.',d:'Idź na Wschód. Miń Poradnię M. Mammografia (K) - Mammografia jest po twojej prawej stronie.',i:'↩️',lm:'Miń Recepcje — skręcaj LEWO na Wschód — miń Poradnię M — Mammografia (K) po prawej'};
     }
   } else if (isF2 && destId==='clinicP') {
     if (entry==='garage') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Walk past Clinic M, CT Scan, and Patient/Staff Elevator West. Clinic P - Nuclear Medicine is on your left.',i:'↩️',lm:'Turn LEFT West — past Clinic M, CT Scan, P/S West — Clinic P on your left'};
-      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pasa Clínica M, CT Scan y el Elevador P/S Oeste. Clínica P - Medicina Nuclear esta a tu izquierda.',i:'↩️',lm:'Gira IZQUIERDA — pasa Clínica M, CT Scan, P/S Oeste — Clínica P a tu izquierda'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pase la Clínica M, CT Scan y el Elevador Oeste. Clínica P - Medicina Nuclear está a tu izquierda.',i:'↩️',lm:'Gira IZQUIERDA — pasa Clínica M, CT Scan, P/S Oeste — Clínica P a tu izquierda'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Teraz idziesz na Zachód. Miń Poradnię M, CT Scan i windą P/S Zachodnia. Medycyna nuklearna (P) jest po twojej lewej stronie.',i:'↩️',lm:'Skręcaj LEWO — miń poradnię M, CT Scan, P/S Zachodnia — medycyna nuklearna (P) po lewej'};
     } else if (entry==='er'||entry==='polk'||entry==='damen') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Clinic P - Nuclear Medicine is on your left.',i:'↩️',lm:'Turn LEFT West — Clinic P - Nuclear Medicine on your left'};
-      navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Ahora vas hacia el Oeste. Clínica P - Medicina Nuclear esta a tu izquierda.',i:'↩️',lm:'Gira IZQUIERDA — Clínica P - Medicina Nuclear a tu izquierda'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Ahora vas hacia el Oeste. Clínica P - Medicina Nuclear está a tu izquierda.',i:'↩️',lm:'Gira IZQUIERDA — Clínica P - Medicina Nuclear a tu izquierda'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód.',d:'Teraz idziesz na Zachód. Medycyna nuklearna (P) jest po twojej lewej stronie.',i:'↩️',lm:'Skręcaj LEWO — Medycyna nuklearna (P) po lewej'};
     } else {
       navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn RIGHT at the hallway.',d:'You are now heading West. Walk past Clinic M, CT Scan, and Patient/Staff Elevator West. Clinic P - Nuclear Medicine is on your left.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT West — past Clinic M, CT Scan, P/S West — Clinic P on your left'};
-      navStepES={a:'Sal del elevador, pasa la Recepcion y gira a la DERECHA en el pasillo.',d:'Ahora vas hacia el Oeste. Pasa Clínica M, CT Scan y el Elevador P/S Oeste. Clínica P - Medicina Nuclear esta a tu izquierda.',i:'↪️',lm:'Pasa la Recepcion — DERECHA al Oeste — pasa Clínica M, CT Scan, P/S Oeste — Clínica P a tu izquierda'};
+      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Ahora vas hacia el Oeste. Pase la Clínica M, CT Scan y el Elevador Oeste. Clínica P - Medicina Nuclear está a tu izquierda.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — pasa Clínica M, CT Scan, P/S Oeste — Clínica P a tu izquierda'};
       navStepPL={a:'Wyjdź z windy, miń recepcję, potem skręcaj W PRAWO na korytarzu.',d:'Teraz idziesz na Zachód. Miń Poradnię M, CT Scan i windą P/S Zachodnia. Medycyna nuklearna (P) jest po twojej lewej stronie.',i:'↪️',lm:'Miń recepcję — skręcaj PRAWO na Zachód — miń poradnię M, CT Scan, P/S Zachodnia — medycyna nuklearna (P) po lewej'};
     }
   } else
@@ -1608,11 +1608,11 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
       // LEFT  = WEST: everything else (x<604)
       if (dx > 604) {
         navStepEN={a:'Turn RIGHT out of the elevator and walk East.',d:nameEN+' is '+locEN+'. It is just a short walk — one of the first rooms you will see.',i:'↪️',lm:'Turn RIGHT — heading East'};
-        navStepES={a:'Gira a la DERECHA al salir del elevador y camina al Este.',d:nameES+' esta '+locES+'. Esta a pocos pasos — uno de los primeros cuartos que veras.',i:'↪️',lm:'Gira DERECHA — rumbo al Este'};
+        navStepES={a:'Gire a la DERECHA al salir del elevador y camina al Este.',d:nameES+' esta '+locES+'. Esta a pocos pasos — uno de los primeros cuartos que verá.',i:'↪️',lm:'Gira DERECHA — rumbo al Este'};
         navStepPL={a:'Skręcaj W PRAWO wychodząc z windy i idź na Wschód.',d:namePL+' jest '+locPL+'. Jest to kilka krokow — jeden z pierwszych pokoi.',i:'↪️',lm:'Skręcaj PRAWO — kierunek Wschód'};
       } else {
         navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Walk past Mammography. '+nameEN+' is '+locEN+'.',i:'↩️',lm:'Turn LEFT — heading West'};
-        navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pasa Mamografía. '+nameES+' esta '+locES+'.',i:'↩️',lm:'Gira IZQUIERDA — rumbo al Oeste'};
+        navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pase Mamografía. '+nameES+' esta '+locES+'.',i:'↩️',lm:'Gira IZQUIERDA — rumbo al Oeste'};
         navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Teraz idziesz na Zachód. Miń mammografię. '+namePL+' jest '+locPL+'.',i:'↩️',lm:'Skręcaj LEWO — kierunek Zachód'};
       }
     } else if (entry==='er'||entry==='polk'||entry==='damen') {
@@ -1620,11 +1620,11 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
       // Clinic R/V/Nuclear are to the LEFT (x<379), everything else is to the RIGHT
       if (dx < 379) {
         navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. '+nameEN+' is '+locEN+'.',i:'↩️',lm:'Turn LEFT — heading West'};
-        navStepES={a:'Gira a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Ahora vas hacia el Oeste. '+nameES+' esta '+locES+'.',i:'↩️',lm:'Gira IZQUIERDA — rumbo al Oeste'};
+        navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Ahora vas hacia el Oeste. '+nameES+' esta '+locES+'.',i:'↩️',lm:'Gira IZQUIERDA — rumbo al Oeste'};
         navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód.',d:'Teraz idziesz na Zachód. '+namePL+' jest '+locPL+'.',i:'↩️',lm:'Skręcaj LEWO — kierunek Zachód'};
       } else {
         navStepEN={a:'Turn RIGHT out of the elevator and walk East down the hallway.',d:'You are now heading East. Walk past Clinic M. '+nameEN+' is '+locEN+'.',i:'↪️',lm:'Turn RIGHT — heading East'};
-        navStepES={a:'Gira a la DERECHA al salir del elevador y camina al Este por el pasillo.',d:'Ahora vas hacia el Este. Pasa Clínica M. '+nameES+' esta '+locES+'.',i:'↪️',lm:'Gira DERECHA — rumbo al Este'};
+        navStepES={a:'Gire a la DERECHA al salir del elevador y camina al Este por el pasillo.',d:'Ahora vas hacia el Este. Pase la Clínica M. '+nameES+' esta '+locES+'.',i:'↪️',lm:'Gira DERECHA — rumbo al Este'};
         navStepPL={a:'Skręcaj W PRAWO wychodząc z windy i idź na Wschód korytarzem.',d:'Teraz idziesz na Wschód. Miń Poradnię M. '+namePL+' jest '+locPL+'.',i:'↪️',lm:'Skręcaj PRAWO — kierunek Wschód'};
       }
     } else {
@@ -1632,73 +1632,73 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
       if (dx < 470) {
         // Turn LEFT — pass Reception Desk on right then continue left
         navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn RIGHT at the hallway.',d:'Walk West down the hallway. '+nameEN+' is '+locEN+'.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT — heading West'};
-        navStepES={a:'Sal del elevador, pasa la Recepcion y gira a la DERECHA en el pasillo.',d:'Camina al Oeste por el pasillo. '+nameES+' esta '+locES+'.',i:'↪️',lm:'Pasa la Recepcion — gira DERECHA — rumbo al Oeste'};
+        navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Camina al Oeste por el pasillo. '+nameES+' esta '+locES+'.',i:'↪️',lm:'Pasa la Recepción — gira DERECHA — rumbo al Oeste'};
         navStepPL={a:'Wyjdź z windy, miń recepcję, potem skręcaj W PRAWO na korytarzu.',d:'Idź na Zachód korytarzem. '+namePL+' jest '+locPL+'.',i:'↪️',lm:'Miń recepcję — skręcaj PRAWO — kierunek Zachód'};
       } else if (dx > 510) {
         // Turn RIGHT
         navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn LEFT at the hallway.',d:'Walk East down the hallway. '+nameEN+' is '+locEN+'.',i:'↩️',lm:'Pass Reception Desk — turn LEFT — heading East'};
-        navStepES={a:'Sal del elevador, pasa la Recepcion y gira a la IZQUIERDA en el pasillo.',d:'Camina al Este por el pasillo. '+nameES+' esta '+locES+'.',i:'↩️',lm:'Pasa la Recepcion — gira IZQUIERDA — rumbo al Este'};
+        navStepES={a:'Salga del elevador, pasa la Recepción y gira a la IZQUIERDA en el pasillo.',d:'Camina al Este por el pasillo. '+nameES+' esta '+locES+'.',i:'↩️',lm:'Pasa la Recepción — gira IZQUIERDA — rumbo al Este'};
         navStepPL={a:'Wyjdź z windy, miń recepcję, potem skręcaj W LEWO na korytarzu.',d:'Idź na Wschód korytarzem. '+namePL+' jest '+locPL+'.',i:'↩️',lm:'Miń Recepcje — skręcaj LEWO — kierunek Wschód'};
       } else {
         // Clinic M — pass reception, turn RIGHT (west), Clinic M on LEFT
         navStepEN={a:'Exit the elevator, pass the 2nd Floor Reception Desk, then turn RIGHT at the hallway.',d:'Clinic M is on your LEFT.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT — Clinic M on your left'};
-        navStepES={a:'Sal del elevador, pasa la Recepcion del 2do Piso y gira a la DERECHA en el pasillo.',d:'Clínica M estara a tu IZQUIERDA.',i:'↪️',lm:'Pasa la Recepcion — gira DERECHA — Clínica M a tu izquierda'};
+        navStepES={a:'Salga del elevador, pasa la Recepción del 2do Piso y gira a la DERECHA en el pasillo.',d:'Clínica M estará a tu IZQUIERDA.',i:'↪️',lm:'Pasa la Recepción — gira DERECHA — Clínica M a tu izquierda'};
         navStepPL={a:'Wyjdź z windy, miń recepcję II piętra, potem skręcaj W PRAWO na korytarzu.',d:'Pracownia radiologiczna (M) będzie po twojej LEWEJ stronie.',i:'↪️',lm:'Miń recepcję — skręcaj PRAWO — Pracownia M po lewej'};
       }
     }
   } else if (!isF2 && destId==='cardiacCathLab') {
     // 3F Cardiac Cath Lab: elevator exits south, Reception is RIGHT (east). Turn RIGHT → walk west → Cath Lab entrance straight ahead
     navStepEN={a:'Exit the elevator, walk to the Reception Desk, turn RIGHT at the hallway.',d:'Upon turning RIGHT, you will see the Cardiac Cath Lab entrance in front of you.',i:'↪️',lm:'Walk to Reception Desk — turn RIGHT West — Cardiac Cath Lab entrance in front of you'};
-    navStepES={a:'Sal del elevador, camina hacia la Recepcion del 3er Piso, gira a la DERECHA en el pasillo.',d:'Al girar a la DERECHA, veras la entrada del Laboratorio de Cateterizacion Cardiaca frente a ti.',i:'↪️',lm:'Camina a la Recepcion — DERECHA al Oeste — entrada del Lab. Cath frente a ti'};
+    navStepES={a:'Salga del elevador, camina hacia la Recepción del 3er Piso, gira a la DERECHA en el pasillo.',d:'Al girar a la DERECHA, verás la entrada del Laboratorio de Cateterizacion Cardiaca frente a ti.',i:'↪️',lm:'Camina a la Recepción — DERECHA al Oeste — entrada del Lab. Cath frente a ti'};
     navStepPL={a:'Wyjdź z windy, podejdz do Recepcji 3. piętra, skręcaj W PRAWO na korytarzu.',d:'Po skrecie W PRAWO zobaczysz wejście do Laboratorium Cewnikowania Serca przed soba.',i:'↪️',lm:'Podejdz do Recepcji — PRAWO na Zachód — wejście do Lab. Cath przed tobą'};
   } else if (!isF2 && destId==='sameDaySurgery') {
     // 3F Same Day Surgery: turn RIGHT past Reception → walk west → entrance on LEFT
     navStepEN={a:'Exit the elevator, pass the 3rd Floor Reception Desk, then turn RIGHT at the hallway.',d:'Walk west down the hallway. Same Day Surgery entrance will be on your LEFT.',i:'↪️',lm:'Pass 3rd Floor Reception Desk — turn RIGHT West — Same Day Surgery on your left'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 3er Piso, luego gira a la DERECHA en el pasillo.',d:'Camina al oeste por el pasillo. La entrada de Cirugia del Mismo Dia estara a tu IZQUIERDA.',i:'↪️',lm:'Pasa la Recepcion del 3er Piso — DERECHA al Oeste — Cirugia del Mismo Dia a tu izquierda'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 3er Piso, luego gira a la DERECHA en el pasillo.',d:'Siga por el pasillo hacia el oeste. La entrada de Cirugía del Mismo Dia estará a tu IZQUIERDA.',i:'↪️',lm:'Pasa la Recepción del 3er Piso — DERECHA al Oeste — Cirugía del Mismo Dia a tu izquierda'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 3. piętra, następnie skręcaj W PRAWO na korytarzu.',d:'Idź na zachód korytarzem. Wejście do Chirurgii Jednego Dnia będzie po twojej LEWEJ stronie.',i:'↪️',lm:'Miń Recepcje 3. piętra — PRAWO na Zachód — Chirurgia Jednego Dnia po lewej'};
   } else if (!isF2 && destId==='mainOR') {
     // 3F Main OR: turn RIGHT past Reception → walk west → past Same Day Surgery → entrance on LEFT
     navStepEN={a:'Exit the elevator, pass the 3rd Floor Reception Desk, then turn RIGHT at the hallway.',d:'Walk west down the hallway. Pass Same Day Surgery on your left. The Main OR entrance will be the next door on your LEFT.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT West — Main OR on your left'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 3er Piso y gira a la DERECHA en el pasillo.',d:'Camina al oeste. Pasa Cirugia del Mismo Dia a tu izquierda. La entrada al Quirofano Principal sera la siguiente puerta a tu IZQUIERDA.',i:'↪️',lm:'Pasa la Recepcion — DERECHA al Oeste — Quirofano Principal a tu izquierda'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 3er Piso y gira a la DERECHA en el pasillo.',d:'Camine hacia el oeste. Pasa Cirugía del Mismo Dia a tu izquierda. La entrada al Quirófano Principal sera la siguiente puerta a tu IZQUIERDA.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — Quirófano Principal a tu izquierda'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 3. piętra, potem skręcaj W PRAWO na korytarzu.',d:'Idź na zachód. Miń Chirurgie Jednego Dnia po lewej. Wejście do Głównej Sali Operacyjnej będzie następnymi drzwiami po twojej LEWEJ.',i:'↪️',lm:'Miń Recepcje — PRAWO na Zachód — Sala Operacyjna po lewej'};
   } else if (!isF2 && destId==='preProcTesting') {
     // 3F PPT: turn LEFT (east) → PPT entrance is in front of you
     navStepEN={a:'Exit the elevator, walk to the Reception Desk, then turn LEFT.',d:'Pre-Procedure Testing (PPT) entrance is in front of you.',i:'↩️',lm:'Walk to Reception Desk — turn LEFT — PPT entrance in front of you'};
-    navStepES={a:'Sal del elevador, camina hacia la Recepcion del 3er Piso, luego gira a la IZQUIERDA.',d:'La entrada de Pruebas Pre-Procedimiento (PPT) esta frente a ti.',i:'↩️',lm:'Camina a la Recepcion — IZQUIERDA — entrada PPT frente a ti'};
+    navStepES={a:'Salga del elevador, camina hacia la Recepción del 3er Piso, luego gira a la IZQUIERDA.',d:'La entrada de Pruebas Pre-Procedimiento (PPT) esta frente a ti.',i:'↩️',lm:'Camina a la Recepción — IZQUIERDA — entrada PPT frente a ti'};
     navStepPL={a:'Wyjdź z windy, podejdz do Recepcji 3. piętra, następnie skręcaj W LEWO.',d:'Wejście do Badan Przed Zabiegiem (PPT) jest przed tobą.',i:'↩️',lm:'Podejdz do Recepcji — LEWO — wejście PPT przed tobą'};
   } else if (!isF2 && destId==='ccu') {
     navStepEN={a:'Exit the elevator, pass the 3rd Floor Reception Desk, then turn RIGHT at the hallway.',d:'Walk west down the hallway. CCU is at the far end of the floor and entrance will be on your RIGHT.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT at the hallway — CCU on your right'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 3er Piso y gira a la DERECHA en el pasillo.',d:'Camina al oeste. La CCU esta al final del pasillo y la entrada estara a tu DERECHA.',i:'↪️',lm:'Pasa la Recepcion — gira DERECHA en el pasillo — CCU a tu derecha'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 3er Piso y gira a la DERECHA en el pasillo.',d:'Camine hacia el oeste. La CCU está al final del pasillo y la entrada estará a tu DERECHA.',i:'↪️',lm:'Pasa la Recepción — gira DERECHA en el pasillo — CCU a tu derecha'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 3. piętra, potem skręcaj W PRAWO na korytarzu.',d:'Idź na zachód. CCU jest na końcu korytarza, wejście będzie po twojej PRAWEJ stronie.',i:'↪️',lm:'Miń recepcję — skręcaj PRAWO na korytarzu — CCU po prawej'};
     checkInEN=null; checkInES=null; checkInPL=null;
   } else if (!isF2 && destId==='micuA') {
     navStepEN={a:'Exit the elevator, pass the 3rd Floor Reception Desk, then turn RIGHT at the hallway.',d:'Walk west down the hallway. MICU-A is at the far end of the floor and entrance will be in front of you.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT at the hallway — MICU-A'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 3er Piso y gira a la DERECHA en el pasillo.',d:'Camina al oeste. MICU-A esta al final del pasillo y la entrada estara frente a ti.',i:'↪️',lm:'Pasa la Recepcion — gira DERECHA en el pasillo — MICU-A'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 3er Piso y gira a la DERECHA en el pasillo.',d:'Camine hacia el oeste. MICU-A está al final del pasillo y la entrada estara frente a ti.',i:'↪️',lm:'Pasa la Recepción — gira DERECHA en el pasillo — MICU-A'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 3. piętra, potem skręcaj W PRAWO na korytarzu.',d:'Idź na zachód. MICU-A jest na końcu korytarza, wejście będzie przed tobą.',i:'↪️',lm:'Miń recepcję — skręcaj PRAWO na korytarzu — MICU-A'};
     checkInEN=null; checkInES=null; checkInPL=null;
   } else if (!isF2 && destId==='micuB') {
     navStepEN={a:'Exit the elevator, pass the 3rd Floor Reception Desk, then turn RIGHT at the hallway.',d:'MICU-B is at the far end of the hallway. Walk west down the hallway and entrance will be on your LEFT.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT at the hallway — MICU-B on your left'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 3er Piso y gira a la DERECHA en el pasillo.',d:'MICU-B esta al final del pasillo. Camina al oeste y la entrada estara a tu IZQUIERDA.',i:'↪️',lm:'Pasa la Recepcion — gira DERECHA en el pasillo — MICU-B a tu izquierda'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 3er Piso y gira a la DERECHA en el pasillo.',d:'MICU-B está al final del pasillo. Camine hacia el oeste y la entrada estará a tu IZQUIERDA.',i:'↪️',lm:'Pasa la Recepción — gira DERECHA en el pasillo — MICU-B a tu izquierda'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 3. piętra, potem skręcaj W PRAWO na korytarzu.',d:'MICU-B jest na końcu korytarza. Idź na zachód, wejście będzie po twojej LEWEJ stronie.',i:'↪️',lm:'Miń recepcję — skręcaj PRAWO na korytarzu — MICU-B po lewej'};
     checkInEN=null; checkInES=null; checkInPL=null;
   } else if (!isF2 && destId==='sicu') {
     navStepEN={a:'Exit the elevator, pass the 3rd Floor Reception Desk, then turn LEFT at the hallway.',d:'Walk east down the hallway. SICU is at the far end of the floor and entrance will be on your LEFT.',i:'↩️',lm:'Pass Reception Desk — turn LEFT at the hallway — SICU on your left'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 3er Piso y gira a la IZQUIERDA en el pasillo.',d:'Camina al este. La SICU esta al final del pasillo y la entrada estara a tu IZQUIERDA.',i:'↩️',lm:'Pasa la Recepcion — gira IZQUIERDA en el pasillo — SICU a tu izquierda'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 3er Piso y gira a la IZQUIERDA en el pasillo.',d:'Camine hacia el este. La SICU está al final del pasillo y la entrada estará a tu IZQUIERDA.',i:'↩️',lm:'Pasa la Recepción — gira IZQUIERDA en el pasillo — SICU a tu izquierda'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 3. piętra, potem skręcaj W LEWO na korytarzu.',d:'Idź na wschód. SICU jest na końcu korytarza, wejście będzie po twojej LEWEJ stronie.',i:'↩️',lm:'Miń Recepcje — skręcaj LEWO na korytarzu — SICU po lewej'};
     checkInEN=null; checkInES=null; checkInPL=null;
   } else if (!isF2 && destId==='neuroICU') {
     navStepEN={a:'Exit the elevator, pass the 3rd Floor Reception Desk, then turn LEFT at the hallway.',d:'Walk east down the hallway. Neuro ICU is at the far end of the floor and entrance will be in front of you.',i:'↩️',lm:'Pass Reception Desk — turn LEFT at the hallway — Neuro ICU'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 3er Piso y gira a la IZQUIERDA en el pasillo.',d:'Camina al este. Neuro ICU esta al final del pasillo y la entrada estara frente a ti.',i:'↩️',lm:'Pasa la Recepcion — gira IZQUIERDA en el pasillo — Neuro ICU'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 3er Piso y gira a la IZQUIERDA en el pasillo.',d:'Camine hacia el este. Neuro ICU está al final del pasillo y la entrada estara frente a ti.',i:'↩️',lm:'Pasa la Recepción — gira IZQUIERDA en el pasillo — Neuro ICU'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 3. piętra, potem skręcaj W LEWO na korytarzu.',d:'Idź na wschód. Neuro ICU jest na końcu korytarza, wejście będzie przed tobą.',i:'↩️',lm:'Miń Recepcje — skręcaj LEWO na korytarzu — Neuro ICU'};
     checkInEN=null; checkInES=null; checkInPL=null;
   } else if (!isF2 && destId==='bicu') {
     navStepEN={a:'Exit the elevator, pass the 3rd Floor Reception Desk, then turn LEFT at the hallway.',d:'BICU is at the far end of the hallway. Walk east down the hallway and entrance will be on your RIGHT.',i:'↩️',lm:'Pass Reception Desk — turn LEFT at the hallway — BICU on your right'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 3er Piso y gira a la IZQUIERDA en el pasillo.',d:'BICU esta al final del pasillo. Camina al este y la entrada estara a tu DERECHA.',i:'↩️',lm:'Pasa la Recepcion — gira IZQUIERDA en el pasillo — BICU a tu derecha'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 3er Piso y gira a la IZQUIERDA en el pasillo.',d:'BICU está al final del pasillo. Camine hacia el este y la entrada estará a tu DERECHA.',i:'↩️',lm:'Pasa la Recepción — gira IZQUIERDA en el pasillo — BICU a tu derecha'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 3. piętra, potem skręcaj W LEWO na korytarzu.',d:'BICU jest na końcu korytarza. Idź na wschód, wejście będzie po twojej PRAWEJ stronie.',i:'↩️',lm:'Miń Recepcje — skręcaj LEWO na korytarzu — BICU po prawej'};
     checkInEN=null; checkInES=null; checkInPL=null;
   } else if (!isF2 && destId==='imcu4900') {
     navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn RIGHT at the hallway.',d:'Walk west down the hallway. IMCU 4900 is at the far end of the floor and entrance will be in front of you.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT at the hallway — IMCU 4900'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 4to Piso y gira a la DERECHA en el pasillo.',d:'Camina al oeste. IMCU 4900 esta al final del pasillo y la entrada estara frente a ti.',i:'↪️',lm:'Pasa la Recepcion — gira DERECHA en el pasillo — IMCU 4900'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la DERECHA en el pasillo.',d:'Camine hacia el oeste. IMCU 4900 está al final del pasillo y la entrada estara frente a ti.',i:'↪️',lm:'Pasa la Recepción — gira DERECHA en el pasillo — IMCU 4900'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W PRAWO na korytarzu.',d:'Idź na zachód. IMCU 4900 jest na końcu korytarza, wejście będzie przed tobą.',i:'↪️',lm:'Miń recepcję — skręcaj PRAWO na korytarzu — IMCU 4900'};
     checkInEN=null; checkInES=null; checkInPL=null;
   } else if (!isF2 && destId==='nursery') {
@@ -1706,57 +1706,57 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     checkInES={a:'Hable con el personal en el mostrador de la unidad.',d:'Digales su nombre y hora de cita.',i:'🏥',lm:'📍 Hablar con el personal'};
     checkInPL={a:'Porozmawiaj z personelem przy recepcji oddziału.',d:'Podaj im swoje imię i godzinę wizyty.',i:'🏥',lm:'📍 Porozmawiaj z personelem'};
     navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn LEFT at the hallway.',d:'Walk east down the hallway. Nursery entrance will be on your LEFT.',i:'↩️',lm:'Pass Reception Desk — turn LEFT East — Nursery on your left'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'Camina al este por el pasillo. La entrada de la Sala Cuna estara a tu IZQUIERDA.',i:'↩️',lm:'Pasa la Recepcion — IZQUIERDA al Este — Sala Cuna a tu izquierda'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'Siga por el pasillo hacia el este. La entrada de la Unidad de Cuidados Neonatales estará a tu IZQUIERDA.',i:'↩️',lm:'Pasa la Recepción — IZQUIERDA al Este — Unidad de Cuidados Neonatales a tu izquierda'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W LEWO na korytarzu.',d:'Idź na wschód korytarzem. Wejście do Oddzialu Noworodkowego będzie po twojej LEWEJ stronie.',i:'↩️',lm:'Miń Recepcje — LEWO na Wschód — Oddzial Noworodkowy po lewej'};
   } else if (!isF2 && destId==='burnStepDown') {
     navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn LEFT at the hallway.',d:'Walk east down the hallway. Burn Step Down is at the far end of the floor and entrance will be in front of you.',i:'↩️',lm:'Pass Reception Desk — turn LEFT at the hallway — Burn Step Down'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'Camina al este. Burn Step Down esta al final del pasillo y la entrada estara frente a ti.',i:'↩️',lm:'Pasa la Recepcion — gira IZQUIERDA en el pasillo — Burn Step Down'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'Camine hacia el este. Burn Step Down está al final del pasillo y la entrada estara frente a ti.',i:'↩️',lm:'Pasa la Recepción — gira IZQUIERDA en el pasillo — Burn Step Down'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W LEWO na korytarzu.',d:'Idź na wschód. Burn Step Down jest na końcu korytarza, wejście będzie przed tobą.',i:'↩️',lm:'Miń Recepcje — skręcaj LEWO na korytarzu — Burn Step Down'};
     checkInEN=null; checkInES=null; checkInPL=null;
     } else if (!isF2 && destId==='picu') {
     navStepEN={a:'Exit the elevator, walk to the Reception Desk, turn RIGHT.',d:'Upon turning RIGHT, you will see the PICU entrance in front of you.',i:'↪️',lm:'Walk to Reception Desk — turn RIGHT — PICU entrance in front of you'};
-    navStepES={a:'Sal del elevador, camina hacia la Recepcion del 4to Piso, gira a la DERECHA en el pasillo.',d:'Al girar a la DERECHA, veras la entrada de la PICU frente a ti.',i:'↪️',lm:'Camina a la Recepcion — DERECHA al Oeste — entrada PICU frente a ti'};
+    navStepES={a:'Salga del elevador, camina hacia la Recepción del 4to Piso, gira a la DERECHA en el pasillo.',d:'Al girar a la DERECHA, verás la entrada de la PICU frente a ti.',i:'↪️',lm:'Camina a la Recepción — DERECHA al Oeste — entrada PICU frente a ti'};
     navStepPL={a:'Wyjdź z windy, podejdz do Recepcji 4. piętra, skręcaj W PRAWO na korytarzu.',d:'Po skrecie W PRAWO zobaczysz wejście do PICU przed soba.',i:'↪️',lm:'Podejdz do Recepcji — PRAWO na Zachód — wejście PICU przed tobą'};
     checkInEN=null; checkInES=null; checkInPL=null;
   } else if (!isF2 && destId==='pedsWard') {
     navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn RIGHT at the hallway.',d:'Walk west down the hallway. Pediatric Ward is at the far end of the floor and entrance will be on your RIGHT.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT at the hallway — Peds Ward on your right'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 4to Piso y gira a la DERECHA en el pasillo.',d:'Camina al oeste. El Pabellon Pediatrico esta al final del pasillo y la entrada estara a tu DERECHA.',i:'↪️',lm:'Pasa la Recepcion — gira DERECHA en el pasillo — Pabellon Pediatrico a tu derecha'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la DERECHA en el pasillo.',d:'Camine hacia el oeste. El Pabellón Pediátrico está al final del pasillo y la entrada estará a tu DERECHA.',i:'↪️',lm:'Pasa la Recepción — gira DERECHA en el pasillo — Pabellón Pediátrico a tu derecha'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W PRAWO na korytarzu.',d:'Idź na zachód. Oddzial Pediatryczny jest na końcu korytarza, wejście będzie po twojej PRAWEJ stronie.',i:'↪️',lm:'Miń recepcję — skręcaj PRAWO na korytarzu — Oddzial Pediatryczny po prawej'};
     checkInEN=null; checkInES=null; checkInPL=null;
   } else if (!isF2 && destId==='imcu4800') {
     navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn RIGHT at the hallway.',d:'IMCU 4800 is at the far end of the hallway. Walk west down the hallway and entrance will be on your LEFT.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT at the hallway — IMCU 4800 on your left'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 4to Piso y gira a la DERECHA en el pasillo.',d:'IMCU 4800 esta al final del pasillo. Camina al oeste y la entrada estara a tu IZQUIERDA.',i:'↪️',lm:'Pasa la Recepcion — gira DERECHA en el pasillo — IMCU 4800 a tu izquierda'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la DERECHA en el pasillo.',d:'IMCU 4800 está al final del pasillo. Camine hacia el oeste y la entrada estará a tu IZQUIERDA.',i:'↪️',lm:'Pasa la Recepción — gira DERECHA en el pasillo — IMCU 4800 a tu izquierda'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W PRAWO na korytarzu.',d:'IMCU 4800 jest na końcu korytarza. Idź na zachód, wejście będzie po twojej LEWEJ stronie.',i:'↪️',lm:'Miń recepcję — skręcaj PRAWO na korytarzu — IMCU 4800 po lewej'};
     checkInEN=null; checkInES=null; checkInPL=null;
   } else if (!isF2 && destId==='room4800') {
     navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn LEFT at the hallway.',d:'Room 4800 is at the far end of the hallway. Walk east down the hallway and entrance will be on your RIGHT.',i:'↩️',lm:'Pass Reception Desk — turn LEFT at the hallway — Room 4800 on your right'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'El Cuarto 4800 esta al final del pasillo. Camina al este y la entrada estara a tu DERECHA.',i:'↩️',lm:'Pasa la Recepcion — gira IZQUIERDA en el pasillo — Cuarto 4800 a tu derecha'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'El 4to Sur — Obstetricia está al final del pasillo. Camine hacia el este y la entrada estará a tu DERECHA.',i:'↩️',lm:'Pasa la Recepción — gira IZQUIERDA en el pasillo — 4to Sur — Obstetricia a tu derecha'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W LEWO na korytarzu.',d:'Sala 4800 jest na końcu korytarza. Idź na wschód, wejście będzie po twojej PRAWEJ stronie.',i:'↩️',lm:'Miń Recepcje — skręcaj LEWO na korytarzu — Sala 4800 po prawej'};
     checkInEN=null; checkInES=null; checkInPL=null;
   } else if (!isF2 && destId==='burnStepDown') {
     navStepEN={a:'Exit the elevator at the 4th Floor. The Reception Desk is right beside you.',d:'Turn RIGHT and walk east down the hallway. Burn Step Down is at the far east end of the floor.',i:'↪️',lm:'Exit elevator — turn RIGHT East — Burn Step Down at far east end'};
-    navStepES={a:'Sal del elevador en el 4to Piso. La Recepcion esta justo a tu lado.',d:'Gira a la DERECHA y camina al este. La Unidad de Transicion de Quemados esta al extremo este del pasillo.',i:'↪️',lm:'Sal del elevador — DERECHA al Este — Unidad Quemados al final'};
+    navStepES={a:'Salga del elevador en el 4to Piso. La Recepción está justo a tu lado.',d:'Gire a la DERECHA y camina al este. La Unidad de Transición de Quemaduras está al extremo este del pasillo.',i:'↪️',lm:'Salga del elevador — DERECHA al Este — Unidad de Quemaduras al final'};
     navStepPL={a:'Wyjdź z windy na IV piętrze. Recepcja jest tuz obok.',d:'Skręcaj W PRAWO i idź na wschód. Oddzial Przejsciowy Oparzeń jest na wschódnim końcu korytarza.',i:'↪️',lm:'Wyjdź z windy — PRAWO na Wschód — Oddzial Oparzeń na końcu'};
     checkInEN=null; checkInES=null; checkInPL=null;
   } else if (!isF2 && destId==='womensHealth') {
     navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn LEFT at the hallway.',d:'Walk east down the hallway. Women\'s Health is at the far end of the floor and entrance will be on your LEFT.',i:'↩️',lm:'Pass Reception Desk — turn LEFT at the hallway — Women\'s Health on your left'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'Camina al este. Salud de la Mujer esta al final del pasillo y la entrada estara a tu IZQUIERDA.',i:'↩️',lm:'Pasa la Recepcion — gira IZQUIERDA en el pasillo — Salud de la Mujer a tu izquierda'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'Camine hacia el este. Salud Femenina está al final del pasillo y la entrada estará a tu IZQUIERDA.',i:'↩️',lm:'Pasa la Recepción — gira IZQUIERDA en el pasillo — Salud Femenina a tu izquierda'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W LEWO na korytarzu.',d:'Idź na wschód. Zdrowie Kobiet jest na końcu korytarza, wejście będzie po twojej LEWEJ stronie.',i:'↩️',lm:'Miń Recepcje — skręcaj LEWO na korytarzu — Zdrowie Kobiet po lewej'};
   } else if (!isF2 && destId==='laborDelivery') {
     checkInEN={a:'Speak with the staff at the unit front desk.',d:'Tell them your name and appointment time.',i:'🏥',lm:'📍 Speak with staff at front desk'};
     checkInES={a:'Hable con el personal en el mostrador de la unidad.',d:'Digales su nombre y hora de cita.',i:'🏥',lm:'📍 Hablar con el personal'};
     checkInPL={a:'Porozmawiaj z personelem przy recepcji oddziału.',d:'Podaj im swoje imię i godzinę wizyty.',i:'🏥',lm:'📍 Porozmawiaj z personelem'};
     navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn LEFT at the hallway.',d:'Walk east down the hallway. Labor and Delivery entrance will be on your LEFT.',i:'↩️',lm:'Pass Reception Desk — turn LEFT East — Labor and Delivery on your left'};
-    navStepES={a:'Sal del elevador, pasa la Recepcion del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'Camina al este por el pasillo. La entrada de Labor y Parto estara a tu IZQUIERDA.',i:'↩️',lm:'Pasa la Recepcion — IZQUIERDA al Este — Labor y Parto a tu izquierda'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'Siga por el pasillo hacia el este. La entrada de Labor y Parto estará a tu IZQUIERDA.',i:'↩️',lm:'Pasa la Recepción — IZQUIERDA al Este — Labor y Parto a tu izquierda'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W LEWO na korytarzu.',d:'Idź na wschód korytarzem. Wejście do Porodu i Oddzialu Noworodkowego będzie po twojej LEWEJ stronie.',i:'↩️',lm:'Miń Recepcje — LEWO na Wschód — Porod i Oddzial Noworodkowy po lewej'};
   } else if (!isF2 && destId==='pediatricClinic') {
     navStepEN={a:'Exit the elevator, walk to the Reception Desk, then turn LEFT.',d:'Pediatric and Adolescent Clinic entrance is in front of you.',i:'↩️',lm:'Walk to Reception Desk — turn LEFT — Pediatric and Adolescent Clinic entrance in front of you'};
-    navStepES={a:'Sal del elevador, camina hacia la Recepcion del 4to Piso, luego gira a la IZQUIERDA.',d:'La entrada de la Clínica Pediatrica y Adolescentes esta frente a ti.',i:'↩️',lm:'Camina a la Recepcion — IZQUIERDA — entrada Clínica Pediatrica frente a ti'};
+    navStepES={a:'Salga del elevador, camina hacia la Recepción del 4to Piso, luego gira a la IZQUIERDA.',d:'La entrada de la Clínica Pediatrica y Adolescentes esta frente a ti.',i:'↩️',lm:'Camina a la Recepción — IZQUIERDA — entrada Clínica Pediatrica frente a ti'};
     navStepPL={a:'Wyjdź z windy, podejdz do Recepcji 4. piętra, następnie skręcaj W LEWO.',d:'Wejście do Kliniki Pediatrycznej i Mlodziezowej jest przed tobą.',i:'↩️',lm:'Podejdz do Recepcji — LEWO — wejście Kliniki Pediatrycznej przed tobą'};
   } else {
     // Generic fallback for any unlisted floor 3-4 destination
     navStepEN={a:'Exit the elevator and walk to the '+fLblEN+' Floor hallway.',d:'Follow the signs on the wall. '+nameEN+' is '+locEN+'.',i:'🚶',lm:'Follow the signs to '+nameEN};
-    navStepES={a:'Sal del elevador y camina por el pasillo del Piso '+f+'.',d:'Sigue los letreros. '+nameES+' esta '+locES+'.',i:'🚶',lm:'Sigue los letreros hacia '+nameES};
+    navStepES={a:'Salga del elevador y camina por el pasillo del Piso '+f+'.',d:'Sigue los letreros. '+nameES+' esta '+locES+'.',i:'🚶',lm:'Sigue los letreros hacia '+nameES};
     navStepPL={a:'Wyjdź z windy i idź korytarzem '+f+'. piętra.',d:'Idź za tabliczkami. '+namePL+' jest '+locPL+'.',i:'🚶',lm:'Idź za tabliczkami do '+namePL};
   }
 
@@ -1764,42 +1764,42 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
   var f1en,f1es,f1pl;
   if(entry==='ogden'){
     f1en={a:'Walk through the Ogden Street front doors.',d:'You will enter the Hospital Main Lobby.',i:'🚪',lm:'You are in the Main Lobby'};
-    f1es={a:'Entra por las puertas de la Calle Ogden.',d:'Estaras en el Lobby Principal.',i:'🚪',lm:'Estas en el Lobby Principal'};
+    f1es={a:'Entre por las puertas de la Calle Ogden.',d:'Estarás en el Lobby Principal.',i:'🚪',lm:'Estás en el Lobby Principal'};
     f1pl={a:'Wejdź przez główne drzwi od ulicy Ogden.',d:'Wejdźiesz do Głównego Holu.',i:'🚪',lm:'Jesteś w głównym holu'};
   } else if(entry==='polk'){
     f1en={a:'Enter through the Polk Street Entrance.',d:(!isF2?'Walk North through the Professional Building walkway towards Stroger Hospital main lobby.':''),i:'🚌',lm:'Enter Polk St'};
-    f1es={a:'Entra por la entrada de la Calle Polk.',d:(!isF2?'Camina al Norte por el pasillo del Edificio Profesional hacia el lobby principal del Hospital Stroger.':'Camina al oeste por el pasillo del Edificio Profesional. Gira a la DERECHA al Corredor Sur entre Urgencias y Clínica F. Gira a la DERECHA al pasillo de clinicas.'),i:'🚌',lm:'Entra por Polk St'+(isF2?' — camina oeste → DERECHA al Corredor Sur → DERECHA al pasillo de clinicas':'')};
+    f1es={a:'Entra por la entrada de la Calle Polk.',d:(!isF2?'Camina al Norte por el pasillo del Edificio Profesional hacia el lobby principal del Hospital Stroger.':'Siga por el pasillo hacia el oeste del Edificio Profesional. Gire a la DERECHA al Corredor Sur entre Urgencias y Clínica F. Gire a la DERECHA al pasillo de clinicas.'),i:'🚌',lm:'Entra por Polk St'+(isF2?' — camina oeste → DERECHA al Corredor Sur → DERECHA al pasillo de clinicas':'')};
     f1pl={a:'Wejdź przez wejście od ulicy Polk.',d:(!isF2?'Idź na Północ przez korytarz Budynku Profesjonalnego w kierunku głównego holu Szpitala Stroger.':'Idź na zachód przez korytarz Budynku Profesjonalnego. Skręcaj W PRAWO do Korytarza Poludniowego miedzy IP a Poradnia F. Skręcaj W PRAWO do korytarza klinik.'),i:'🚌',lm:'Wejdź przez Polk St'+(isF2?' — idź zachód → PRAWO do Korytarza Poludniowego → PRAWO do korytarza klinik':'')};
   } else if(entry==='damen'){
     f1en={a:'Enter through the Damen Avenue Entrance.',d:(!isF2?'Walk North through the Professional Building walkway towards Stroger Hospital main lobby.':''),i:'🚌',lm:'Enter Damen Ave'};
-    f1es={a:'Entra por la entrada de la Avenida Damen.',d:(!isF2?'Camina al Norte por el pasillo del Edificio Profesional hacia el lobby principal del Hospital Stroger.':'Camina al este por el pasillo del Edificio Profesional. Gira a la IZQUIERDA al Corredor Sur entre Urgencias y Clínica F. Gira a la DERECHA al pasillo de clinicas.'),i:'🚌',lm:'Entra por Damen Ave'+(isF2?' — camina este → IZQUIERDA al Corredor Sur → DERECHA al pasillo de clinicas':'')};
+    f1es={a:'Entra por la entrada de la Avenida Damen.',d:(!isF2?'Camina al Norte por el pasillo del Edificio Profesional hacia el lobby principal del Hospital Stroger.':'Siga por el pasillo hacia el este del Edificio Profesional. Gire a la IZQUIERDA al Corredor Sur entre Urgencias y Clínica F. Gire a la DERECHA al pasillo de clinicas.'),i:'🚌',lm:'Entra por Damen Ave'+(isF2?' — camina este → IZQUIERDA al Corredor Sur → DERECHA al pasillo de clinicas':'')};
     f1pl={a:'Wejdź przez wejście od Alei Damen.',d:(!isF2?'Idź na Północ przez korytarz Budynku Profesjonalnego w kierunku głównego holu Szpitala Stroger.':'Idź na wschód przez korytarz Budynku Profesjonalnego. Skręcaj W LEWO do Korytarza Poludniowego miedzy IP a Poradnia F. Skręcaj W PRAWO do korytarza klinik.'),i:'🚌',lm:'Wejdź przez Damen Ave'+(isF2?' — idź wschód → LEWO do Korytarza Poludniowego → PRAWO do korytarza klinik':'')};
   } else if(entry==='garage'){
     if(!isF2){
       // Floors 3-4: walk west in corridor → turn RIGHT (north) at Gift Shop/Snack Kiosk → left to Main Elevator
       f1en={a:'Come in through the side door from the Parking Garage.',d:'Walk west down the hallway. When you see the Gift Shop on your right, turn RIGHT into the Main Lobby. Then turn LEFT and walk to the Main Elevator.',i:'🅿️',lm:'Walk west → turn RIGHT at Gift Shop → LEFT to Main Elevator'};
-      f1es={a:'Entra por la puerta lateral del Estacionamiento.',d:'Camina al oeste por el pasillo. Cuando veas la Tienda de Regalos a tu DERECHA y el Kiosco de Bocadillos a tu IZQUIERDA, gira a la DERECHA hacia el Lobby. Luego gira a la IZQUIERDA y camina al Elevador Principal.',i:'🅿️',lm:'Camina oeste → gira DERECHA en Tienda de Regalos → IZQUIERDA al Elevador Principal'};
+      f1es={a:'Entre por la puerta lateral del Estacionamiento.',d:'Siga por el pasillo hacia el oeste. Cuando veas la Tienda de Regalos a tu derecha, gira a la DERECHA hacia el lobby principal. El Elevador Principal está frente a la recepción principal.',i:'🅿️',lm:'Sigue oeste → gira DERECHA en Tienda de Regalos → Elevador Principal frente a ti'};
       f1pl={a:'Wejdź przez boczne drzwi od Garazu.',d:'Idź na zachód korytarzem. Gdy zobaczysz Sklep z Upominkami po PRAWEJ i Kiosk Snackowy po LEWEJ, skręcaj W PRAWO do Głównego Holu. Nastepnie skręcaj W LEWO i idź do Głównej Windy.',i:'🅿️',lm:'Idź zachód → skręcaj PRAWO przy Sklepie → LEWO do Głównej Windy'};
     } else {
       f1en={a:'Come in through the side door from the Parking Garage.',d:'Walk into the hallway.',i:'🅿️'};
-      f1es={a:'Entra por la puerta lateral del Estacionamiento.',d:'Camina al pasillo.',i:'🅿️'};
+      f1es={a:'Entre por la puerta lateral del Estacionamiento.',d:'Camina al pasillo.',i:'🅿️'};
       f1pl={a:'Wejdź przez boczne drzwi od Garazu.',d:'Wejdź do korytarza.',i:'🅿️'};
     }
   } else {
     if(!isF2){
       // Floors 3-4: east through ER → continue east to Chapel corner → turn LEFT (north) at Chapel → east to Main Elevator
       f1en={a:'Walk through the Emergency Room entrance.',d:'Walk east through the ER and into the hallway. When you reach the Chapel on your LEFT, turn LEFT. Then walk east to the Main Elevator.',i:'🚨',lm:'Walk east → turn LEFT at Chapel → Main Elevator'};
-      f1es={a:'Entra por la entrada de Urgencias.',d:'Camina al este por urgencias y sigue por el pasillo. Cuando llegues a la Capilla a tu IZQUIERDA, gira a la IZQUIERDA. Luego camina al este hacia el Elevador Principal.',i:'🚨',lm:'Camina este → gira IZQUIERDA en la Capilla → Elevador Principal'};
+      f1es={a:'Entre por la entrada de Urgencias.',d:'Siga por el pasillo hacia el este. Cuando llegues a la Capilla a tu IZQUIERDA, gira a la IZQUIERDA. Luego camine hacia el este hacia el Elevador Principal.',i:'🚨',lm:'Camina este → gira IZQUIERDA en la Capilla → Elevador Principal'};
       f1pl={a:'Wejdź przez wejście IP.',d:'Idź na wschód przez IP i dalej korytarzem. Gdy dojdziesz do Kaplicy po LEWEJ stronie, skręcaj W LEWO. Nastepnie idź na wschód do Głównej Windy.',i:'🚨',lm:'Idź wschód → skręcaj LEWO przy Kaplicy → Glowna Winda'};
     } else {
       f1en={a:'Walk through the Emergency Room entrance.',d:'Walk east through the ER and into the main hallway.',i:'🚨'};
-      f1es={a:'Entra por la entrada de Urgencias.',d:'Camina al este por urgencias al pasillo.',i:'🚨'};
+      f1es={a:'Entre por la entrada de Urgencias.',d:'Camine hacia el este por urgencias al pasillo.',i:'🚨'};
       f1pl={a:'Wejdź przez wejście IP.',d:'Idź na wschód przez IP do głównego korytarza.',i:'🚨'};
     }
   }
 
-  var helpdeskEN={a:'Visit the Helpdesk in the Main Lobby.',d:'The Helpdesk is located near the Ogden Street entrance. Ask for a visitor pass. You will need to show this pass to the Security Officer at the Main Elevator.',i:'🪪',lm:'Get visitor pass at Helpdesk — show to Security at Main Elevator'};
-  var helpdeskES={a:'Visita el Helpdesk en el Lobby Principal.',d:'El Helpdesk esta cerca de la entrada de la Calle Ogden. Solicita un pase de visitante. Debes mostrarlo al Oficial de Seguridad en el Elevador Principal.',i:'🪪',lm:'Obtener pase en Helpdesk — mostrar a Seguridad en el Elevador Principal'};
+  var helpdeskEN={a:'Visit the Mostrador de Ayuda in the Main Lobby.',d:'The Mostrador de Ayuda is located near the Ogden Street entrance. Ask for a visitor pass. You will need to show this pass to the Security Officer at the Main Elevator.',i:'🪪',lm:'Get visitor pass at Mostrador de Ayuda — show to Security at Main Elevator'};
+  var helpdeskES={a:'Visita el Mostrador de Ayuda en el Lobby Principal.',d:'El Mostrador de Ayuda esta cerca de la entrada de la Calle Ogden. Solicite un pase de visitante. Debe mostrarlo al Oficial de Seguridad en el Elevador Principal.',i:'🪪',lm:'Obtenga el pase en el Mostrador de Ayuda — mostrar a Seguridad en el Elevador Principal'};
   var helpdeskPL={a:'Odwiedz punkt informacyjny w głównym holu.',d:'punkt informacyjny znajduje się przy wejściu od ulicy Ogden. Popros o przepustkę dla odwiedzających. Musisz ją pokazać oficerowi ochrony przy głównej windzie.',i:'🪪',lm:'Odbierz przepustkę w punkcie informacyjnym — pokaz Ochronie przy głównej windzie'};
   // ── Cantonese zh steps (mirrors en with Cantonese text) ──
   var f1zh;
@@ -1993,9 +1993,9 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     es:[f1es,
       ...(!isF2?[helpdeskES]:[]),
       {a:'Busca el '+elvNameES+'.',d:elvDescES,i:'🛗',elv:elvChipES},
-      {a:'Sube al Piso '+f+'.',d:'Las puertas se abriran. Sal al pasillo.',i:'🔢',lm:'Ya estas en el Piso '+f},
+      {a:'Sube al Piso '+f+'.',d:'Las puertas se abrirán. Sal al pasillo.',i:'🔢',lm:'Ya estás en el Piso '+f},
       navStepES,
-      ...(locES?[{a:nameES+' esta '+locES+'.',d:'Busca el letrero en la pared.',i:'🏥',lm:'📍 '+locES}]:[]),
+      ...(locES?[{a:nameES+' esta '+locES+'.',d:'Busque el letrero en la pared.',i:'🏥',lm:'📍 '+locES}]:[]),
       ...(checkInES?[checkInES]:[])
     ],
     pl:[f1pl,
@@ -2022,35 +2022,35 @@ function pbSteps(entry,floor,nameEN,nameES,namePL){
   var s1en,s1es,s1pl;
   if(entry==='polk'){
     s1en={a:'Enter through the Polk Street Entrance.',d:'',i:'🚌',lm:'Enter Polk St'};
-    s1es={a:'Entra por la entrada sur de la Calle Polk.',d:'Ahora estas dentro del Edificio Profesional.',i:'🚌',lm:'Estas en la entrada Polk St'};
+    s1es={a:'Entre por la entrada sur de la Calle Polk.',d:'Ahora estás dentro del Edificio Profesional.',i:'🚌',lm:'Estás en la entrada Polk St'};
     s1pl={a:'Wejdź przez wejście południowe od ulicy Polk.',d:'Jesteś teraz w Budynku Profesjonalnym.',i:'🚌',lm:'Jesteś przy wejściu Polk St'};
   } else if(entry==='damen'){
     s1en={a:'Enter through the Damen Avenue Entrance.',d:'',i:'🚌',lm:'Enter Damen Ave'};
-    s1es={a:'Entra por la entrada sur de la Avenida Damen.',d:'Ahora estas dentro del Edificio Profesional.',i:'🚌',lm:'Estas en la entrada Damen Ave'};
+    s1es={a:'Entre por la entrada sur de la Avenida Damen.',d:'Ahora estás dentro del Edificio Profesional.',i:'🚌',lm:'Estás en la entrada Damen Ave'};
     s1pl={a:'Wejdź przez wejście południowe od Alei Damen.',d:'Jesteś teraz w Budynku Profesjonalnym.',i:'🚌',lm:'Jesteś przy wejściu Damen Ave'};
   } else if(entry==='garage'){
     s1en={a:'Come in through the side door from the Parking Garage.',d:'Walk west along the hallway, then walk south through the corridor between the Emergency Room and Clinic F toward the Professional Building.',i:'🅿️',lm:'Enter Garage — walk west then south through corridor to PB'};
-    s1es={a:'Entra por la puerta lateral del Estacionamiento.',d:'Camina al oeste por el pasillo principal hacia la entrada sur del Edificio Profesional.',i:'🅿️',lm:'Entra del garage — camina al corredor sur del EP'};
+    s1es={a:'Entre por la puerta lateral del Estacionamiento.',d:'Siga por el pasillo hacia el oeste principal hacia la entrada sur del Edificio Profesional.',i:'🅿️',lm:'Entra del garage — camina al corredor sur del EP'};
     s1pl={a:'Wejdź przez boczne drzwi od Garazu.',d:'Idź na zachód głównym korytarzem w kierunku południowego wejścia do Budynku Profesjonalnego.',i:'🅿️',lm:'Wejdź od garażu — idź do korytarza południowego BP'};
   } else if(entry==='er'){
     s1en={a:'Walk through the Emergency Room entrance.',d:'Walk east through the ER. Continue south through the corridor between the Emergency Room and Clinic F toward the Professional Building.',i:'🚨',lm:'Enter ER — walk south through corridor to PB'};
-    s1es={a:'Entra por la entrada de Urgencias.',d:'Camina al este por urgencias al pasillo. Continua al sur por el corredor hacia el Edificio Profesional.',i:'🚨',lm:'Entra por ER — camina sur al EP'};
+    s1es={a:'Entre por la entrada de Urgencias.',d:'Camine hacia el este por urgencias al pasillo. Continúa al sur por el corredor hacia el Edificio Profesional.',i:'🚨',lm:'Entra por ER — camina sur al EP'};
     s1pl={a:'Wejdź przez wejście IP.',d:'Idź na wschód przez IP do korytarza. Kontynuuj na poludnie przez korytarz do Budynku Profesjonalnego.',i:'🚨',lm:'Wejdź przez IP — idź na poludnie do BP'};
   } else {
     s1en={a:'Walk through the Ogden Street front doors.',d:'Walk south through the corridor between the Emergency Room and Clinic F toward the Professional Building.',i:'🚪',lm:'Enter Ogden — walk south through corridor to PB'};
-    s1es={a:'Entra por las puertas de la Calle Ogden.',d:'Estaras en el Lobby Principal. Camina al sur por el pasillo hacia el Edificio Profesional.',i:'🚪',lm:'Entra por Ogden — camina sur al EP'};
+    s1es={a:'Entre por las puertas de la Calle Ogden.',d:'Estarás en el Lobby Principal. Camine hacia el sur por el pasillo hacia el Edificio Profesional.',i:'🚪',lm:'Entra por Ogden — camina sur al EP'};
     s1pl={a:'Wejdź przez główne drzwi od ulicy Ogden.',d:'Wejdźiesz do Głównego Holu. Idź na poludnie korytarzem do Budynku Profesjonalnego.',i:'🚪',lm:'Wejdź przez Ogden — idź na poludnie do BP'};
   }
   // Step 2: kiosk (all PB patients)
   var kioskEN={a:'Find the Self Check-in Kiosks in the Professional Building lobby.',d:'Check in at the kiosk before proceeding.',i:'📋',lm:'Check in at Self Check-in Kiosk'};
-  var kioskES={a:'Busca los Kioscos de Auto-Registro en el lobby del Edificio Profesional.',d:'Registrate en el kiosco antes de continuar.',i:'📋',lm:'Registrarse en el Kiosco'};
+  var kioskES={a:'Busca los Kioscos de Auto-Registro en el lobby del Edificio Profesional.',d:'Regístrate en el kiosco antes de continuar.',i:'📋',lm:'Registrarse en el Kiosco'};
   var kioskPL={a:'Znajdź kioski samoobsługowe w holu Budynku Profesjonalnego.',d:'Zamelduj się przy kiosku przed kontynuowaniem.',i:'📋',lm:'Zamelduj się przy kiosku'};
   if(isGround){
     var isDental=(nameEN.indexOf('Dental')>=0);
     if(isDental){
       // Dental Clinic: entry → walk past kiosks → check in. No kiosk step.
       var dentalPassEN={a:'Walk past the Self Check-in Kiosks.',d:'The Dental Clinic is on the 1st Floor of the Professional Building, west of the PB Elevator.',i:'🦷',lm:'Walk past Kiosks — Dental Clinic ahead'};
-      var dentalPassES={a:'Pasa los Kioscos de Auto-Registro.',d:'La Clínica Dental esta en el 1er Piso del Edificio Profesional, al oeste del Elevador EP.',i:'🦷',lm:'Pasa los Kioscos — Clínica Dental adelante'};
+      var dentalPassES={a:'Pasa los Kioscos de Auto-Registro.',d:'La Clínica Dental está en el 1er Piso del Edificio Profesional, al oeste del Elevador EP.',i:'🦷',lm:'Pasa los Kioscos — Clínica Dental adelante'};
       var dentalPassPL={a:'Miń kioski samoobsługowe.',d:'Poradnia Dentystyczna jest na I piętrze Budynku Profesjonalnego, na zachód od Windy BP.',i:'🦷',lm:'Miń Kioski — Poradnia Dentystyczna przed tobą'};
       var s1zh_d,dPassZH;
       if(entry==='polk') s1zh_d={a:'從Polk街入口進入。',d:'',i:'🚌',lm:'從Polk街入口進入'};
@@ -2060,13 +2060,13 @@ function pbSteps(entry,floor,nameEN,nameES,namePL){
       else s1zh_d={a:'從Ogden街正門進入。',d:'沿急症室和F診所之間的走廊向南走前往專業大樓。',i:'🚪',lm:'從Ogden進入—向南走到專業大樓'};
       dPassZH={a:'經過自助登記機繼續前行。',d:'牙科診所在專業大樓一樓，PB電梯西側。',i:'🦷',lm:'經過登記機—前方是牙科診所'};
       return{en:[s1en,dentalPassEN,{a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'}],
-             es:[s1es,dentalPassES,{a:'Entra y regístrate.',d:'Di tu nombre y hora de cita.',i:'✅'}],
+             es:[s1es,dentalPassES,{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',d:'Indique su nombre y hora de cita.',i:'✅'}],
              pl:[s1pl,dentalPassPL,{a:'Wejdź i zarejestruj się.',d:'Podaj imię i godzinę wizyty.',i:'✅'}],
              zh:[s1zh_d,dPassZH,{a:'進入並辦理登記。',d:'告訴工作人員您的姓名及預約時間。',i:'✅'}]};
     }
     // Ophthalmology: entry → kiosk check-in → proceed to clinic
     var navEN={a:'After checking in, proceed to the Ophthalmology Clinic.',d:'The Ophthalmology Clinic is on the 1st Floor of the Professional Building.',i:'👁️',lm:'PB 1F — Ophthalmology Clinic'};
-    var navES={a:'Despues de registrarte, dirígete a la Clínica de Oftalmología.',d:'La Clínica de Oftalmología esta en el 1er Piso del Edificio Profesional.',i:'👁️',lm:'EP Piso 1 — Clínica de Oftalmología'};
+    var navES={a:'Después de registrarte, dirígete a la Clínica de Oftalmología.',d:'La Clínica de Oftalmología está en el 1er Piso del Edificio Profesional.',i:'👁️',lm:'EP Piso 1 — Clínica de Oftalmología'};
     var navPL={a:'Po zameldowaniu udaj się do Kliniki Okulistycznej.',d:'Poradnia okulistyczna jest na I piętrze Budynku Profesjonalnego.',i:'👁️',lm:'BP Piętro 1 — Poradnia okulistyczna'};
     var s1zh_o,kioskZH,navZH;
     if(entry==='polk') s1zh_o={a:'從Polk街入口進入。',d:'',i:'🚌',lm:'從Polk街入口進入'};
@@ -2077,17 +2077,17 @@ function pbSteps(entry,floor,nameEN,nameES,namePL){
     kioskZH={a:'在專業大樓大堂找到自助登記機。',d:'請先在登記機辦理登記，再繼續前行。',i:'📋',lm:'在自助登記機辦理登記'};
     navZH={a:'登記後前往眼科診所。',d:'眼科診所位於專業大樓一樓。',i:'👁️',lm:'PB一樓—眼科診所'};
     return{en:[s1en,kioskEN,navEN,{a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'}],
-           es:[s1es,kioskES,navES,{a:'Entra y regístrate.',d:'Di tu nombre y hora de cita.',i:'✅'}],
+           es:[s1es,kioskES,navES,{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',d:'Indique su nombre y hora de cita.',i:'✅'}],
            pl:[s1pl,kioskPL,navPL,{a:'Wejdź i zarejestruj się.',d:'Podaj imię i godzinę wizyty.',i:'✅'}],
            zh:[s1zh_o,kioskZH,navZH,{a:'進入並辦理登記。',d:'告訴工作人員您的姓名及預約時間。',i:'✅'}]};
   }
   // PB upper floors — need PB elevator
   var flNum=floor==='pb2'?'2':floor==='pb3'?'3':'4';
   var elvEN={a:'Get on the PB Elevator and press '+flNum+'.',d:'The PB Elevator is just across the Self Check-in Kiosks. Press floor '+flNum+' for '+nameEN+'.',i:'🛗',lm:'PB Elevator — Press '+flNum};
-  var elvES={a:'Sube al Elevador del EP y presiona '+flNum+'.',d:'El Elevador del EP esta justo al frente de los Kioscos. Presiona piso '+flNum+' para '+nameES+'.',i:'🛗',lm:'Elevador EP — Presiona '+flNum};
+  var elvES={a:'Sube al Elevador del EP y presiona '+flNum+'.',d:'El Elevador del EP está justo al frente de los Kioscos. Presiona piso '+flNum+' para '+nameES+'.',i:'🛗',lm:'Elevador EP — Presiona '+flNum};
   var elvPL={a:'Wejdź do Windy BP i naciśnij '+flNum+'.',d:'Winda BP jest naprzeciwko kiosków. Naciśnij piętro '+flNum+' dla '+namePL+'.',i:'🛗',lm:'Winda BP — Naciśnij '+flNum};
   var receptionEN={a:'Exit the elevator on the '+flLbl+' Floor.',d:'Go to the '+flLbl+' Floor Reception Desk and show your appointment slip.',i:'🏥',lm:'Go to '+flLbl+' Floor Reception Desk'};
-  var receptionES={a:'Sal del elevador en el '+flLbl+' Piso.',d:'Dirígete al mostrador de Recepcion del '+flLbl+' Piso y muestra tu comprobante de cita.',i:'🏥',lm:'Recepcion del '+flLbl+' Piso'};
+  var receptionES={a:'Salga del elevador en el '+flLbl+' Piso.',d:'Dirígete al mostrador de Recepción del '+flLbl+' Piso y muestra tu comprobante de cita.',i:'🏥',lm:'Recepción del '+flLbl+' Piso'};
   var receptionPL={a:'Wyjdź z windy na '+flLbl+'. piętrze.',d:'Idź do Recepcji na '+flLbl+'. piętrze i pokaz wydruk z wizyta.',i:'🏥',lm:'Recepcja '+flLbl+'. piętra'};
   var s1zh_u;
   if(entry==='polk') s1zh_u={a:'從Polk街入口進入。',d:'',i:'🚌',lm:'從Polk街入口進入'};
@@ -2099,7 +2099,7 @@ function pbSteps(entry,floor,nameEN,nameES,namePL){
   var elvZH2={a:'搭乘PB電梯，按'+flNum+'。',d:'PB電梯就在自助登記機對面。按'+flNum+'樓前往'+nameEN+'。',i:'🛗',lm:'PB電梯—按'+flNum};
   var recZH2={a:'在'+flLbl+'樓出電梯。',d:'前往'+flLbl+'樓服務台並出示您的預約單。',i:'🏥',lm:flLbl+'樓服務台'};
   return{en:[s1en,kioskEN,elvEN,receptionEN,{a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'}],
-         es:[s1es,kioskES,elvES,receptionES,{a:'Entra y regístrate.',d:'Di tu nombre y hora de cita.',i:'✅'}],
+         es:[s1es,kioskES,elvES,receptionES,{a:'¡Llegó a su destino! Por favor regístrese en la recepción.',d:'Indique su nombre y hora de cita.',i:'✅'}],
          pl:[s1pl,kioskPL,elvPL,receptionPL,{a:'Wejdź i zarejestruj się.',d:'Podaj imię i godzinę wizyty.',i:'✅'}],
          zh:[s1zh_u,kioskZH2,elvZH2,recZH2,{a:'進入並辦理登記。',d:'告訴工作人員您的姓名及預約時間。',i:'✅'}]};
 }
@@ -2123,88 +2123,88 @@ function mku(id,fl,em,spec,nEN,nES,nPL,dEN,dES,dPL,lEN,lES,lPL,nZH,dZH){
            polk:elvSteps('polk',fl,nEN,nES,nPL,lEN,lES,lPL,id),
            damen:elvSteps('damen',fl,nEN,nES,nPL,lEN,lES,lPL,id)}};
 }
-[mku('clinicG','2','🧠','Integrated Behavioral Health - Neurology - Neurosurgery - Musculoskeletal','Clinic G','Clínica G','Poradnia G','2nd Floor','Piso 2','II piętro','at the far East end of the hallway','al extremo este del pasillo','na wschódnim końcu korytarza','G診所 — 神經科','二樓'),
- mku('clinicH','2','🫘','Integrated Behavioral Health - Nephrology','Clinic H','Clínica H','Poradnia H','2nd Floor','Piso 2','II piętro','at the very far East end of the hallway past Clinic G','al extremo este del pasillo mas alla de Clínica G','na wschódnim końcu korytarza za Poradnia G','H診所 — 腎科','二樓'),
- mku('clinicI','2','🦴','Integrated Behavioral Health - Orthopedics - Rheumatology - Plastics - Hand Surgery - Podiatry','Clinic I','Clínica I','Poradnia I','2nd Floor','Piso 2','II piętro','in the East section of the floor, across Clinic G','en la seccion este del piso, frente a Clínica G','we wschódniej czesci, naprzeciwko Poradni G','I診所 — 骨科','二樓'),
- mku('clinicJ','2','🩸','Dialysis','Clinic J - Dialysis','Clínica J - Dialisis','Oddział dializ (J)','2nd Floor','Piso 2','II piętro','on the East side of the floor','en el lado este del piso','po wschódniej stronie piętra','J診所 — 洗腎','二樓'),
+[mku('clinicG','2','🧠','Integrated Behavioral Health - Neurology - Neurosurgery - Musculoskeletal','Clinic G','Clínica G','Poradnia G','2nd Floor','Piso 2','II piętro','at the far East end of the hallway','al lado este al final del pasillo','na wschódnim końcu korytarza','G診所 — 神經科','二樓'),
+ mku('clinicH','2','🫘','Integrated Behavioral Health - Nephrology','Clinic H','Clínica H','Poradnia H','2nd Floor','Piso 2','II piętro','at the very far East end of the hallway past Clinic G','al lado este del pasillo, junto a Clínica G','na wschódnim końcu korytarza za Poradnia G','H診所 — 腎科','二樓'),
+ mku('clinicI','2','🦴','Integrated Behavioral Health - Orthopedics - Rheumatology - Plastics - Hand Surgery - Podiatry','Clinic I','Clínica I','Poradnia I','2nd Floor','Piso 2','II piętro','in the East section of the floor, across Clinic G','al lado este del piso, junto a Clínica G','we wschódniej czesci, naprzeciwko Poradni G','I診所 — 骨科','二樓'),
+ mku('clinicJ','2','🩸','Dialysis','Clinic J - Dialysis','Clínica J - Diálisis','Oddział dializ (J)','2nd Floor','Piso 2','II piętro','on the East side of the floor','en el lado este del piso','po wschódniej stronie piętra','J診所 — 洗腎','二樓'),
  mku('clinicM','2','🩻','Clinic M — CT Scan - Interventional Radiology/Special Procedures - X-Ray - Ultrasound','Clinic M','Clínica M','Pracownia radiologiczna (M)','2nd Floor','Piso 2','II piętro','','','','M診所 — 放射科','二樓'),
  mku('clinicL','2','🏥','Clinic L','Clinic L','Clínica L','Pracownia (L)','2nd Floor','Piso 2','II piętro','','','','L診所','二樓'),
  mku('clinicN','2','🏃','Physical Therapy - Occupational Therapy - Speech and Language Pathology - PT/OT','Clinic N — Physical and Occupational Therapy','Clínica N — Fisioterapia y Terapia Ocupacional','Fizjoterapia i terapia zajęciowa (N)','2nd Floor','Piso 2','II piętro','','','','N診所 — 物理及職業治療','二樓'),
  mku('clinicR','2','🫁','Endoscopy - Bronchoscopy - Fluoroscopy','Clinic R','Clínica R','Pracownia endoskopowa (R)','2nd Floor','Piso 2','II piętro','on the West side of the floor','en el lado oeste del piso','po zachodniej stronie piętra','R診所 — 內視鏡','二樓'),
- mku('neuroTesting','2','🧠','Neurological Testing - EEG - EMG - Neuro Diagnostics','Neuro Testing','Pruebas Neurologicas','Pracownia neurologiczna','2nd Floor','Piso 2','II piętro','','','','神經測試','二樓'),
- mku('clinicV','2','💓','Cardiology Testing','Clinic V - Cardiology Testing','Clínica V - Pruebas Cardiologicas','Poradnia kardiologiczna (V)','2nd Floor','Piso 2','II piętro','','','','V診所 — 心臟測試','二樓'),
+ mku('neuroTesting','2','🧠','Neurological Testing - EEG - EMG - Neuro Diagnostics','Neuro Testing','Pruebas Neurológicas','Pracownia neurologiczna','2nd Floor','Piso 2','II piętro','','','','神經測試','二樓'),
+ mku('clinicV','2','💓','Cardiology Testing','Clinic V - Cardiology Testing','Clínica V - Pruebas Cardiológicas','Poradnia kardiologiczna (V)','2nd Floor','Piso 2','II piętro','','','','V診所 — 心臟測試','二樓'),
  mku('respiratoryTherapy','2','🫁','Respiratory Therapy - Pulmonary Function - Pulmonary Rehabilitation','Respiratory Therapy','Terapia Respiratoria','Terapia oddechowa','2nd Floor','Piso 2','II piętro','','','','呼吸治療','二樓'),
- mku('sleepLab','2','😴','Sleep Study - Sleep Disorders - Sleep Center','Sleep Lab','Laboratorio del Sueno','Laboratorium snu','2nd Floor','Piso 2','II piętro','','','','睡眠實驗室','二樓'),
+ mku('sleepLab','2','😴','Sleep Study - Sleep Disorders - Sleep Center','Sleep Lab','Laboratorio del Sueño','Laboratorium snu','2nd Floor','Piso 2','II piętro','','','','睡眠實驗室','二樓'),
  mku('clinicP','2','☢️','Nuclear Medicine','Clinic P - Nuclear Medicine','Clínica P - Medicina Nuclear','Medycyna nuklearna (P)','2nd Floor','Piso 2','II piętro','','','','P診所 — 核子醫學','二樓'),
  mku('clinicK','2','🩺','Mammography - Breast Imaging','Clinic K - Mammography','Clínica K - Mamografía','Mammografia (K)','2nd Floor','Piso 2','II piętro','','','','K診所 — 乳房X光','二樓'),
  mku('cardiacCathLab','3','🫀','Cardiac Catheterization Laboratory','Cardiac Cath Lab','Lab. Cateterismo Cardiaco','Pracownia cewnikowania serca','3rd Floor','Piso 3','III piętro','','','','心導管實驗室','三樓'),
- mku('ccu','3','🏥','Coronary Care Unit','CCU - Coronary Care Unit','CCU - Unidad de Cuidados Coronarios','CCU — Oddział Intensywnej Opieki Kardiologicznej','3rd Floor','Piso 3','III piętro','','','','CCU — 冠心病護理病房','三樓'),
+ mku('ccu','3','🏥','Coronary Care Unit','CCU - Coronary Care Unit','CCU — Unidad de Cuidados Coronarios','CCU — Oddział Intensywnej Opieki Kardiologicznej','3rd Floor','Piso 3','III piętro','','','','CCU — 冠心病護理病房','三樓'),
  mku('micuA','3','🏥','Medical Intensive Care Unit A','MICU-A','MICU-A','Oddział Intensywnej Terapii Medycznej A (MICU-A)','3rd Floor','Piso 3','III piętro','','','','MICU-A — 內科ICU','三樓'),
  mku('micuB','3','🏥','Medical Intensive Care Unit B','MICU-B','MICU-B','Oddział Intensywnej Terapii Medycznej B (MICU-B)','3rd Floor','Piso 3','III piętro','','','','MICU-B — 內科ICU','三樓'),
- mku('sicu','3','🏥','Surgical Intensive Care Unit','SICU - Surgical ICU','SICU - UCI Quirurgica','Chirurgiczny Oddział Intensywnej Terapii (SICU)','3rd Floor','Piso 3','III piętro','','','','SICU — 外科ICU','三樓'),
- mku('neuroICU','3','🧠','Neurological Intensive Care Unit','Neuro ICU','Neuro UCI','Neurologiczny Oddział Intensywnej Terapii (Neuro ICU)','3rd Floor','Piso 3','III piętro','','','','神經ICU','三樓'),
- mku('bicu','3','🏥','Burn Intensive Care Unit','BICU - Burn ICU','BICU - UCI de Quemados','Oddział Intensywnej Terapii Oparzeń (BICU)','3rd Floor','Piso 3','III piętro','','','','BICU — 燒傷ICU','三樓'),
- mku('sameDaySurgery','3','🔪','Same Day Surgery - Pre-Op - PACU','Same Day Surgery','Cirugia del Mismo Dia','Chirurgia jednego dnia','3rd Floor','Piso 3','III piętro','','','','日間手術','三樓'),
+ mku('sicu','3','🏥','Surgical Intensive Care Unit','SICU - Surgical ICU','SICU — UCI Quirúrgica','Chirurgiczny Oddział Intensywnej Terapii (SICU)','3rd Floor','Piso 3','III piętro','','','','SICU — 外科ICU','三樓'),
+ mku('neuroICU','3','🧠','Neurological Intensive Care Unit','Neuro ICU','Neuro UCI — Neurológica','Neurologiczny Oddział Intensywnej Terapii (Neuro ICU)','3rd Floor','Piso 3','III piętro','','','','神經ICU','三樓'),
+ mku('bicu','3','🏥','Burn Intensive Care Unit','BICU - Burn ICU','BICU — UCI de Quemaduras','Oddział Intensywnej Terapii Oparzeń (BICU)','3rd Floor','Piso 3','III piętro','','','','BICU — 燒傷ICU','三樓'),
+ mku('sameDaySurgery','3','🔪','Same Day Surgery - Pre-Op - PACU','Same Day Surgery','Cirugía del Mismo Día','Chirurgia jednego dnia','3rd Floor','Piso 3','III piętro','','','','日間手術','三樓'),
  mku('preProcTesting','3','📋','Pre-Procedure Testing - Pre-Operative Evaluation','Pre-Procedure Testing (PPT)','Pruebas Pre-Procedimiento PPT','Diagnostyka przedzabiegowa (PPT)','3rd Floor','Piso 3','III piętro','','','','術前測試（PPT）','三樓'),
  mku('imcu4900','4','🏥','Intermediate Care Unit 4900','IMCU 4900','IMCU 4900','Oddział Intensywnej Terapii Pośredniej (IMCU 4900)','4th Floor','Piso 4','IV piętro','','','','IMCU 4900 — 中級護理','四樓'),
- mku('nursery','4','🍼','Nursery - Newborn Care','Nursery','Sala Cuna','Oddział Noworodkowy','4th Floor','Piso 4','IV piętro','','','','嬰兒室','四樓'),
+ mku('nursery','4','🍼','Nursery - Newborn Care','Nursery','Unidad de Cuidados Neonatales','Oddział Noworodkowy','4th Floor','Piso 4','IV piętro','','','','嬰兒室','四樓'),
  mku('picu','4','🏥','Pediatric Intensive Care Unit','PICU - Pediatric ICU','PICU - UCI Pediatrica','Oddział Intensywnej Terapii Pediatrycznej (PICU)','4th Floor','Piso 4','IV piętro','','','','PICU — 兒科ICU','四樓'),
- mku('pedsWard','4','🧒','Pediatric Ward','Pediatric Ward','Pabellon Pediatrico','Oddział Pediatryczny','4th Floor','Piso 4','IV piętro','','','','兒科病房','四樓'),
+ mku('pedsWard','4','🧒','Pediatric Ward','Pediatric Ward','Pabellón Pediátrico','Oddział Pediatryczny','4th Floor','Piso 4','IV piętro','','','','兒科病房','四樓'),
  mku('imcu4800','4','🏥','Intermediate Care Unit 4800','IMCU 4800','IMCU 4800','Oddział Intensywnej Terapii Pośredniej (IMCU 4800)','4th Floor','Piso 4','IV piętro','','','','IMCU 4800 — 中級護理','四樓'),
- mku('room4800','4','🏥','Inpatient Unit 4800','Room 4800','Cuarto 4800','Sala 4800','4th Floor','Piso 4','IV piętro','','','','4800病房','四樓'),
- mku('burnStepDown','4','🔥','Burn Step Down Unit','Burn Step Down','Unidad de Transicion de Quemados','Oddział Pośredni Oparzeń','4th Floor','Piso 4','IV piętro','','','','燒傷過渡病房','四樓'),
- mku('womensHealth','4','👩‍⚕️',"Women's Health - Ob/Gyn","Women's Health",'Salud de la Mujer','Poradnia zdrowia kobiety','4th Floor','Piso 4','IV piętro','','','','女性健康科','四樓'),
+ mku('room4800','4','🏥','Inpatient Unit 4800','Room 4800','4to Sur — Obstetricia','Sala 4800','4th Floor','Piso 4','IV piętro','','','','4800病房','四樓'),
+ mku('burnStepDown','4','🔥','Burn Step Down Unit','Burn Step Down','Unidad de Transición de Quemaduras','Oddział Pośredni Oparzeń','4th Floor','Piso 4','IV piętro','','','','燒傷過渡病房','四樓'),
+ mku('womensHealth','4','👩‍⚕️',"Women's Health - Ob/Gyn","Women's Health",'Salud Femenina','Poradnia zdrowia kobiety','4th Floor','Piso 4','IV piętro','','','','女性健康科','四樓'),
  mku('laborDelivery','4','🍼','Labor and Delivery - Nursery - Maternity','Labor and Delivery','Labor y Parto','Poród i oddział noworodkowy','4th Floor','Piso 4','IV piętro','','','','產房及分娩','四樓'),
- mku('pediatricClinic','4','🧒','Pediatric and Adolescent Clinic - PICU - Pediatric Ward','Pediatric and Adolescent Clinic','Clínica Pediatrica y Adolescentes','Poradnia pediatryczna i młodzieżowa','4th Floor','Piso 4','IV piętro','','','','兒科及青少年診所','四樓')
+ mku('pediatricClinic','4','🧒','Pediatric and Adolescent Clinic - PICU - Pediatric Ward','Pediatric and Adolescent Clinic','Clínica Pediátrica y Adolescentes','Poradnia pediatryczna i młodzieżowa','4th Floor','Piso 4','IV piętro','','','','兒科及青少年診所','四樓')
 ].forEach(function(c){if(c.id==='clinicL')c.hidden=true;CLINICS.push(c);});
 (function(){
   function mriSteps(entry){
     var s1en,s1es,s1pl,elvEN,elvES,elvPL;
     if(entry==='ogden'){
       s1en={a:'Walk through the Ogden Street front doors.',d:'You will enter the Hospital Main Lobby.',i:'🚪',lm:'You are in the Main Lobby'};
-      s1es={a:'Entra por las puertas de la Calle Ogden.',d:'Estaras en el Lobby Principal.',i:'🚪',lm:'Estas en el Lobby Principal'};
+      s1es={a:'Entre por las puertas de la Calle Ogden.',d:'Estarás en el Lobby Principal.',i:'🚪',lm:'Estás en el Lobby Principal'};
       s1pl={a:'Wejdź przez główne drzwi od ulicy Ogden.',d:'Wejdźiesz do Głównego Holu.',i:'🚪',lm:'Jesteś w głównym holu'};
       elvEN={a:'Walk through the lobby towards the chapel into the hallway. Turn RIGHT — the Patient/Staff Elevator West (P/S WEST) is on your LEFT.',d:'Press LL for Lower Level.',i:'🛗',elv:'P/S West Elevator — Press LL'};
-      elvES={a:'Camina por el lobby hacia la capilla al pasillo. Gira a la DERECHA — el Elevador P/S OESTE esta a tu IZQUIERDA.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador P/S Oeste — Presiona LL'};
+      elvES={a:'Camine por el lobby hacia la capilla al pasillo. Gire a la DERECHA — el Elevador P/S OESTE está a tu IZQUIERDA.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Oeste — Presiona LL'};
       elvPL={a:'Przejdź przez hol w kierunku kaplicy do korytarza. Skręcaj W PRAWO — Winda P/S ZACHODNIA jest po twojej LEWEJ.',d:'Naciśnij LL dla Dolnego Poziomu.',i:'🛗',elv:'Winda P/S Zachodnia — Naciśnij LL'};
     } else if(entry==='garage'){
       s1en={a:'Come in through the side door from the Parking Garage.',d:'Walk west into the main hallway.',i:'🅿️',lm:'Enter from Parking Garage'};
-      s1es={a:'Entra por la puerta lateral del Estacionamiento.',d:'Camina al oeste hacia el pasillo principal.',i:'🅿️',lm:'Entra por el Estacionamiento'};
+      s1es={a:'Entre por la puerta lateral del Estacionamiento.',d:'Camine hacia el oeste hacia el pasillo principal.',i:'🅿️',lm:'Entra por el Estacionamiento'};
       s1pl={a:'Wejdź przez boczne drzwi od Garazu.',d:'Idź na zachód do głównego korytarza.',i:'🅿️',lm:'Wejdź od Garazu'};
       elvEN={a:'Walk west along the hallway past Clinic A, B, C, D, E, and F. The Patient/Staff Elevator West (P/S WEST) is on your LEFT, just past Clinic F.',d:'Press LL for Lower Level.',i:'🛗',elv:'P/S West Elevator — Press LL'};
-      elvES={a:'Camina al oeste por el pasillo pasando las Clinicas A, B, C, D, E y F. El Elevador P/S OESTE esta a tu IZQUIERDA, justo despues de la Clínica F.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador P/S Oeste — Presiona LL'};
+      elvES={a:'Siga por el pasillo hacia el oeste pasando las Clínicas A, B, C, D, E y F. El Elevador P/S OESTE está a tu IZQUIERDA, justo después de la Clínica F.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Oeste — Presiona LL'};
       elvPL={a:'Idź na zachód korytarzem mijając Poradni A, B, C, D, E i F. Winda P/S ZACHODNIA jest po twojej LEWEJ, tuż za Poradnia F.',d:'Naciśnij LL dla Dolnego Poziomu.',i:'🛗',elv:'Winda P/S Zachodnia — Naciśnij LL'};
     } else if(entry==='er'){
       s1en={a:'Walk through the Emergency Room entrance.',d:'Walk east through the ER and into the main hallway.',i:'🚨',lm:'Enter from Emergency Room'};
-      s1es={a:'Entra por la entrada de Urgencias.',d:'Camina al este por urgencias al pasillo principal.',i:'🚨',lm:'Entra por Urgencias'};
+      s1es={a:'Entre por la entrada de Urgencias.',d:'Camine hacia el este por urgencias al pasillo principal.',i:'🚨',lm:'Entra por Urgencias'};
       s1pl={a:'Wejdź przez wejście IP.',d:'Idź na wschód przez IP do głównego korytarza.',i:'🚨',lm:'Wejdź przez IP'};
       elvEN={a:'Once in the main hallway, turn RIGHT (east). The Patient/Staff Elevator West (P/S WEST) is immediately on your RIGHT.',d:'Press LL for Lower Level.',i:'🛗',elv:'P/S West Elevator — Press LL'};
-      elvES={a:'En el pasillo principal, gira a la DERECHA (este). El Elevador P/S OESTE esta inmediatamente a tu DERECHA.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador P/S Oeste — Presiona LL'};
+      elvES={a:'En el pasillo principal, gira a la DERECHA (este). El Elevador P/S OESTE esta inmediatamente a tu DERECHA.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Oeste — Presiona LL'};
       elvPL={a:'W głównym korytarzu skręcaj W PRAWO (wschód). Winda P/S ZACHODNIA jest natychmiast po twojej PRAWEJ.',d:'Naciśnij LL dla Dolnego Poziomu.',i:'🛗',elv:'Winda P/S Zachodnia — Naciśnij LL'};
     } else if(entry==='polk'){
       s1en={a:'Enter through the Polk Street Entrance.',d:'Walk north through the Professional Building walkway, then turn RIGHT into the hospital corridor.',i:'🚌',lm:'Enter Polk St — walk north into hospital'};
-      s1es={a:'Entra por la entrada de la Calle Polk.',d:'Camina al norte por el pasillo del Edificio Profesional y luego gira a la DERECHA al corredor del hospital.',i:'🚌',lm:'Entra por Polk St — camina al norte al hospital'};
+      s1es={a:'Entra por la entrada de la Calle Polk.',d:'Camine hacia el norte por el pasillo del Edificio Profesional y luego gira a la DERECHA al corredor del hospital.',i:'🚌',lm:'Entra por Polk St — camina al norte al hospital'};
       s1pl={a:'Wejdź przez wejście od ulicy Polk.',d:'Idź na północ przez korytarz Budynku Profesjonalnego, a następnie skręcaj W PRAWO do korytarza szpitala.',i:'🚌',lm:'Wejdź przez Polk St — idź północ do szpitala'};
       elvEN={a:'Walk west along the hospital corridor. The Patient/Staff Elevator West (P/S WEST) is on your RIGHT, just before Clinic F.',d:'Press LL for Lower Level.',i:'🛗',elv:'P/S West Elevator — Press LL'};
-      elvES={a:'Camina al oeste por el corredor del hospital. El Elevador P/S OESTE esta a tu DERECHA, justo antes de la Clínica F.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador P/S Oeste — Presiona LL'};
+      elvES={a:'Camine hacia el oeste por el corredor del hospital. El Elevador P/S OESTE está a tu DERECHA, justo antes de la Clínica F.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Oeste — Presiona LL'};
       elvPL={a:'Idź na zachód korytarzem szpitalnym. Winda P/S ZACHODNIA jest po twojej PRAWEJ, tuz przed Poradnia F.',d:'Naciśnij LL dla Dolnego Poziomu.',i:'🛗',elv:'Winda P/S Zachodnia — Naciśnij LL'};
     } else {
       // damen
       s1en={a:'Enter through the Damen Avenue Entrance.',d:'Walk east through the Professional Building walkway, then turn LEFT into the hospital corridor.',i:'🚌',lm:'Enter Damen Ave — walk east into hospital'};
-      s1es={a:'Entra por la entrada de la Avenida Damen.',d:'Camina al este por el pasillo del Edificio Profesional y luego gira a la IZQUIERDA al corredor del hospital.',i:'🚌',lm:'Entra por Damen Ave — camina al este al hospital'};
+      s1es={a:'Entra por la entrada de la Avenida Damen.',d:'Siga por el pasillo hacia el este del Edificio Profesional y luego gira a la IZQUIERDA al corredor del hospital.',i:'🚌',lm:'Entra por Damen Ave — camina al este al hospital'};
       s1pl={a:'Wejdź przez wejście od Alei Damen.',d:'Idź na wschód przez korytarz Budynku Profesjonalnego, a następnie skręcaj W LEWO do korytarza szpitalnego.',i:'🚌',lm:'Wejdź przez Damen Ave — idź wschód do szpitala'};
       elvEN={a:'Walk east along the hospital corridor. The Patient/Staff Elevator West (P/S WEST) is on your LEFT, just before Clinic F.',d:'Press LL for Lower Level.',i:'🛗',elv:'P/S West Elevator — Press LL'};
-      elvES={a:'Camina al este por el corredor del hospital. El Elevador P/S OESTE esta a tu IZQUIERDA, justo antes de la Clínica F.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador P/S Oeste — Presiona LL'};
+      elvES={a:'Camine hacia el este por el corredor del hospital. El Elevador P/S OESTE está a tu IZQUIERDA, justo antes de la Clínica F.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Oeste — Presiona LL'};
       elvPL={a:'Idź na wschód korytarzem szpitalnym. Winda P/S ZACHODNIA jest po twojej LEWEJ, tuz przed Poradnia F.',d:'Naciśnij LL dla Dolnego Poziomu.',i:'🛗',elv:'Winda P/S Zachodnia — Naciśnij LL'};
     }
     var navEN={a:'Take the elevator down to the Lower Level.',d:'The doors will open. Step out into the hallway.',i:'🔢',lm:'You are now on the Lower Level'};
-    var navES={a:'Baja al Nivel Inferior.',d:'Las puertas se abriran. Sal al pasillo.',i:'🔢',lm:'Ya estas en el Nivel Inferior'};
+    var navES={a:'Baja al Nivel Inferior.',d:'Las puertas se abrirán. Sal al pasillo.',i:'🔢',lm:'Ya estás en el Nivel Inferior'};
     var navPL={a:'Jedź na Dolny Poziom.',d:'Drzwi się otworzą. Wyjdź na korytarz.',i:'🔢',lm:'Jesteś teraz na Dolnym Poziomie'};
     var dirEN={a:'Turn LEFT out of the elevator and walk down the hallway.',d:'MRI is on your RIGHT.',i:'↩️',lm:'Turn LEFT — MRI on your right'};
-    var dirES={a:'Gira a la IZQUIERDA al salir del elevador y camina por el pasillo.',d:'El MRI estara a tu DERECHA.',i:'↩️',lm:'Gira IZQUIERDA — MRI a tu derecha'};
+    var dirES={a:'Gire a la IZQUIERDA al salir del elevador y camina por el pasillo.',d:'El MRI estará a tu DERECHA.',i:'↩️',lm:'Gira IZQUIERDA — MRI a tu derecha'};
     var dirPL={a:'Skręcaj W LEWO wychodząc z windy i idź korytarzem.',d:'MRI będzie po twojej PRAWEJ stronie.',i:'↩️',lm:'Skręcaj LEWO — MRI po prawej'};
     var chkEN={a:'Go inside and check in.',d:'Tell the person your name and appointment time.',i:'✅'};
-    var chkES={a:'Entra y regístrate.',d:'Di tu nombre y hora de cita.',i:'✅'};
+    var chkES={a:'¡Llegó a su destino! Por favor regístrese en la recepción.',d:'Indique su nombre y hora de cita.',i:'✅'};
     var chkPL={a:'Wejdź i zarejestruj się.',d:'Podaj imię i godzinę wizyty.',i:'✅'};
     // Build zh steps for MRI
     var s1zh_mri, elvZH_mri;
@@ -2236,8 +2236,8 @@ function mku(id,fl,em,spec,nEN,nES,nPL,dEN,dES,dPL,lEN,lES,lPL,nZH,dZH){
 // ── PROFESSIONAL BUILDING (PB) CLINICS ──
 [mku('ophthalmology','1','👁️','Ophthalmology Clinic — PB 1st Floor','Ophthalmology Clinic','Clínica de Oftalmología','Poradnia okulistyczna','PB 1st Floor','PB Piso 1','BP piętro I','','','','眼科診所','PB一樓'),
  mku('dentalClinic','1','🦷','Dental Clinic — PB 1st Floor','Dental Clinic','Clínica Dental','Poradnia dentystyczna','PB 1st Floor','PB Piso 1','BP piętro I','','','','牙科診所','PB一樓'),
- mku('oncologyServices','pb2','🎗️','Oncology Services — PB 2nd Floor','Oncology Services','Servicios de Oncologia','Onkologia','PB 2nd Floor','PB Piso 2','BP piętro II','','','','腫瘤科服務','PB二樓'),
- mku('infusionCenter','pb2','💉','Infusion Center — PB 2nd Floor','Infusion Center','Centro de Infusion','Centrum infuzji','PB 2nd Floor','PB Piso 2','BP piętro II','','','','輸液中心','PB二樓'),
+ mku('oncologyServices','pb2','🎗️','Oncology Services — PB 2nd Floor','Oncology Services','Servicios de Oncología','Onkologia','PB 2nd Floor','PB Piso 2','BP piętro II','','','','腫瘤科服務','PB二樓'),
+ mku('infusionCenter','pb2','💉','Infusion Center — PB 2nd Floor','Infusion Center','Centro de Infusión','Centrum infuzji','PB 2nd Floor','PB Piso 2','BP piętro II','','','','輸液中心','PB二樓'),
  mku('palliativeCare','pb2','🕊️','Palliative Care — PB 2nd Floor','Palliative Care','Cuidados Paliativos','Opieka paliatywna','PB 2nd Floor','PB Piso 2','BP piętro II','','','','紓緩治療','PB二樓'),
  mku('generalMedicineClinic','pb3','🩺','General Medicine Clinic — PB 3rd Floor','General Medicine Clinic','Clínica de Medicina General','Poradnia medycyny ogólnej','PB 3rd Floor','PB Piso 3','BP piętro III','','','','普通內科診所','PB三樓'),
  mku('geriatricClinic','pb3','👴','Geriatric Clinic — PB 3rd Floor','Geriatric Clinic','Clínica Geriatrica','Poradnia geriatryczna','PB 3rd Floor','PB Piso 3','BP piętro III','','','','老人科診所','PB三樓'),
@@ -2263,11 +2263,11 @@ function mku(id,fl,em,spec,nEN,nES,nPL,dEN,dES,dPL,lEN,lES,lPL,nZH,dZH){
     if(!erEN)return;
     // Build polk steps: entry→turn RIGHT(west)→corridor→turn RIGHT into hallway→ER hallway steps 1+
     var polkS1EN={a:'Walk through the Polk Street Entrance.',d:'',i:'🚌',lm:'Enter Polk St'};
-    var polkS1ES={a:'Entra por la entrada de la Calle Polk.',d:'Gira a la DERECHA y camina al oeste por el pasillo del Edificio Profesional.',i:'🚌',lm:'Entra por Polk St — gira DERECHA oeste'};
+    var polkS1ES={a:'Entra por la entrada de la Calle Polk.',d:'Gire a la DERECHA y camina al oeste por el pasillo del Edificio Profesional.',i:'🚌',lm:'Entra por Polk St — gira DERECHA oeste'};
     var polkS1PL={a:'Wejdź przez wejście od ulicy Polk.',d:'Skręcaj W PRAWO i idź na zachód przez korytarz Budynku Profesjonalnego.',i:'🚌',lm:'Wejdź przez Polk St — skręcaj PRAWO zachód'};
     // Build damen steps: entry→turn LEFT(east)→corridor→turn RIGHT into hallway→ER hallway steps 1+
     var damenS1EN={a:'Walk through the Damen Avenue Entrance.',d:'',i:'🚌',lm:'Enter Damen Ave'};
-    var damenS1ES={a:'Entra por la entrada de la Avenida Damen.',d:'Gira a la IZQUIERDA y camina al este por el pasillo del Edificio Profesional.',i:'🚌',lm:'Entra por Damen Ave — gira IZQUIERDA este'};
+    var damenS1ES={a:'Entra por la entrada de la Avenida Damen.',d:'Gire a la IZQUIERDA y camina al este por el pasillo del Edificio Profesional.',i:'🚌',lm:'Entra por Damen Ave — gira IZQUIERDA este'};
     var damenS1PL={a:'Wejdź przez wejście od Alei Damen.',d:'Skręcaj W LEWO i idź na wschód przez korytarz Budynku Profesjonalnego.',i:'🚌',lm:'Wejdź przez Damen Ave — skręcaj LEWO wschód'};
     // Fix direction text: entering from south, all clinics are on patient's RIGHT
     // (walking east after turning right at corridor end)
@@ -2775,11 +2775,11 @@ var UI_STRINGS={
     btnGo:'Get My Directions',btnSpeak:'Read Directions Out Loud',
     tip1:'Follow the orange line on the map to find your way.',
     tip2:'For clinics/services in Stroger Hospital, P/S East & West elevators serve floors 1–2 only. For 3rd or 4th floor clinics, all patients must use the Main Elevator.',
-    tip3:'Helpdesk is in the Main Lobby near the Ogden entrance.',
+    tip3:'Mostrador de Ayuda is in the Main Lobby near the Ogden entrance.',
     tip4:'Came by car? Use the side door from the Parking Garage.',
     tip5:'For clinics/services in PB 2nd–4th floors, go to the Self Check-in Kiosks on PB 1st Floor before getting on the PB Elevator.',
     secHelp:'NEED HELP?',
-    helpH1:'Helpdesk',helpP1:'In the Main Lobby, 1st Floor — Staff available 7AM-9PM daily',
+    helpH1:'Mostrador de Ayuda',helpP1:'In the Main Lobby, 1st Floor — Staff available 7AM-9PM daily',
     helpH2:'Elevator Guide',helpP2:'Main elevator: floors 1-4 (all patients). Patient/Staff East (by garage) and West: floors 1-2 only. For 3rd and 4th floor clinics, all patients — including those entering from the garage or ER — must use the Main Elevator. Service elevators: staff badge required.',
     helpH3:'Accessibility',helpP3:'Wheelchair and assistance: Call (312) 864-6000',
     helpH4:'Interpreter Services',helpP4:'Interpreters in various languages are available in person, phone, and devices',
@@ -2792,30 +2792,30 @@ var UI_STRINGS={
   es:{
     heroTitle:'¡Bienvenido! 👋',
     heroHosp:'John H. Stroger, Jr. Hospital del Condado de Cook',
-    heroSub:'Busca tu clínica o unidad hospitalaria. Te mostraremos la ruta en el mapa con instrucciones paso a paso y piso por piso.',
+    heroSub:'Busca su clínica o unidad hospitalaria. Le mostraremos la ruta en el mapa con instrucciones paso a paso y piso por piso.',
     heroSub2:'Los pisos que no aplican a tu ruta aparecerán en gris.',
     secFind:'ENCUENTRA TU CLÍNICA O UNIDAD HOSPITALARIA',
-    lblSearch:'Busca tu Clínica o Departamento',
-    lblAppt:'Escribe el nombre que aparece en tu papel de cita:',
+    lblSearch:'Busque su Clínica o Departamento',
+    lblAppt:'Escribe el nombre que aparece en su papel de cita:',
     ftabAll:'Todos los Pisos',ftabF1:'1er Piso',ftabF2:'2do Piso',ftabF3:'3er Piso',ftabF4:'4to Piso',ftabLL:'Nivel Inferior',
     lblEntry:'¿Por dónde vas a entrar al hospital?',
     optOgden:'🚌 Entrada Calle Ogden',optGarage:'🅿️ Entrada Estacionamiento',optER:'🚨 Entrada Sala de Emergencias',optDamen:'🚌 Entrada Avenida Damen',optPolk:'🚌 Entrada Calle Polk',
     btnGo:'Obtener mis Indicaciones',btnSpeak:'Leer Instrucciones en Voz Alta',
-    tip1:'Sigue la línea naranja en el mapa para encontrar tu camino.',
-    tip2:'Los elevadores P/S Este y Oeste sirven solo los pisos 1–2. Para clínicas en el 3er o 4to piso, todos los pacientes deben usar el Elevador Principal.',
+    tip1:'Siga la línea naranja en el mapa para encontrar tu camino.',
+    tip2:'Los elevadores Este y Oeste sirven solo los pisos 1 y 2. Para clínicas en el 3er o 4to piso, todos los pacientes deben usar el Elevador Principal.',
     tip3:'El mostrador de ayuda está en el Lobby Principal cerca de la entrada de Ogden.',
-    tip4:'¿Llegaste en auto? Usa la puerta lateral desde el Estacionamiento.',
-    tip5:'Para clínicas en los pisos 2–4 del Edificio Profesional, ve a los Quioscos de Registro Automático en el 1er piso antes de subir.',
+    tip4:'¿Llegó en auto? Use la puerta lateral desde el Estacionamiento.',
+    tip5:'Para clínicas en los pisos 2–4 del Edificio Profesional, vaya a los Quioscos de Registro Automático en el 1er piso antes de subir.',
     secHelp:'¿NECESITAS AYUDA?',
     helpH1:'Mostrador de Ayuda',helpP1:'En el Lobby Principal, 1er Piso — Personal disponible de 7AM a 9PM diariamente',
-    helpH2:'Guía de Elevadores',helpP2:'Elevador principal: pisos 1-4 (todos los pacientes). P/S Este (junto al garaje) y Oeste: solo pisos 1-2. Para clínicas en el 3er y 4to piso, todos los pacientes deben usar el Elevador Principal. Elevadores de servicio: solo para personal.',
+    helpH2:'Guía de Elevadores',helpP2:'Elevador principal: pisos 1-4 (todos los pacientes). Elevador Este (junto al garaje) y Elevador Oeste: solo pisos 1–2. Para clínicas en el 3er y 4to piso, todos los pacientes deben usar el Elevador Principal. Elevadores de servicio: solo para personal.',
     helpH3:'Accesibilidad',helpP3:'Silla de ruedas y asistencia: Llame al (312) 864-6000',
     helpH4:'Servicios de Interpretación',helpP4:'Intérpretes en varios idiomas disponibles en persona, por teléfono y en dispositivos',
     helpH5:'Cómo Llegar en CTA',helpP5:'Las rutas 49 (Western) y 20 (Madison) paran cerca. Línea Rosa: Estación Polk.',
     btn911:'🚨 Llamar para Ayuda de Emergencia: 911',
     navHome:'Inicio',navDir:'Direcciones',navHelp:'Ayuda',
     langHint:'Seleccionar Idioma',langTitle:'🌐 Elige tu Idioma',langDone:'Listo',
-    lblMap:'Tu Ruta — Sigue la Línea Naranja',lblProgress:'Tu Progreso',lblSteps:'Instrucciones Paso a Paso'
+    lblMap:'Su Ruta — Sigue la Línea Naranja',lblProgress:'Su Progreso',lblSteps:'Instrucciones Paso a Paso'
   },
   zh:{
     heroTitle:'歡迎！ 👋',
