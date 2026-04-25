@@ -48,7 +48,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
 .floor-tabs{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap;}
 .ftab{border:2px solid var(--border);border-radius:20px;padding:5px 12px;font-family:'Nunito',sans-serif;font-size:.76em;font-weight:800;background:#fff;color:var(--muted);cursor:pointer;touch-action:manipulation;}
 .ftab.on{background:var(--teal);color:#fff;border-color:var(--teal);}
-.ftab.f2.on{background:#2563EB;border-color:#2563EB;} .ftab.f3.on{background:#7C3AED;border-color:#7C3AED;} .ftab.f4.on{background:#C0392B;border-color:#C0392B;}
+.ftab.f2.on{background:#2563EB;border-color:#2563EB;} .ftab.f3.on{background:#7C3AED;border-color:#7C3AED;} .ftab.f4.on{background:#C0392B;border-color:#C0392B;} .ftab.fll.on{background:#D97706;border-color:#D97706;color:#fff;}
 .btn-go{width:100%;background:var(--teal);color:#fff;border:none;border-radius:var(--rs);padding:15px;font-family:'Nunito',sans-serif;font-size:1.05em;font-weight:900;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px;box-shadow:0 4px 16px rgba(0,120,106,.28);touch-action:manipulation;}
 .btn-go:active{opacity:.88;}
 .btn-speak{background:var(--gold);color:var(--ink);border:none;border-radius:var(--rs);padding:11px 16px;width:100%;font-family:'Nunito',sans-serif;font-size:.92em;font-weight:900;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px;touch-action:manipulation;}
@@ -66,7 +66,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
 .fmtab{border:2px solid var(--border);border-radius:10px;padding:4px 10px;font-family:'Nunito',sans-serif;font-size:.72em;font-weight:800;background:#f7fbfa;color:var(--muted);cursor:pointer;touch-action:manipulation;}
 .fmtab.disabled{opacity:.28;cursor:not-allowed;pointer-events:none;background:#ececec;border-color:#d0d0d0;color:#aaa;}
 .fmtab.on{background:var(--teal);color:#fff;border-color:var(--teal);}
-.fmtab.f2.on{background:#2563EB;border-color:#2563EB;} .fmtab.f3.on{background:#7C3AED;border-color:#7C3AED;} .fmtab.f4.on{background:#C0392B;border-color:#C0392B;}
+.fmtab.f2.on{background:#2563EB;border-color:#2563EB;} .fmtab.f3.on{background:#7C3AED;border-color:#7C3AED;} .fmtab.f4.on{background:#C0392B;border-color:#C0392B;} .fmtab.fll.on{background:#D97706;border-color:#D97706;color:#fff;}
 .fmp{display:none;} .fmp.on{display:block;}
 .map-wrap{border-radius:var(--rs);overflow:hidden;border:2px solid var(--border);}
 /* Route animation */
@@ -190,7 +190,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
         <button class="ftab f2" id="ftab-f2" onclick="setFloor('2',this)">2nd Floor</button>
         <button class="ftab f3" id="ftab-f3" onclick="setFloor('3',this)">3rd Floor</button>
         <button class="ftab f4" id="ftab-f4" onclick="setFloor('4',this)">4th Floor</button>
-        <button class="ftab" id="ftab-ll" onclick="setFloor('ll',this)" style="background:#fff;color:#607070;border-color:#C5DEDD;">Lower Level</button>
+        <button class="ftab fll" id="ftab-ll" onclick="setFloor('ll',this)">Lower Level</button>
       </div>
       <div class="sw">
         <span class="sw-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
@@ -213,8 +213,8 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
     </div>
     <div class="tips">
       <div class="tip"><div class="ico">🗺️</div><p id="tip1">Follow the orange line on the map to find your way.</p></div>
-      <div class="tip"><div class="ico">🛗</div><p id="tip2">For clinics/services in Stroger Hospital, P/S East &amp; West elevators serve floors 1–2 only. For 3rd or 4th floor clinics, all patients must use the Main Elevator.</p></div>
-      <div class="tip"><div class="ico">ℹ️</div><p id="tip3">Mostrador de Ayuda is in the Main Lobby near the Ogden entrance.</p></div>
+      <div class="tip"><div class="ico">🛗</div><p id="tip2">For clinics/services in Stroger Hospital, Patient/Staff East &amp; West elevators serve floors 1–2 only. For 3rd or 4th floor clinics, all patients must use the Main Elevator.</p></div>
+      <div class="tip"><div class="ico">ℹ️</div><p id="tip3">The Help Desk is in the Main Lobby near the Ogden entrance.</p></div>
       <div class="tip"><div class="ico">🅿️</div><p id="tip4">Came by car? Use the side door from the Parking Garage.</p></div>
       <div class="tip"><div class="ico">📋</div><p id="tip5">For clinics/services in PB 2nd–4th floors, go to the Self Check-in Kiosks on PB 1st Floor before getting on the PB Elevator.</p></div>
     </div>
@@ -234,7 +234,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
         <button class="fmtab f2" id="fmtab-2" onclick="switchFloor('2')">2nd Floor</button>
         <button class="fmtab f3" id="fmtab-3" onclick="switchFloor('3')">3rd Floor</button>
         <button class="fmtab f4" id="fmtab-4" onclick="switchFloor('4')">4th Floor</button>
-        <button class="fmtab" id="fmtab-ll" onclick="switchFloor('ll')" style="background:#5b5b5b;color:#fff;border-color:#333;">Lower Level</button>
+        <button class="fmtab fll" id="fmtab-ll" onclick="switchFloor('ll')">Lower Level</button>
       </div>
       <div class="map-wrap">
         <!-- FLOOR 1 MAP -->
@@ -278,7 +278,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <rect id="rm-clinicF" x="191" y="159" width="52" height="62" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <rect id="rm-clinicE" x="243" y="159" width="46" height="62" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <rect id="rm-clinicD" x="288" y="159" width="54" height="62" fill="#fff" stroke="#999" stroke-width="1.8"/>
-          <rect id="rm-clinicC" x="350" y="182" width="25" height="44" fill="#fff" stroke="#999" stroke-width="1.8"/>
+          <rect id="rm-clinicC" x="340" y="182" width="25" height="44" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <rect id="rm-clinicB" x="376" y="159" width="24" height="67" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <rect id="rm-clinicA" x="399" y="159" width="40" height="67" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <rect id="rm-pharmacy" x="397" y="106" width="41" height="46" fill="#fff" stroke="#999" stroke-width="1.8"/>
@@ -291,7 +291,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <text x="217" y="193" text-anchor="middle" font-family="Nunito" font-size="9.5" font-weight="900" fill="#222">Clinic F</text>
           <text x="265" y="193" text-anchor="middle" font-family="Nunito" font-size="9.5" font-weight="900" fill="#222">Clinic E</text>
           <text x="315" y="193" text-anchor="middle" font-family="Nunito" font-size="9.5" font-weight="900" fill="#222">Clinic D</text>
-          <text x="362" y="207" text-anchor="middle" font-family="Nunito" font-size="9" font-weight="900" fill="#222">Clinic C</text>
+          <text x="352" y="207" text-anchor="middle" font-family="Nunito" font-size="9" font-weight="900" fill="#222">Clinic C</text>
           <text x="388" y="195" text-anchor="middle" font-family="Nunito" font-size="9" font-weight="900" fill="#222">Clinic B</text>
           <text x="419" y="195" text-anchor="middle" font-family="Nunito" font-size="9.5" font-weight="900" fill="#222">Clinic A</text>
           <text x="418" y="132" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="#333">Pharmacy</text>
@@ -302,29 +302,27 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <!-- Main Elevator: crop(266,112) -->
           <rect x="257" y="104" width="20" height="17" rx="3" fill="#cce5ff" stroke="#2255cc" stroke-width="2"/>
           <text x="267" y="115" text-anchor="middle" font-family="Nunito" font-size="6" font-weight="900" fill="#003399">🛗MAIN</text>
-          <!-- P/S West: crop(172,163) -->
-          <rect x="163" y="154" width="18" height="18" rx="3" fill="#d4f4e8" stroke="#007744" stroke-width="2"/>
-          <text x="172" y="162" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#004422">P/S</text>
-          <text x="172" y="169" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#004422">WEST</text>
-          <!-- P/S East: crop(360,163) — near Clinic B/C, patient from garage walks here -->
-          <rect x="351" y="154" width="18" height="18" rx="3" fill="#d4f4e8" stroke="#007744" stroke-width="2"/>
-          <text x="360" y="162" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#004422">P/S</text>
-          <text x="360" y="169" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#004422">EAST</text>
+          <!-- Patient/Staff West: crop(172,163) -->
+          <rect x="158" y="150" width="28" height="22" rx="3" fill="#d4f4e8" stroke="#007744" stroke-width="2"/>
+          <text x="172" y="159" text-anchor="middle" font-family="Nunito" font-size="4.2" font-weight="900" fill="#004422">Patient/</text>
+          <text x="172" y="164" text-anchor="middle" font-family="Nunito" font-size="4.2" font-weight="900" fill="#004422">Staff</text>
+          <text x="172" y="169" text-anchor="middle" font-family="Nunito" font-size="4" font-weight="900" fill="#004422">WEST</text>
+          <!-- Patient/Staff East: between Clinic A and Clinic B (per layout feedback) -->
+          <rect x="390" y="150" width="28" height="22" rx="3" fill="#d4f4e8" stroke="#007744" stroke-width="2"/>
+          <text x="404" y="159" text-anchor="middle" font-family="Nunito" font-size="4.2" font-weight="900" fill="#004422">Patient/</text>
+          <text x="404" y="164" text-anchor="middle" font-family="Nunito" font-size="4.2" font-weight="900" fill="#004422">Staff</text>
+          <text x="404" y="169" text-anchor="middle" font-family="Nunito" font-size="4" font-weight="900" fill="#004422">EAST</text>
           <!-- Service elevator -->
           <rect x="270" y="136" width="16" height="12" rx="2" fill="#e0e0e0" stroke="#888" stroke-width="1"/>
           <text x="278" y="145" text-anchor="middle" font-family="Nunito" font-size="5" fill="#555">SVC</text>
-          <!-- Mostrador de Ayuda -->
-          <rect x="258" y="126" width="14" height="11" rx="2" fill="#fff0cc" stroke="#c8a000" stroke-width="1.5"/>
-          <text x="265" y="134" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#7a5500">Help</text>
+          <!-- Help Desk -->
+          <rect x="255" y="124" width="20" height="13" rx="2" fill="#fff0cc" stroke="#c8a000" stroke-width="1.5"/>
+          <text x="265" y="130" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#7a5500">Help</text>
+          <text x="265" y="136" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#7a5500">Desk</text>
           <!-- Snack Kiosk -->
           <rect x="289" y="137" width="12" height="14" rx="2" fill="#fff4e8" stroke="#cc7700" stroke-width="1.5"/>
           <text x="295" y="147" text-anchor="middle" font-family="Nunito" font-size="6" fill="#884400">🥤</text>
-          <!-- Security -->
-          <rect x="440" y="114" width="22" height="30" rx="2" fill="#f0f4ff" stroke="#4455bb" stroke-width="1.2"/>
-          <text x="451" y="132" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#223388">Security</text>
-          <!-- Med Records -->
-          <rect x="439" y="159" width="33" height="14" rx="2" fill="#f5f5ff" stroke="#6666bb" stroke-width="1.2"/>
-          <text x="456" y="169" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#333388">Med Rec</text>
+
           <!-- ENTRANCE SIGNS -->
           <rect x="150" y="52" width="230" height="22" rx="7" fill="#00786A"/>
           <text x="265" y="68" text-anchor="middle" font-family="Nunito" font-size="10" font-weight="900" fill="white">🚌 OGDEN ST ENTRANCE</text>
@@ -350,16 +348,16 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <polyline id="rt-ogden-clinicF"  class="rpath" stroke="#FF6600" stroke-width="5" points="265,91 265,142 217,142 217,159"/>
           <polyline id="rt-ogden-clinicE"  class="rpath" stroke="#FF6600" stroke-width="5" points="265,91 265,130 310,130 310,142 265,142 265,159"/>
           <polyline id="rt-ogden-clinicD"  class="rpath" stroke="#FF6600" stroke-width="5" points="265,91 265,142 315,142 315,159"/>
-          <polyline id="rt-ogden-clinicC"  class="rpath" stroke="#FF6600" stroke-width="5" points="265,91 265,142 363,142 363,182"/>
-          <polyline id="rt-ogden-clinicB"  class="rpath" stroke="#FF6600" stroke-width="5" points="265,91 265,142 388,142 388,159"/>
+          <polyline id="rt-ogden-clinicC"  class="rpath" stroke="#FF6600" stroke-width="5" points="265,91 265,142 352,142 352,182"/>
+          <polyline id="rt-ogden-clinicB"  class="rpath" stroke="#FF6600" stroke-width="5" points="265,91 265,142 376,142 376,170"/>
           <polyline id="rt-ogden-clinicA"  class="rpath" stroke="#FF6600" stroke-width="5" points="265,91 265,142 419,142 419,159"/>
           <polyline id="rt-ogden-pharmacy" class="rpath" stroke="#FF6600" stroke-width="5" points="265,91 265,142 419,142 419,135"/>
           <polyline id="rt-ogden-giftshop" class="rpath" stroke="#FF6600" stroke-width="5" points="265,91 265,126 310,126"/>
           <polyline id="rt-ogden-er"       class="rpath" stroke="#FF6600" stroke-width="5" points="265,91 265,142 100,142 100,159"/>
           <!-- GARAGE routes: enter (515,142) west along corridor -->
           <polyline id="rt-garage-clinicA"  class="rpath" stroke="#FF6600" stroke-width="5" points="515,142 419,142 419,159"/>
-          <polyline id="rt-garage-clinicB"  class="rpath" stroke="#FF6600" stroke-width="5" points="515,142 388,142 388,159"/>
-          <polyline id="rt-garage-clinicC"  class="rpath" stroke="#FF6600" stroke-width="5" points="515,142 363,142 363,182"/>
+          <polyline id="rt-garage-clinicB"  class="rpath" stroke="#FF6600" stroke-width="5" points="515,142 376,142 376,170"/>
+          <polyline id="rt-garage-clinicC"  class="rpath" stroke="#FF6600" stroke-width="5" points="515,142 352,142 352,182"/>
           <polyline id="rt-garage-clinicD"  class="rpath" stroke="#FF6600" stroke-width="5" points="515,142 315,142 315,159"/>
           <polyline id="rt-garage-clinicE"  class="rpath" stroke="#FF6600" stroke-width="5" points="515,142 265,142 265,159"/>
           <polyline id="rt-garage-clinicF"  class="rpath" stroke="#FF6600" stroke-width="5" points="515,142 217,142 217,159"/>
@@ -373,9 +371,9 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <polyline id="rt-garage-burnTrauma" class="rpath" stroke="#FF6600" stroke-width="5" points="515,142 87,142 87,66"/>
           <!-- ER: from y=156, north to y=88, east to x=26 -->
           <polyline id="rt-er-burnTrauma" class="rpath" stroke="#FF6600" stroke-width="5" points="5,156 5,130 87,130 87,66"/>
-          <!-- Garage → P/S East elevator (for going to 2nd floor) -->
-          <polyline id="rt-garage-pseast"   class="rpath" stroke="#FF6600" stroke-width="5" points="515,142 360,142 360,159"/>
-          <!-- Garage → P/S West elevator (for Lower Level / MRI) -->
+          <!-- Garage → Patient/Staff East elevator (for going to 2nd floor) -->
+          <polyline id="rt-garage-pseast"   class="rpath" stroke="#FF6600" stroke-width="5" points="515,142 404,142 404,154"/>
+          <!-- Garage → Patient/Staff West elevator (for Lower Level / MRI) -->
           <polyline id="rt-garage-pswest"   class="rpath" stroke="#FF6600" stroke-width="5" points="515,142 172,142 172,159"/>
           <!-- Ogden → Main Elevator (for going to upper floors) -->
           <polyline id="rt-ogden-mainelev"  class="rpath" stroke="#FF6600" stroke-width="5" points="265,91 265,112"/>
@@ -383,16 +381,16 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <polyline id="rt-garage-mainelev" class="rpath" stroke="#FF6600" stroke-width="5" points="515,142 295,142 295,130 267,130 267,121"/>
           <!-- ER → Main Elevator (floors 3-4): east through ER corridor → continue east to Chapel at x=220 → turn LEFT (north) at Chapel corner → east along lobby to elevator -->
           <polyline id="rt-er-mainelev"     class="rpath" stroke="#FF6600" stroke-width="5" points="5,156 184,156 184,142 220,142 220,130 267,130 267,121"/>
-          <!-- ER → P/S West elevator (for going to 2nd floor from ER) -->
+          <!-- ER → Patient/Staff West elevator (for going to 2nd floor from ER) -->
           <polyline id="rt-er-pswest"       class="rpath" stroke="#FF6600" stroke-width="5" points="5,156 184,156 184,142 172,142 172,159"/>
-          <!-- Ogden → P/S West elevator (for Lower Level / MRI) -->
+          <!-- Ogden → Patient/Staff West elevator (for Lower Level / MRI) -->
           <polyline id="rt-ogden-pswest"    class="rpath" stroke="#FF6600" stroke-width="5" points="265,91 265,142 172,142 172,159"/>
           <!-- ER routes: east (5,190)→(184,190) then south to y=235 corridor -->
           <polyline id="rt-er-clinicF"      class="rpath" stroke="#FF6600" stroke-width="5" points="5,156 184,156 184,142 217,142 217,159"/>
           <polyline id="rt-er-clinicE"      class="rpath" stroke="#FF6600" stroke-width="5" points="5,156 184,156 184,142 265,142 265,159"/>
           <polyline id="rt-er-clinicD"      class="rpath" stroke="#FF6600" stroke-width="5" points="5,156 184,156 184,142 315,142 315,159"/>
-          <polyline id="rt-er-clinicC"      class="rpath" stroke="#FF6600" stroke-width="5" points="5,156 184,156 184,142 363,142 363,182"/>
-          <polyline id="rt-er-clinicB"      class="rpath" stroke="#FF6600" stroke-width="5" points="5,156 184,156 184,142 388,142 388,159"/>
+          <polyline id="rt-er-clinicC"      class="rpath" stroke="#FF6600" stroke-width="5" points="5,156 184,156 184,142 352,142 352,182"/>
+          <polyline id="rt-er-clinicB"      class="rpath" stroke="#FF6600" stroke-width="5" points="5,156 184,156 184,142 376,142 376,170"/>
           <polyline id="rt-er-clinicA"      class="rpath" stroke="#FF6600" stroke-width="5" points="5,156 184,156 184,142 419,142 419,159"/>
           <polyline id="rt-er-pharmacy"     class="rpath" stroke="#FF6600" stroke-width="5" points="5,156 184,156 184,142 419,142 419,135"/>
           <polyline id="rt-er-giftshop"     class="rpath" stroke="#FF6600" stroke-width="5" points="5,156 184,156 184,142 310,142 310,151"/>
@@ -400,7 +398,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <circle id="mk-clinicF"  class="dring" cx="217" cy="190" r="13"/>
           <circle id="mk-clinicE"  class="dring" cx="265" cy="190" r="13"/>
           <circle id="mk-clinicD"  class="dring" cx="315" cy="190" r="13"/>
-          <circle id="mk-clinicC"  class="dring" cx="363" cy="204" r="13"/>
+          <circle id="mk-clinicC"  class="dring" cx="352" cy="204" r="13"/>
           <circle id="mk-clinicB"  class="dring" cx="388" cy="193" r="13"/>
           <circle id="mk-clinicA"  class="dring" cx="419" cy="193" r="13"/>
           <circle id="mk-pharmacy" class="dring" cx="418" cy="129" r="13"/>
@@ -579,14 +577,15 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <text x="424" y="122" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="#222">Clinic N</text>
           <text x="424" y="132" text-anchor="middle" font-family="Nunito" font-size="6.5" fill="#555">PT / OT</text>
           <text x="424" y="141" text-anchor="middle" font-family="Nunito" font-size="6" fill="#555">Speech</text>
-          <!-- Reception + Main Elev: raw(482,101) -->
-          <rect x="466" y="101" width="50" height="28" fill="#d8f0ec" stroke="#00786A" stroke-width="1.5"/>
-          <text x="491" y="112" text-anchor="middle" font-family="Nunito" font-size="7" font-weight="900" fill="#004d44">2F Reception</text>
-          <rect x="482" y="101" width="18" height="11" rx="2" fill="#cce5ff" stroke="#2255cc" stroke-width="1.5"/>
-          <text x="491" y="109" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#003399">🛗MAIN</text>
+          <!-- Main Elevator — standalone box above reception -->
+          <rect x="481" y="101" width="20" height="14" rx="2" fill="#cce5ff" stroke="#2255cc" stroke-width="1.5"/>
+          <text x="491" y="111" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#003399">🛗MAIN</text>
+          <!-- 2F Reception below elevator -->
+          <rect x="456" y="116" width="70" height="13" rx="2" fill="#d8f0ec" stroke="#00786A" stroke-width="1.2"/>
+          <text x="491" y="125" text-anchor="middle" font-family="Nunito" font-size="6.5" font-weight="900" fill="#004d44">2F Reception</text>
           <rect x="525" y="107" width="65" height="47" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <text x="558" y="128" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="#222">Clinic J</text>
-          <text x="558" y="138" text-anchor="middle" font-family="Nunito" font-size="6.5" fill="#555">Dialysis</text>
+          <text x="558" y="138" text-anchor="middle" font-family="Nunito" font-size="6" fill="#555">Hemo Dialysis</text>
           <rect id="rm2-clinicG" x="617" y="101" width="54" height="53" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <text x="644" y="122" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="#222">Clinic G</text>
           <text x="644" y="132" text-anchor="middle" font-family="Nunito" font-size="6.5" fill="#555">Neurology</text>
@@ -601,21 +600,28 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <text x="491" y="181" text-anchor="middle" font-family="Nunito" font-size="5.5" fill="#555">CT·IR·XR·US</text>
           <rect x="524" y="161" width="59" height="23" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <text x="554" y="176" text-anchor="middle" font-family="Nunito" font-size="7.5" font-weight="900" fill="#222">Clinic L</text>
-          <!-- P/S East elevator on 2nd floor: raw(604,168) — by garage side, right of Clinic J -->
-          <rect x="595" y="159" width="18" height="18" rx="3" fill="#d4f4e8" stroke="#007744" stroke-width="2"/>
-          <text x="604" y="167" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#004422">P/S</text>
+          <!-- Patient/Staff East elevator on 2nd floor -->
+          <rect x="591" y="157" width="26" height="22" rx="3" fill="#d4f4e8" stroke="#007744" stroke-width="2"/>
+          <text x="604" y="164" text-anchor="middle" font-family="Nunito" font-size="4.2" font-weight="900" fill="#004422">Patient/</text>
+          <text x="604" y="169" text-anchor="middle" font-family="Nunito" font-size="4.2" font-weight="900" fill="#004422">Staff E</text>
           <text x="604" y="174" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#004422">EAST</text>
-          <!-- P/S East label badge -->
+          <!-- Patient/Staff East label badge -->
           <rect x="580" y="177" width="48" height="9" rx="2" fill="#007744" opacity=".85"/>
           <text x="604" y="184" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="white">From Garage</text>
-          <!-- P/S West elevator on 2nd floor: raw(379,168) — left of PT/OT area -->
-          <rect x="370" y="159" width="18" height="18" rx="3" fill="#d4f4e8" stroke="#007744" stroke-width="2"/>
-          <text x="379" y="167" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#004422">P/S</text>
+          <!-- Patient/Staff West elevator on 2nd floor -->
+          <rect x="366" y="157" width="26" height="22" rx="3" fill="#d4f4e8" stroke="#007744" stroke-width="2"/>
+          <text x="379" y="164" text-anchor="middle" font-family="Nunito" font-size="4.2" font-weight="900" fill="#004422">Patient/</text>
+          <text x="379" y="169" text-anchor="middle" font-family="Nunito" font-size="4.2" font-weight="900" fill="#004422">Staff W</text>
           <text x="379" y="174" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#004422">WEST</text>
           <!-- Bottom row (y=190-245): Clinic V, Nuclear Med, HIS Mostrador de Ayuda, Interv. Rad, Obs, X-Ray, Mammo, Clinic I -->
-          <rect id="rm2-clinicV" x="279" y="190" width="39" height="36" fill="#fff" stroke="#999" stroke-width="1.8"/>
-          <text x="298" y="205" text-anchor="middle" font-family="Nunito" font-size="7" font-weight="900" fill="#222">Clinic V</text>
-          <text x="298" y="214" text-anchor="middle" font-family="Nunito" font-size="5.5" fill="#555">Cardio Test</text>
+          <!-- Clinic U: EKG — in old Clinic V position -->
+          <rect id="rm2-clinicU" x="279" y="190" width="39" height="36" fill="#fff" stroke="#999" stroke-width="1.8"/>
+          <text x="298" y="203" text-anchor="middle" font-family="Nunito" font-size="7" font-weight="900" fill="#222">Clinic U</text>
+          <text x="298" y="213" text-anchor="middle" font-family="Nunito" font-size="5" fill="#555">EKG</text>
+          <!-- Clinic Q: Audiology + Peritoneal Dialysis — IN corridor band, directly left of Patient/Staff West elevator -->
+          <rect id="rm2-clinicQ" x="334" y="157" width="32" height="22" rx="2" fill="#fff" stroke="#007744" stroke-width="1.8"/>
+          <text x="350" y="166" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#222">Clinic Q</text>
+          <text x="350" y="174" text-anchor="middle" font-family="Nunito" font-size="3.8" fill="#555">Audio/PD</text>
           <rect x="319" y="192" width="53" height="53" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <text x="346" y="210" text-anchor="middle" font-family="Nunito" font-size="7" font-weight="900" fill="#222">Clinic P</text>
           <text x="346" y="222" text-anchor="middle" font-family="Nunito" font-size="7" font-weight="900" fill="#222">Medicine</text>
@@ -633,26 +639,35 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <rect id="rm2-clinicI" x="619" y="190" width="53" height="55" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <text x="645" y="213" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="#222">Clinic I</text>
           <text x="645" y="222" text-anchor="middle" font-family="Nunito" font-size="6.5" fill="#555">Orthopedics</text>
-          <!-- Left area: Respiratory Therapy + Sleep Lab -->
-          <rect id="rm2-respiratoryTherapy" x="266" y="100" width="28" height="38" rx="2" fill="#fff" stroke="#999" stroke-width="1.5"/>
-          <text x="280" y="113" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#222">Resp.</text>
-          <text x="280" y="122" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#222">Therapy</text>
-          <rect id="rm2-sleepLab" x="266" y="138" width="28" height="30" rx="2" fill="#fff" stroke="#999" stroke-width="1.5"/>
-          <text x="280" y="149" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#222">Sleep</text>
-          <text x="280" y="159" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#222">Lab</text>
-          <!-- Neuro Testing: narrow strip at far west, y=168-218 -->
-          <rect id="rm2-neuroTesting" x="266" y="168" width="20" height="50" rx="2" fill="#fff" stroke="#999" stroke-width="1.5"/>
-          <text x="276" y="185" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#222">Neuro</text>
-          <text x="276" y="194" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#222">Testing</text>
+          <!-- Clinic T: Respiratory Therapy + Pulmonary Rehab + Sleep Lab -->
+          <rect id="rm2-clinicT" x="266" y="100" width="28" height="68" rx="2" fill="#fff" stroke="#999" stroke-width="1.5"/>
+          <text x="280" y="115" text-anchor="middle" font-family="Nunito" font-size="6.5" font-weight="900" fill="#222">Clinic T</text>
+          <text x="280" y="125" text-anchor="middle" font-family="Nunito" font-size="4" fill="#555">Pulm.</text>
+          <text x="280" y="132" text-anchor="middle" font-family="Nunito" font-size="4" fill="#555">Lab</text>
+          <text x="280" y="140" text-anchor="middle" font-family="Nunito" font-size="4" fill="#555">Resp.</text>
+          <text x="280" y="147" text-anchor="middle" font-family="Nunito" font-size="4" fill="#555">Therapy</text>
+          <text x="280" y="155" text-anchor="middle" font-family="Nunito" font-size="4" fill="#555">Sleep</text>
+          <text x="280" y="162" text-anchor="middle" font-family="Nunito" font-size="4" fill="#555">Lab</text>
+          <!-- Hidden anchors for route targeting (same room as Clinic T) -->
+          <rect id="rm2-respiratoryTherapy" x="266" y="100" width="28" height="68" rx="2" fill="none" stroke="none"/>
+          <rect id="rm2-sleepLab" x="266" y="100" width="28" height="68" rx="2" fill="none" stroke="none"/>
+          <!-- Clinic V (Cardiology Testing) moved here from bottom row -->
+          <rect id="rm2-clinicV" x="266" y="168" width="20" height="50" rx="2" fill="#fff" stroke="#999" stroke-width="1.5"/>
+          <text x="276" y="182" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#222">Clinic V</text>
+          <text x="276" y="191" text-anchor="middle" font-family="Nunito" font-size="4" fill="#555">Cardio-</text>
+          <text x="276" y="199" text-anchor="middle" font-family="Nunito" font-size="4" fill="#555">logy</text>
+          <text x="276" y="207" text-anchor="middle" font-family="Nunito" font-size="4" fill="#555">Testing</text>
+          <!-- Hidden anchor so neuroTesting routes still resolve -->
+          <rect id="rm2-neuroTesting" x="266" y="168" width="20" height="50" rx="2" fill="none" stroke="none"/>
           <!-- Floor label bar -->
           <rect x="266" y="273" width="497" height="16" rx="3" fill="#2563EB" opacity=".9"/>
           <text x="514" y="285" text-anchor="middle" font-family="Nunito" font-size="9" font-weight="900" fill="white">2ND FLOOR — Follow the orange line ↑</text>
           <!--
             2ND FLOOR ROUTES
-            Garage entry: P/S East at raw x=450 → corridor y=168 → to dest
+            Garage entry: Patient/Staff East at raw x=450 → corridor y=168 → to dest
             Ogden/ER entry: Main Elev at raw (491,106) → corridor y=168 → to dest
           -->
-          <!-- Garage (P/S East at 450,163): walk east or west along y=168 -->
+          <!-- Garage (Patient/Staff East at 450,163): walk east or west along y=168 -->
           <polyline id="rt2-garage-clinicG"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 644,168 644,154"/>
           <polyline id="rt2-garage-clinicH"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 694,168"/>
           <polyline id="rt2-garage-clinicI"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 645,168 645,190"/>
@@ -664,7 +679,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <polyline id="rt2-garage-xray"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 543,168 543,190"/>
           <polyline id="rt2-garage-interventionalRad" class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 443,168 443,190"/>
           <polyline id="rt2-garage-clinicP"     class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 346,168 346,192"/>
-          <polyline id="rt2-garage-clinicV"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 298,168 298,190"/>
+          <polyline id="rt2-garage-clinicV"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 276,168 276,182"/>
           <polyline id="rt2-garage-clinicR"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 330,168 330,155"/>
           <polyline id="rt2-garage-clinicN" class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 456,168 456,131"/>
           <!-- Ogden/ER (Main Elev at 491,112): drop to y=168, then walk -->
@@ -679,22 +694,30 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <polyline id="rt2-ogden-xray"            class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 543,172 543,190"/>
           <polyline id="rt2-ogden-interventionalRad" class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 443,172 443,190"/>
           <polyline id="rt2-ogden-clinicP"      class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 346,172 346,192"/>
-          <polyline id="rt2-ogden-clinicV"         class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,168 298,168 298,190"/>
+          <polyline id="rt2-ogden-clinicV"         class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,168 276,168 276,182"/>
           <polyline id="rt2-ogden-clinicR"         class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,172 330,172 330,155"/>
           <polyline id="rt2-ogden-clinicN" class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,131 456,131"/>
+          <!-- Clinic U routes (EKG) — same approach as old Clinic V -->
+          <polyline id="rt2-ogden-clinicU"  class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,168 298,168 298,190"/>
+          <polyline id="rt2-garage-clinicU" class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 298,168 298,190"/>
+          <polyline id="rt2-er-clinicU"     class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 298,168 298,190"/>
+          <!-- Clinic Q routes (Audiology/PD) — approach from corridor y=168 south at x=337 -->
+          <polyline id="rt2-ogden-clinicQ"  class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,157 350,157 350,157"/>
+          <polyline id="rt2-garage-clinicQ" class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 350,168"/>
+          <polyline id="rt2-er-clinicQ"     class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 350,168"/>
           <!-- Neuro Testing routes (far west wall x=273, y=182) -->
           <polyline id="rt2-ogden-neuroTesting"  class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,168 273,168 273,182"/>
           <polyline id="rt2-garage-neuroTesting" class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 273,168 273,182"/>
           <polyline id="rt2-er-neuroTesting"     class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 273,168 273,182"/>
           <!-- Respiratory Therapy routes -->
-          <polyline id="rt2-ogden-respiratoryTherapy"  class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,168 294,168 294,119"/>
-          <polyline id="rt2-garage-respiratoryTherapy" class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 294,168 294,119"/>
-          <polyline id="rt2-er-respiratoryTherapy"     class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 294,168 294,119"/>
+          <polyline id="rt2-ogden-respiratoryTherapy"  class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,168 280,168 280,134"/>
+          <polyline id="rt2-garage-respiratoryTherapy" class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 280,168 280,134"/>
+          <polyline id="rt2-er-respiratoryTherapy"     class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 280,168 280,134"/>
           <!-- Sleep Lab routes -->
-          <polyline id="rt2-ogden-sleepLab"   class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,168 294,168 294,153"/>
-          <polyline id="rt2-garage-sleepLab"  class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 294,168 294,153"/>
-          <polyline id="rt2-er-sleepLab"      class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 294,168 294,153"/>
-          <!-- ER entry routes (from P/S West at 379,168) -->
+          <polyline id="rt2-ogden-sleepLab"   class="rpath" stroke="#FF6600" stroke-width="4.5" points="491,112 491,168 280,168 280,134"/>
+          <polyline id="rt2-garage-sleepLab"  class="rpath" stroke="#FF6600" stroke-width="4.5" points="604,168 280,168 280,134"/>
+          <polyline id="rt2-er-sleepLab"      class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 280,168 280,134"/>
+          <!-- ER entry routes (from Patient/Staff West at 379,168) -->
           <polyline id="rt2-er-clinicG"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 644,168 644,154"/>
           <polyline id="rt2-er-clinicH"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 694,168"/>
           <polyline id="rt2-er-clinicI"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 645,168 645,190"/>
@@ -703,7 +726,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <polyline id="rt2-er-ctScan"            class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 428,168"/>
           <polyline id="rt2-er-clinicL"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 554,168"/>
           <polyline id="rt2-er-clinicR"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 330,168 330,155"/>
-          <polyline id="rt2-er-clinicV"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 298,168 298,190"/>
+          <polyline id="rt2-er-clinicV"           class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 276,168 276,182"/>
           <polyline id="rt2-er-clinicN"   class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 456,168 456,131"/>
           <polyline id="rt2-er-clinicP"        class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 346,168 346,192"/>
           <polyline id="rt2-er-clinicK"       class="rpath" stroke="#FF6600" stroke-width="4.5" points="379,168 598,168 598,190"/>
@@ -720,19 +743,21 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <circle id="mk2-xray"             class="dring" cx="543" cy="208" r="12"/>
           <circle id="mk2-interventionalRad" class="dring" cx="443" cy="208" r="12"/>
           <circle id="mk2-clinicP"       class="dring" cx="346" cy="218" r="12"/>
-          <circle id="mk2-clinicV"          class="dring" cx="298" cy="208" r="12"/>
+          <circle id="mk2-clinicU"  class="dring" cx="298" cy="208" r="12"/>
+          <circle id="mk2-clinicQ"  class="dring" cx="350" cy="168" r="10"/>
+          <!-- mk2-clinicV now at new west position -->
           <circle id="mk2-clinicR"          class="dring" cx="330" cy="127" r="12"/>
           <circle id="mk2-clinicN"  class="dring" cx="424" cy="130" r="12"/>
-          <circle id="mk2-respiratoryTherapy" class="dring" cx="280" cy="119" r="10"/>
-          <circle id="mk2-sleepLab"           class="dring" cx="280" cy="153" r="10"/>
-          <circle id="mk2-clinicV"             class="dring" cx="298" cy="208" r="13"/>
-          <circle id="mk2-neuroTesting"        class="dring" cx="276" cy="193" r="11"/>
+          <circle id="mk2-respiratoryTherapy" class="dring" cx="280" cy="134" r="10"/>
+          <circle id="mk2-sleepLab"           class="dring" cx="280" cy="134" r="10"/>
+          <circle id="mk2-clinicV"             class="dring" cx="276" cy="193" r="11"/>
+          <circle id="mk2-neuroTesting"        class="dring" cx="276" cy="193" r="11"/><!-- neuroTesting now in Clinic V area -->
           <!-- YOU ARE HERE pins on 2F -->
           <g id="yah2-garage" class="yah">
             <circle cx="604" cy="152" r="8" fill="#F2A900" stroke="white" stroke-width="2"/>
             <text x="604" y="156" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="#5a3d00">★</text>
             <rect x="566" y="161" width="76" height="10" rx="3" fill="rgba(160,110,0,.85)"/>
-            <text x="604" y="169" text-anchor="middle" font-family="Nunito" font-size="6.5" font-weight="900" fill="white">YOU ARE HERE (P/S East)</text>
+            <text x="604" y="169" text-anchor="middle" font-family="Nunito" font-size="6.5" font-weight="900" fill="white">YOU ARE HERE (Patient/Staff East)</text>
           </g>
           <g id="yah2-ogden" class="yah">
             <circle cx="491" cy="106" r="8" fill="#00786A" stroke="white" stroke-width="2"/>
@@ -744,7 +769,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
             <circle cx="379" cy="159" r="8" fill="#C0392B" stroke="white" stroke-width="2"/>
             <text x="379" y="163" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="white">★</text>
             <rect x="340" y="168" width="78" height="10" rx="3" fill="rgba(140,30,20,.85)"/>
-            <text x="379" y="176" text-anchor="middle" font-family="Nunito" font-size="6.5" font-weight="900" fill="white">YOU ARE HERE (P/S West)</text>
+            <text x="379" y="176" text-anchor="middle" font-family="Nunito" font-size="6.5" font-weight="900" fill="white">YOU ARE HERE (Patient/Staff West)</text>
           </g>
         </svg>
         </div><!-- /fmp-2 -->
@@ -797,17 +822,19 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <text x="605" y="135" text-anchor="middle" font-family="Nunito" font-size="7.5" font-weight="900" fill="#222">SICU</text>
           <text x="605" y="145" text-anchor="middle" font-family="Nunito" font-size="6" fill="#555">Surgical ICU</text>
 
-          <!-- ══ P/S ELEVATORS IN CORRIDOR — same style as 2F ══ -->
+          <!-- ══ PATIENT/STAFF ELEVATORS IN CORRIDOR — same style as 2F ══ -->
 
-          <!-- P/S West: ctr(385,174) -->
-          <rect x="376" y="159" width="18" height="18" rx="3" fill="#d4f4e8" stroke="#007744" stroke-width="2"/>
-          <text x="385" y="167" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#004422">P/S</text>
-          <text x="385" y="174" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#004422">WEST</text>
+          <!-- Patient/Staff West: ctr(385,174) -->
+          <rect x="372" y="157" width="26" height="22" rx="3" fill="#d4f4e8" stroke="#007744" stroke-width="2"/>
+          <text x="385" y="164" text-anchor="middle" font-family="Nunito" font-size="4.2" font-weight="900" fill="#004422">Patient/</text>
+          <text x="385" y="169" text-anchor="middle" font-family="Nunito" font-size="4.2" font-weight="900" fill="#004422">Staff</text>
+          <text x="385" y="174" text-anchor="middle" font-family="Nunito" font-size="4" font-weight="900" fill="#004422">WEST</text>
 
-          <!-- P/S East: ctr(572,174) -->
-          <rect x="563" y="159" width="18" height="18" rx="3" fill="#d4f4e8" stroke="#007744" stroke-width="2"/>
-          <text x="572" y="167" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#004422">P/S</text>
-          <text x="572" y="174" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#004422">EAST</text>
+          <!-- Patient/Staff East: ctr(572,174) -->
+          <rect x="559" y="157" width="26" height="22" rx="3" fill="#d4f4e8" stroke="#007744" stroke-width="2"/>
+          <text x="572" y="164" text-anchor="middle" font-family="Nunito" font-size="4.2" font-weight="900" fill="#004422">Patient/</text>
+          <text x="572" y="169" text-anchor="middle" font-family="Nunito" font-size="4.2" font-weight="900" fill="#004422">Staff</text>
+          <text x="572" y="174" text-anchor="middle" font-family="Nunito" font-size="4" font-weight="900" fill="#004422">EAST</text>
 
           <!-- ══ LOWER ROW ROOMS (y=170+) ══ -->
 
@@ -864,6 +891,8 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <!-- BICU: east to corridor, east to BICU north face -->
           <polyline id="rt3-bicu"             class="rpath" stroke="#FF6600" stroke-width="4" points="478,128 478,162 605,162 605,194"/>
 
+          <!-- NICU route: south to corridor, east to x=554 -->
+          <polyline id="rt4-nicu" class="rpath" stroke="#FF6600" stroke-width="4" points="465,121 465,177 554,177 554,187"/>
           <!-- ══ DESTINATION RINGS ══ -->
           <circle id="mk3-cardiacCathLab"  class="dring" cx="422" cy="140" r="12"/>
           <circle id="mk3-sameDaySurgery"  class="dring" cx="420" cy="188" r="15"/>
@@ -896,7 +925,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <!-- ══ IMCU 4900: far west, spans corridor (y=122 to y=217) ══ -->
           <rect x="277" y="122" width="45" height="95" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <text x="299" y="163" text-anchor="middle" font-family="Nunito" font-size="6.5" font-weight="900" fill="#222">IMCU</text>
-          <text x="299" y="173" text-anchor="middle" font-family="Nunito" font-size="6.5" font-weight="900" fill="#222">4900</text>
+          <text x="299" y="173" text-anchor="middle" font-family="Nunito" font-size="6.5" font-weight="900" fill="#222">4800</text>
 
           <!-- ══ NORTH SIDE (above corridor, y=108-167) ══ -->
 
@@ -934,16 +963,17 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
 
           <!-- Women's Health -->
           <rect id="rm4-womensHealth" x="578" y="109" width="46" height="57" fill="#fff" stroke="#999" stroke-width="1.8"/>
-          <text x="601" y="131" text-anchor="middle" font-family="Nunito" font-size="6.5" font-weight="900" fill="#222">Women's</text>
-          <text x="601" y="141" text-anchor="middle" font-family="Nunito" font-size="6.5" font-weight="900" fill="#222">Health</text>
+          <text x="601" y="126" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#222">OB/Prenatal</text>
+          <text x="601" y="135" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#222">Clinic &amp;</text>
+          <text x="601" y="144" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#222">Gynecology</text>
 
           <!-- ══ CORRIDOR ELEMENTS ══ -->
 
-          <!-- P/S West Elevator -->
+          <!-- Patient/Staff West Elevator -->
           <rect x="380" y="182" width="14" height="5" rx="1" fill="#d4f4e8" stroke="#007744" stroke-width="1.5"/>
           <text x="387" y="186" text-anchor="middle" font-family="Nunito" font-size="4" font-weight="900" fill="#004422">P/S W</text>
 
-          <!-- P/S East Elevator -->
+          <!-- Patient/Staff East Elevator -->
           <rect x="558" y="179" width="14" height="5" rx="1" fill="#d4f4e8" stroke="#007744" stroke-width="1.5"/>
           <text x="565" y="183" text-anchor="middle" font-family="Nunito" font-size="4" font-weight="900" fill="#004422">P/S E</text>
 
@@ -952,7 +982,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <!-- IMCU 4800 -->
           <rect id="rm4-imcu4800" x="322" y="187" width="46" height="58" fill="#fff" stroke="#999" stroke-width="1.8"/>
           <text x="345" y="211" text-anchor="middle" font-family="Nunito" font-size="6" font-weight="900" fill="#222">IMCU</text>
-          <text x="345" y="221" text-anchor="middle" font-family="Nunito" font-size="6" font-weight="900" fill="#222">4800</text>
+          <text x="345" y="221" text-anchor="middle" font-family="Nunito" font-size="6" font-weight="900" fill="#222">4900</text>
 
           <!-- Nursery -->
           <rect x="412" y="187" width="62" height="58" fill="#fff" stroke="#999" stroke-width="1.8"/>
@@ -963,9 +993,15 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <text x="502" y="211" text-anchor="middle" font-family="Nunito" font-size="6.5" font-weight="900" fill="#222">Labor &amp;</text>
           <text x="502" y="221" text-anchor="middle" font-family="Nunito" font-size="6.5" font-weight="900" fill="#222">Delivery</text>
 
+
+          <!-- NICU: east of Labor & Delivery -->
+          <rect id="rm4-nicu-room" x="530" y="187" width="48" height="58" fill="#fff" stroke="#999" stroke-width="1.8"/>
+          <text x="554" y="211" text-anchor="middle" font-family="Nunito" font-size="7" font-weight="900" fill="#222">NICU</text>
+          <text x="554" y="221" text-anchor="middle" font-family="Nunito" font-size="5" fill="#555">Neonatal ICU</text>
           <!-- 4800 room (across from Women's Health, adjacent to Burn Step Down) -->
           <rect id="rm4-room4800" x="578" y="187" width="46" height="57" fill="#fff" stroke="#999" stroke-width="1.8"/>
-          <text x="601" y="217" text-anchor="middle" font-family="Nunito" font-size="6.5" font-weight="900" fill="#222">4800</text>
+          <text x="601" y="210" text-anchor="middle" font-family="Nunito" font-size="5.5" font-weight="900" fill="#222">OB/Gyne</text>
+          <text x="601" y="220" text-anchor="middle" font-family="Nunito" font-size="5" fill="#555">4800</text>
 
           <!-- Burn Step Down: bridges corridor, adjacent to Women's Health east, faces IMCU 4900 south -->
           <rect id="rm4-burnStepDown" x="624" y="135" width="45" height="109" fill="#fff" stroke="#999" stroke-width="1.8"/>
@@ -999,6 +1035,8 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <!-- Labor & Delivery (Same Day Surgery pattern): south to corridor, east, arrive at north face y=187 -->
           <polyline id="rt4-laborDelivery"   class="rpath" stroke="#FF6600" stroke-width="4" points="465,121 465,177 502,177 502,187"/>
 
+          <!-- NICU route: south to corridor, east to x=554 -->
+          <polyline id="rt4-nicu-b" class="rpath" stroke="#FF6600" stroke-width="4" points="465,121 465,177 554,177 554,187"/>
           <!-- ══ DESTINATION RINGS ══ -->
           <circle id="mk4-pediatricClinic" class="dring" cx="540" cy="136" r="13"/>
           <circle id="mk4-picu"            class="dring" cx="431" cy="137" r="12"/>
@@ -1010,6 +1048,7 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
           <circle id="mk4-imcu4800"        class="dring" cx="345" cy="187" r="12"/>
           <circle id="mk4-nursery"         class="dring" cx="443" cy="187" r="12"/>
           <circle id="mk4-laborDelivery"   class="dring" cx="502" cy="187" r="12"/>
+          <circle id="mk4-nicu"           class="dring" cx="554" cy="187" r="12"/>
 
           <!-- YOU ARE HERE -->
           <g id="yah4-all" class="yah">
@@ -1023,34 +1062,65 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
 
         <!-- LOWER LEVEL MAP -->
         <div class="fmp" id="fmp-ll">
-        <svg viewBox="0 0 560 200" xmlns="http://www.w3.org/2000/svg" style="background:#f2f7f6;width:100%;height:auto;display:block;">
+        <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" style="background:#f2f7f6;width:100%;height:auto;display:block;">
           <!-- Building shell -->
-          <rect x="5" y="6" width="550" height="178" rx="5" fill="#edf3f2" stroke="#8aadaa" stroke-width="2"/>
-          <!-- Corridor band (horizontal hallway) -->
-          <rect x="5" y="70" width="550" height="28" fill="#c5e5e0" stroke="none"/>
+          <rect x="5" y="6" width="550" height="204" rx="5" fill="#edf3f2" stroke="#8aadaa" stroke-width="2"/>
+          <!-- Corridor band (horizontal hallway) y=100 to y=128 -->
+          <rect x="5" y="100" width="550" height="28" fill="#c5e5e0" stroke="none"/>
           <!-- Floor label -->
-          <rect x="5" y="184" width="550" height="16" rx="3" fill="#444" opacity=".9"/>
-          <text x="280" y="195" text-anchor="middle" font-family="Nunito" font-size="9" font-weight="900" fill="white">LOWER LEVEL — P/S West Elevator (all entries)</text>
-          <!-- P/S West Elevator — placed center-right area to leave room for MRI on the west/left side -->
-          <rect x="340" y="58" width="28" height="40" rx="3" fill="#d8f0ec" stroke="#00786A" stroke-width="2"/>
-          <text x="354" y="72" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#003399">🛗P/S</text>
-          <text x="354" y="81" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#004d44">WEST</text>
-          <text x="354" y="90" text-anchor="middle" font-family="Nunito" font-size="5" fill="#004d44">LL</text>
-          <!-- Hallway label -->
-          <text x="200" y="88" text-anchor="middle" font-family="Nunito" font-size="7" fill="#005544">← Hallway →</text>
-          <!-- MRI Room — West and South of the elevator -->
-          <rect id="rm-mri" x="120" y="108" width="90" height="70" fill="#fff" stroke="#999" stroke-width="1.8"/>
-          <text x="165" y="140" text-anchor="middle" font-family="Nunito" font-size="11" font-weight="900" fill="#222">MRI</text>
-          <text x="165" y="155" text-anchor="middle" font-family="Nunito" font-size="6.5" fill="#555">Lower Level</text>
-          <!-- YOU ARE HERE pin at P/S West elevator -->
+          <rect x="5" y="204" width="550" height="16" rx="3" fill="#444" opacity=".9"/>
+          <text x="280" y="215" text-anchor="middle" font-family="Nunito" font-size="9" font-weight="900" fill="white">LOWER LEVEL — Patient/Staff West Elevator (all entries)</text>
+
+          <!-- ══ NORTH SECTION (above corridor y=6-100): elevators and Radiation Therapy ══ -->
+
+          <!-- Patient/Staff West Elevator — north section, left area -->
+          <rect x="220" y="55" width="32" height="42" rx="3" fill="#d8f0ec" stroke="#00786A" stroke-width="2"/>
+          <text x="236" y="66" text-anchor="middle" font-family="Nunito" font-size="4.5" font-weight="900" fill="#003399">🛗Patient/</text>
+          <text x="236" y="73" text-anchor="middle" font-family="Nunito" font-size="4.5" font-weight="900" fill="#003399">Staff W</text>
+          <text x="236" y="80" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#004d44">WEST</text>
+          <text x="236" y="89" text-anchor="middle" font-family="Nunito" font-size="5" fill="#004d44">LL</text>
+          <!-- connector line from elevator down to corridor -->
+          <line x1="236" y1="97" x2="236" y2="100" stroke="#00786A" stroke-width="2"/>
+
+          <!-- Radiation Therapy — top section, right of P/S West -->
+          <rect id="rm-ll-radiationTherapy" x="295" y="30" width="80" height="55" fill="#fff" stroke="#999" stroke-width="1.8"/>
+          <text x="335" y="52" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="#222">Radiation</text>
+          <text x="335" y="64" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="#222">Therapy</text>
+          <text x="335" y="76" text-anchor="middle" font-family="Nunito" font-size="5.5" fill="#555">Lower Level</text>
+          <!-- connector line from RT down to corridor -->
+          <line x1="335" y1="85" x2="335" y2="100" stroke="#999" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+          <!-- Main Elevator — top section, right of Radiation Therapy -->
+          <rect x="420" y="35" width="38" height="42" rx="3" fill="#cce5ff" stroke="#2255cc" stroke-width="2"/>
+          <text x="439" y="50" text-anchor="middle" font-family="Nunito" font-size="6" font-weight="900" fill="#003399">🛗MAIN</text>
+          <text x="439" y="59" text-anchor="middle" font-family="Nunito" font-size="5" font-weight="900" fill="#003399">Elevator</text>
+          <text x="439" y="68" text-anchor="middle" font-family="Nunito" font-size="4.5" fill="#003399">Lower</text>
+          <text x="439" y="74" text-anchor="middle" font-family="Nunito" font-size="4.5" fill="#003399">Level</text>
+          <!-- connector line from Main Elevator down to corridor -->
+          <line x1="439" y1="77" x2="439" y2="100" stroke="#2255cc" stroke-width="2" stroke-dasharray="3,2"/>
+
+          <!-- ══ SOUTH SECTION (below corridor y=128-210): MRI ══ -->
+
+          <!-- MRI Room — south side, left area -->
+          <rect id="rm-mri" x="100" y="138" width="100" height="58" fill="#fff" stroke="#999" stroke-width="1.8"/>
+          <text x="150" y="164" text-anchor="middle" font-family="Nunito" font-size="12" font-weight="900" fill="#222">MRI</text>
+          <text x="150" y="178" text-anchor="middle" font-family="Nunito" font-size="6.5" fill="#555">Lower Level</text>
+
+          <!-- YOU ARE HERE pin at Patient/Staff West elevator -->
           <g id="yah-ll-all" class="yah">
-            <circle cx="354" cy="62" r="8" fill="#00786A" stroke="white" stroke-width="2"/>
-            <text x="354" y="66" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="white">★</text>
+            <circle cx="236" cy="59" r="8" fill="#00786A" stroke="white" stroke-width="2"/>
+            <text x="236" y="63" text-anchor="middle" font-family="Nunito" font-size="8" font-weight="900" fill="white">★</text>
           </g>
-          <!-- Orange route: exit elevator → turn RIGHT (west) → walk west along corridor → MRI on left (south) -->
-          <polyline id="rt-ll-mri" class="rpath" stroke="#FF6600" stroke-width="5" points="354,98 354,84 165,84 165,108"/>
-          <!-- Destination ring -->
-          <circle id="mk-ll-mri" class="dring" cx="165" cy="143" r="18"/>
+
+          <!-- Orange routes -->
+          <!-- P/S West → west along corridor → south into MRI -->
+          <polyline id="rt-ll-mri" class="rpath" stroke="#FF6600" stroke-width="5" points="236,97 236,114 150,114 150,138"/>
+          <!-- P/S West → east along corridor → north into Radiation Therapy -->
+          <polyline id="rt-ll-radiationTherapy" class="rpath" stroke="#FF6600" stroke-width="5" points="236,97 236,114 335,114 335,85"/>
+
+          <!-- Destination rings -->
+          <circle id="mk-ll-mri" class="dring" cx="150" cy="167" r="20"/>
+          <circle id="mk-ll-radiationTherapy" class="dring" cx="335" cy="57" r="22"/>
         </svg>
         </div><!-- /fmp-ll -->
       </div><!-- /map-wrap -->
@@ -1080,8 +1150,8 @@ select.sel{width:100%;border:2px solid var(--border);border-radius:var(--rs);pad
   <!-- HELP -->
   <div class="help-sec" id="help-sec">
     <div class="sec-lbl" id="sec-help">NEED HELP?</div>
-    <div class="help-item"><div class="help-ic">ℹ️</div><div><h3 id="help-h1">Mostrador de Ayuda</h3><p id="help-p1">In the Main Lobby, 1st Floor — Staff available 7AM-9PM daily</p></div></div>
-    <div class="help-item"><div class="help-ic">🛗</div><div><h3 id="help-h2">Elevator Guide</h3><p id="help-p2">Main elevator: floors 1-4 (all patients). Patient/Staff East (by garage) and West: floors 1-2 only. For 3rd and 4th floor clinics, all patients — including those entering from the garage or ER — must use the Main Elevator. Service elevators: staff badge required.</p></div></div>
+    <div class="help-item"><div class="help-ic">ℹ️</div><div><h3 id="help-h1">Help Desk</h3><p id="help-p1">In the Main Lobby, 1st Floor — Staff available 7AM-9PM daily</p></div></div>
+    <div class="help-item"><div class="help-ic">🛗</div><div><h3 id="help-h2">Elevator Guide</h3><p id="help-p2">Main elevator: floors 1-4 (all patients). Patient/Staff East (by garage) and Patient/Staff West: floors 1–2 only. For 3rd and 4th floor clinics, all patients — including those entering from the garage or ER — must use the Main Elevator. Service elevators: staff badge required.</p></div></div>
     <div class="help-item"><div class="help-ic">♿</div><div><h3 id="help-h3">Accessibility</h3><p id="help-p3">Wheelchair and assistance: Call (312) 864-6000</p></div></div>
     <div class="help-item"><div class="help-ic">🌐</div><div><h3 id="help-h4">Interpreter Services</h3><p id="help-p4">Interpreters in various languages are available in person, phone, and devices</p></div></div>
     <div class="help-item"><div class="help-ic">🚌</div><div><h3 id="help-h5">Getting Here by CTA</h3><p id="help-p5">Bus 49 (Western) and Bus 20 (Madison) stop nearby. Pink Line: Polk Station.</p></div></div>
@@ -1129,7 +1199,7 @@ var CLINICS=[
  en:{name:'Clinic A',desc:'1st Floor'},es:{name:'Clínica A',desc:'Piso 1'},pl:{name:'Poradnia A',desc:'I piętro'},zh:{name:'A診所',desc:'一樓'},
  steps:{
   ogden:{en:[
-   {a:'Walk through the front doors on Ogden Street.',d:'You will enter the Hospital Main Lobby. The Mostrador de Ayuda is straight ahead.',i:'🚪',lm:'You are in the Main Lobby'},
+   {a:'Walk through the front doors on Ogden Street.',d:'You will enter the Hospital Main Lobby. The Help Desk is straight ahead.',i:'🚪',lm:'You are in the Main Lobby'},
    {a:'Walk through the lobby toward the hallway.',d:'Pass the Snack Kiosk on your right. The Gift Shop will be on your left. Turn LEFT into the hallway heading East.',i:'⬆️',lm:'Snack Kiosk on right, Gift Shop on left — Turn LEFT East'},
    {a:'Walk east along the hallway all the way to the far end.',d:'Pass Clinic F, Clinic E, Clinic D, Clinic C, and Clinic B.',i:'🚶',lm:'Walk east — Clinic A is at the far end'},
    {a:'Clinic A is the last room at the far East end.',d:'Look for the Clinic A - Cardiology sign on the wall.',i:'🏥',lm:'📍 Last room at the far East end'},
@@ -1405,8 +1475,8 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
   var fLblEN=f==='2'?'2nd':f==='3'?'3rd':'4th';
 
   // ── Elevator assignment ──
-  // Garage → P/S East  (floors 1-2 only)
-  // ER     → P/S West  (floors 1-2 only)
+  // Garage → Patient/Staff East  (floors 1-2 only)
+  // ER     → Patient/Staff West  (floors 1-2 only)
   // Ogden  → Main Elevator (all floors)
   // Floors 3-4: everyone uses Main Elevator
   var elvNameEN, elvDescEN, elvChipEN;
@@ -1415,10 +1485,10 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
   if (isF2 && entry==='garage') {
     elvNameEN='Patient/Staff Elevator (East)';
     elvDescEN='Turn LEFT and walk west down the hallway. The P/S EAST elevator is about halfway down, between Clinic B and the Gift Shop area. It goes to floors 1 and 2 only.';
-    elvChipEN='P/S East Elevator - press floor 2';
+    elvChipEN='Patient/Staff East Elevator - press floor 2';
     elvNameES='Elevador Paciente/Personal (Este)';
     elvDescES='Gire a la IZQUIERDA y camina al oeste. El elevador P/S ESTE esta aproximadamente a la mitad del pasillo, entre Clínica B y la Tienda de Regalos. Solo va a pisos 1 y 2.';
-    elvChipES='Elevador Este - presiona piso 2';
+    elvChipES='Elevador Patient/Staff Este - presiona piso 2';
     elvNamePL='Winda Pacjent/Personel (Wschódnia)';
     elvDescPL='Skręcaj W LEWO i idź na zachód. Zielona winda P/S WSCHODNIA jest mniej wiecej w polowie korytarza, miedzy Poradnia B a Sklepem z Upominkami. Jedźie tylko na piętra 1 i 2.';
     elvChipPL='Winda P/S Wschódnia - naciśnij piętro 2';
@@ -1429,14 +1499,14 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
       'Walk east through the ER area into the main hallway. The P/S WEST elevator is on your right just before you reach Clinic F. It goes to floors 1 and 2 only.';
     elvChipEN=(entry==='polk'||entry==='damen')?
       'Walk North → turn LEFT — Get on Patient/Staff Elevator West — Press 2':
-      'P/S West Elevator - press floor 2';
+      'Patient/Staff West Elevator - press floor 2';
     elvNameES='Elevador Paciente/Personal (Oeste)';
     elvDescES=(entry==='polk'||entry==='damen')?
       'Camina al Norte por el pasillo del Edificio Profesional. Al final del pasillo, gira a la IZQUIERDA y sube al Elevador Paciente/Personal Oeste.':
       'Camine hacia el este por urgencias al pasillo principal. El elevador P/S OESTE está a tu derecha justo antes de llegar a Clínica F. Solo va a pisos 1 y 2.';
     elvChipES=(entry==='polk'||entry==='damen')?
-      'Camina Norte → gira IZQUIERDA — Sube al Elevador Oeste — Presiona 2':
-      'Elevador Oeste - presiona piso 2';
+      'Camina Norte → gira IZQUIERDA — Sube al Elevador Patient/Staff Oeste — Presiona 2':
+      'Elevador Patient/Staff Oeste - presiona piso 2';
     elvNamePL='Winda Pacjent/Personel (Zachodnia)';
     elvDescPL=(entry==='polk'||entry==='damen')?
       'Idź na Północ przez korytarz Budynku Profesjonalnego. Na końcu korytarza skręcaj W LEWO i wejdz do Windy Pacjent/Personel Zachodnia.':
@@ -1457,7 +1527,7 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
   }
 
   // ── Position-aware turn directions for 2nd floor ──
-  // Raw SVG x-positions: Main Elev=491, P/S East=604, P/S West=379
+  // Raw SVG x-positions: Main Elev=491, Patient/Staff East=604, Patient/Staff West=379
   // Destinations further right need a right turn, further left need a left turn
   var DEST_X={clinicG:644,clinicH:694,clinicI:645,clinicJ:558,clinicM:491,
               clinicK:597,clinicP:346,clinicR:330,clinicV:298,clinicN:424,clinicL:554};
@@ -1499,8 +1569,8 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     var roomLabelES = nameES;
     var roomLabelPL = namePL;
     if (entry==='garage') {
-      navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk past Mammography, then past the Patient/Staff Elevator West, then past Clinic R. '+nameEN+' is on your right.',i:'↩️',lm:'Turn LEFT West — pass P/S West, Clinic R — '+nameEN+' on right'};
-      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Pase Mamografía, luego el Elevador Oeste, luego Clínica R. '+nameES+' está a tu derecha.',i:'↩️',lm:'IZQUIERDA al Oeste — pasa P/S Oeste, Clínica R — '+nameES+' a la derecha'};
+      navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk past Mammography, then past the Patient/Staff Elevator West, then past Clinic R. '+nameEN+' is on your right.',i:'↩️',lm:'Turn LEFT West — pass Patient/Staff West, Clinic R — '+nameEN+' on right'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Pase Mamografía, luego el Elevador Patient/Staff Oeste, luego Clínica R. '+nameES+' está a tu derecha.',i:'↩️',lm:'IZQUIERDA al Oeste — pasa P/S Oeste, Clínica R — '+nameES+' a la derecha'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Miń mammografię, potem windą P/S Zachodnia, potem Poradnię R. '+namePL+' jest po twojej prawej stronie.',i:'↩️',lm:'LEWO na Zachód — miń P/S Zachodnia, Poradnię R — '+namePL+' po prawej'};
     } else if (entry==='er'||entry==='polk'||entry==='damen') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk west past Clinic R. '+nameEN+' is on your right, just past Clinic R.',i:'↩️',lm:'Turn LEFT West — past Clinic R — '+nameEN+' on your right'};
@@ -1509,29 +1579,29 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     } else {
       // Ogden — Main Elevator, exits South → turn RIGHT (west)
       navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn RIGHT at the hallway.',d:'Walk West down the hallway. Walk past the Patient/Staff Elevator West, then past Clinic R. '+nameEN+' is on your right.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT West — past Clinic R — '+nameEN+' on right'};
-      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Camina al Oeste. Pase el Elevador Oeste, luego Clínica R. '+nameES+' está a tu derecha.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — pasa Clínica R — '+nameES+' a tu derecha'};
+      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Camina al Oeste. Pase el Elevador Patient/Staff Oeste, luego Clínica R. '+nameES+' está a tu derecha.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — pasa Clínica R — '+nameES+' a tu derecha'};
       navStepPL={a:'Wyjdź z windy, miń recepcję, potem skręcaj W PRAWO na korytarzu.',d:'Idź na Zachód korytarzem. Miń windą P/S Zachodnia, potem Poradnię R. '+namePL+' jest po twojej prawej stronie.',i:'↪️',lm:'Miń Recepcje — PRAWO na Zachód — miń Poradnię R — '+namePL+' po prawej'};
     }
   } else if (isF2 && destId==='clinicV') {
-    // Clinic V: south of corridor, past Clinic R on right, Clinic V on your left
+    // Clinic V: now at far west (moved from bottom row to neuroTesting position)
     if (entry==='garage') {
-      navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk past Mammography, then past the Patient/Staff Elevator West, then past Clinic R on your right. Clinic V is on your left.',i:'↩️',lm:'Turn LEFT West — Clinic R on right — Clinic V on your left'};
-      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Pase Mamografía, luego el Elevador Oeste, luego Clínica R a tu derecha. Clínica V está a tu izquierda.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a la derecha — Clínica V a la izquierda'};
+      navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk all the way west past Clinic R, then past Clinic U, then past Clinic Q. Clinic V is at the far west end of the hallway.',i:'↩️',lm:'Turn LEFT West — walk to far west end — Clinic V on your left'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Pase Mamografía, luego el Elevador Patient/Staff Oeste, luego Clínica R a tu derecha. Clínica V está a tu izquierda.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a la derecha — Clínica V a la izquierda'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Miń mammografię, windą P/S Zachodnia, potem Poradnię R po prawej. Poradnia kardiologiczna (V) jest po twojej lewej stronie.',i:'↩️',lm:'LEWO na Zachód — Pracownia R po prawej — Poradnia kardiologiczna (V) po lewej'};
     } else if (entry==='er'||entry==='polk'||entry==='damen') {
-      navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk west past Clinic R on your right. Clinic V is on your left just past Clinic R.',i:'↩️',lm:'Turn LEFT West — Clinic R on right — Clinic V on your left'};
+      navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk west past Clinic R, Clinic U, and Clinic Q. Clinic V is at the far west end.',i:'↩️',lm:'Turn LEFT West — far west end — Clinic V'};
       navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Camine hacia el oeste pasando Clínica R a tu derecha. Clínica V está a tu izquierda justo después de Clínica R.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a la derecha — Clínica V a la izquierda'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód.',d:'Idź na zachód, mijając Poradnię R po prawej. Poradnia kardiologiczna (V) jest po twojej lewej stronie tuż za pracownią R.',i:'↩️',lm:'LEWO na Zachód — Pracownia R po prawej — Poradnia kardiologiczna (V) po lewej'};
     } else {
-      navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn RIGHT at the hallway.',d:'Walk West. Pass the Patient/Staff Elevator West, then Clinic R on your right. Clinic V is on your left.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT West — Clinic V on your left'};
-      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Camina al Oeste. Pase el Elevador Oeste, luego Clínica R a tu derecha. Clínica V está a tu izquierda.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — Clínica V a tu izquierda'};
+      navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn RIGHT at the hallway.',d:'Walk West all the way past Clinic R, Clinic U, and Clinic Q. Clinic V is at the far west end.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT West — Clinic V at far end'};
+      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Camina al Oeste. Pase el Elevador Patient/Staff Oeste, luego Clínica R a tu derecha. Clínica V está a tu izquierda.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — Clínica V a tu izquierda'};
       navStepPL={a:'Wyjdź z windy, miń recepcję, potem skręcaj W PRAWO na korytarzu.',d:'Idź na Zachód. Miń windą P/S Zachodnia, potem Poradnię R po prawej. Poradnia kardiologiczna (V) jest po twojej lewej stronie.',i:'↪️',lm:'Miń Recepcje — PRAWO na Zachód — Poradnia kardiologiczna (V) po lewej'};
     }
   } else if (isF2 && destId==='neuroTesting') {
     // Neuro Testing: far west wall, past Clinic V (south) and Sleep Lab (north)
     if (entry==='garage') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk past Mammography, the Patient/Staff Elevator West, and Clinic R on your right. Pass Clinic V on your left. Neuro Testing is at the very far end of the hallway on your left.',i:'↩️',lm:'Turn LEFT West — pass Clinic R, Clinic V — Neuro Testing at far end'};
-      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Pase Mamografía, el Elevador Oeste y Clínica R a tu derecha. Pase la Clínica V a tu izquierda. Neurología de Pruebas está al extremo oeste del pasillo a tu izquierda.',i:'↩️',lm:'IZQUIERDA al Oeste — pasa Clínica R, Clínica V — Neuro Testing al final'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Pase Mamografía, el Elevador Patient/Staff Oeste y Clínica R a tu derecha. Pase la Clínica V a tu izquierda. Neurología de Pruebas está al extremo oeste del pasillo a tu izquierda.',i:'↩️',lm:'IZQUIERDA al Oeste — pasa Clínica R, Clínica V — Neuro Testing al final'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Miń mammografię, windę P/S Zachodnia i Poradnię R po prawej. Miń Poradnię V po lewej. Badania Neurologiczne są na samym końcu korytarza po lewej.',i:'↩️',lm:'LEWO na Zachód — miń Poradnię R, Poradnię V — Neuro Testing na końcu'};
     } else if (entry==='er'||entry==='polk'||entry==='damen') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'Walk west past Clinic R on your right, then past Clinic V on your left. Neuro Testing is at the very far end of the hallway.',i:'↩️',lm:'Turn LEFT West — Clinic R right, Clinic V left — Neuro Testing at far end'};
@@ -1539,23 +1609,23 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód.',d:'Miń Poradnię R po prawej, potem Poradnię V po lewej. Badania Neurologiczne są na samym końcu korytarza.',i:'↩️',lm:'LEWO na Zachód — Pracownia R po prawej, poradnia kardiologiczna (V) po lewej — Neuro Testing na końcu'};
     } else {
       navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn RIGHT at the hallway.',d:'Walk West. Pass the Patient/Staff Elevator West, then Clinic R on your right, then Clinic V on your left. Neuro Testing is at the very far end of the hallway.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT West — Neuro Testing at far end'};
-      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Camina al Oeste. Pase el Elevador Oeste, Clínica R a tu derecha, Clínica V a tu izquierda. Neurología de Pruebas está al extremo oeste.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — Neuro Testing al final'};
+      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Camina al Oeste. Pase el Elevador Patient/Staff Oeste, Clínica R a tu derecha, Clínica V a tu izquierda. Neurología de Pruebas está al extremo oeste.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — Neuro Testing al final'};
       navStepPL={a:'Wyjdź z windy, miń recepcję, potem skręcaj W PRAWO na korytarzu.',d:'Idź na Zachód. Miń windą P/S Zachodnia, Poradnię R po prawej, Poradnię V po lewej. Badania Neurologiczne są na samym końcu korytarza.',i:'↪️',lm:'Miń Recepcje — PRAWO na Zachód — Neuro Testing na końcu'};
     }
   } else if (isF2 && destId==='clinicR') {
-    // Clinic R: from all entries, "Walk past P/S West elevator, Clinic R is on your right"
+    // Clinic R: from all entries, "Walk past Patient/Staff West elevator, Clinic R is on your right"
     if (entry==='garage') {
-      navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Walk past Mammography, then past the Patient/Staff Elevator West. Clinic R is on your right.',i:'↩️',lm:'Turn LEFT West — Clinic R on your right past P/S West'};
-      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pase Mamografía y luego el Elevador Oeste. Clínica R está a tu derecha.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a la derecha, pasando P/S Oeste'};
+      navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Walk past Mammography, then past the Patient/Staff Elevator West. Clinic R is on your right.',i:'↩️',lm:'Turn LEFT West — Clinic R on your right past Patient/Staff West'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pase Mamografía y luego el Elevador Patient/Staff Oeste. Clínica R está a tu derecha.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a la derecha, pasando P/S Oeste'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Teraz idziesz na Zachód. Miń mammografię, potem windą P/S Zachodnia. Pracownia endoskopowa (R) jest po twojej prawej stronie.',i:'↩️',lm:'LEWO na Zachód — Pracownia R po prawej za windą P/S Zachodnia'};
     } else if (entry==='er'||entry==='polk'||entry==='damen') {
-      navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Clinic R is on your right just past the P/S West elevator.',i:'↩️',lm:'Turn LEFT West — Clinic R on your right'};
-      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Ahora vas hacia el Oeste. Clínica R está a tu derecha, justo después del Elevador Oeste.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a tu derecha'};
+      navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Clinic R is on your right just past the Patient/Staff West elevator.',i:'↩️',lm:'Turn LEFT West — Clinic R on your right'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Ahora vas hacia el Oeste. Clínica R está a tu derecha, justo después del Elevador Patient/Staff Oeste.',i:'↩️',lm:'IZQUIERDA al Oeste — Clínica R a tu derecha'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód.',d:'Teraz idziesz na Zachód. Pracownia endoskopowa (R) jest po twojej prawej stronie, tuż za Winda P/S Zachodnia.',i:'↩️',lm:'LEWO na Zachód — Pracownia R po prawej'};
     } else {
       // Ogden — Main Elevator, exits facing South → turn RIGHT (west)
       navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn RIGHT at the hallway.',d:'Walk West down the hallway. Walk past the Patient/Staff Elevator West. Clinic R is on your right.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT West — Clinic R on your right'};
-      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Camina al Oeste por el pasillo. Pase el Elevador Oeste. Clínica R está a tu derecha.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — Clínica R a tu derecha'};
+      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Camina al Oeste por el pasillo. Pase el Elevador Patient/Staff Oeste. Clínica R está a tu derecha.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — Clínica R a tu derecha'};
       navStepPL={a:'Wyjdź z windy, miń recepcję, potem skręcaj W PRAWO na korytarzu.',d:'Idź na Zachód korytarzem. Miń windą P/S Zachodnia. Pracownia endoskopowa (R) jest po twojej prawej stronie.',i:'↪️',lm:'Miń Recepcje — PRAWO na Zachód — Pracownia R po prawej'};
     }
   } else if (isF2 && destId==='clinicM') {
@@ -1588,22 +1658,22 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     }
   } else if (isF2 && destId==='clinicP') {
     if (entry==='garage') {
-      navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Walk past Clinic M, CT Scan, and Patient/Staff Elevator West. Clinic P - Nuclear Medicine is on your left.',i:'↩️',lm:'Turn LEFT West — past Clinic M, CT Scan, P/S West — Clinic P on your left'};
-      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pase la Clínica M, CT Scan y el Elevador Oeste. Clínica P - Medicina Nuclear está a tu izquierda.',i:'↩️',lm:'Gira IZQUIERDA — pasa Clínica M, CT Scan, P/S Oeste — Clínica P a tu izquierda'};
+      navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Walk past Clinic M, CT Scan, and Patient/Staff Elevator West. Clinic P - Nuclear Medicine is on your left.',i:'↩️',lm:'Turn LEFT West — past Clinic M, CT Scan, Patient/Staff West — Clinic P on your left'};
+      navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste por el pasillo.',d:'Ahora vas hacia el Oeste. Pase la Clínica M, CT Scan y el Elevador Patient/Staff Oeste. Clínica P - Medicina Nuclear está a tu izquierda.',i:'↩️',lm:'Gira IZQUIERDA — pasa Clínica M, CT Scan, P/S Oeste — Clínica P a tu izquierda'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Teraz idziesz na Zachód. Miń Poradnię M, CT Scan i windą P/S Zachodnia. Medycyna nuklearna (P) jest po twojej lewej stronie.',i:'↩️',lm:'Skręcaj LEWO — miń poradnię M, CT Scan, P/S Zachodnia — medycyna nuklearna (P) po lewej'};
     } else if (entry==='er'||entry==='polk'||entry==='damen') {
       navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. Clinic P - Nuclear Medicine is on your left.',i:'↩️',lm:'Turn LEFT West — Clinic P - Nuclear Medicine on your left'};
       navStepES={a:'Gire a la IZQUIERDA al salir del elevador y camina al Oeste.',d:'Ahora vas hacia el Oeste. Clínica P - Medicina Nuclear está a tu izquierda.',i:'↩️',lm:'Gira IZQUIERDA — Clínica P - Medicina Nuclear a tu izquierda'};
       navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód.',d:'Teraz idziesz na Zachód. Medycyna nuklearna (P) jest po twojej lewej stronie.',i:'↩️',lm:'Skręcaj LEWO — Medycyna nuklearna (P) po lewej'};
     } else {
-      navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn RIGHT at the hallway.',d:'You are now heading West. Walk past Clinic M, CT Scan, and Patient/Staff Elevator West. Clinic P - Nuclear Medicine is on your left.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT West — past Clinic M, CT Scan, P/S West — Clinic P on your left'};
-      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Ahora vas hacia el Oeste. Pase la Clínica M, CT Scan y el Elevador Oeste. Clínica P - Medicina Nuclear está a tu izquierda.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — pasa Clínica M, CT Scan, P/S Oeste — Clínica P a tu izquierda'};
+      navStepEN={a:'Exit the elevator, pass the Reception Desk, then turn RIGHT at the hallway.',d:'You are now heading West. Walk past Clinic M, CT Scan, and Patient/Staff Elevator West. Clinic P - Nuclear Medicine is on your left.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT West — past Clinic M, CT Scan, Patient/Staff West — Clinic P on your left'};
+      navStepES={a:'Salga del elevador, pasa la Recepción y gira a la DERECHA en el pasillo.',d:'Ahora vas hacia el Oeste. Pase la Clínica M, CT Scan y el Elevador Patient/Staff Oeste. Clínica P - Medicina Nuclear está a tu izquierda.',i:'↪️',lm:'Pasa la Recepción — DERECHA al Oeste — pasa Clínica M, CT Scan, P/S Oeste — Clínica P a tu izquierda'};
       navStepPL={a:'Wyjdź z windy, miń recepcję, potem skręcaj W PRAWO na korytarzu.',d:'Teraz idziesz na Zachód. Miń Poradnię M, CT Scan i windą P/S Zachodnia. Medycyna nuklearna (P) jest po twojej lewej stronie.',i:'↪️',lm:'Miń recepcję — skręcaj PRAWO na Zachód — miń poradnię M, CT Scan, P/S Zachodnia — medycyna nuklearna (P) po lewej'};
     }
   } else
   if (isF2) {
     if (entry==='garage') {
-      // Exiting P/S East at x=604, patient faces NORTH on exit
+      // Exiting Patient/Staff East at x=604, patient faces NORTH on exit
       // RIGHT = EAST: Clinic G/H/I (x>604)
       // LEFT  = WEST: everything else (x<604)
       if (dx > 604) {
@@ -1616,7 +1686,7 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
         navStepPL={a:'Skręcaj W LEWO wychodząc z windy i idź na Zachód korytarzem.',d:'Teraz idziesz na Zachód. Miń mammografię. '+namePL+' jest '+locPL+'.',i:'↩️',lm:'Skręcaj LEWO — kierunek Zachód'};
       }
     } else if (entry==='er'||entry==='polk'||entry==='damen') {
-      // Exiting P/S West at x=379 (ER, Polk, Damen all use P/S West for 2F)
+      // Exiting Patient/Staff West at x=379 (ER, Polk, Damen all use Patient/Staff West for 2F)
       // Clinic R/V/Nuclear are to the LEFT (x<379), everything else is to the RIGHT
       if (dx < 379) {
         navStepEN={a:'Turn LEFT out of the elevator and walk West down the hallway.',d:'You are now heading West. '+nameEN+' is '+locEN+'.',i:'↩️',lm:'Turn LEFT — heading West'};
@@ -1697,7 +1767,7 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     navStepPL={a:'Wyjdź z windy, miń Recepcje 3. piętra, potem skręcaj W LEWO na korytarzu.',d:'BICU jest na końcu korytarza. Idź na wschód, wejście będzie po twojej PRAWEJ stronie.',i:'↩️',lm:'Miń Recepcje — skręcaj LEWO na korytarzu — BICU po prawej'};
     checkInEN=null; checkInES=null; checkInPL=null;
   } else if (!isF2 && destId==='imcu4900') {
-    navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn RIGHT at the hallway.',d:'Walk west down the hallway. IMCU 4900 is at the far end of the floor and entrance will be in front of you.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT at the hallway — IMCU 4900'};
+    navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn RIGHT at the hallway.',d:'Walk west down the hallway. IMCU 4800 is at the far end of the floor and entrance will be in front of you.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT at the hallway — IMCU 4900'};
     navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la DERECHA en el pasillo.',d:'Camine hacia el oeste. IMCU 4900 está al final del pasillo y la entrada estara frente a ti.',i:'↪️',lm:'Pasa la Recepción — gira DERECHA en el pasillo — IMCU 4900'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W PRAWO na korytarzu.',d:'Idź na zachód. IMCU 4900 jest na końcu korytarza, wejście będzie przed tobą.',i:'↪️',lm:'Miń recepcję — skręcaj PRAWO na korytarzu — IMCU 4900'};
     checkInEN=null; checkInES=null; checkInPL=null;
@@ -1724,7 +1794,7 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W PRAWO na korytarzu.',d:'Idź na zachód. Oddzial Pediatryczny jest na końcu korytarza, wejście będzie po twojej PRAWEJ stronie.',i:'↪️',lm:'Miń recepcję — skręcaj PRAWO na korytarzu — Oddzial Pediatryczny po prawej'};
     checkInEN=null; checkInES=null; checkInPL=null;
   } else if (!isF2 && destId==='imcu4800') {
-    navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn RIGHT at the hallway.',d:'IMCU 4800 is at the far end of the hallway. Walk west down the hallway and entrance will be on your LEFT.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT at the hallway — IMCU 4800 on your left'};
+    navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn RIGHT at the hallway.',d:'IMCU 4900 is at the far end of the hallway. Walk west down the hallway and entrance will be on your LEFT.',i:'↪️',lm:'Pass Reception Desk — turn RIGHT at the hallway — IMCU 4800 on your left'};
     navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la DERECHA en el pasillo.',d:'IMCU 4800 está al final del pasillo. Camine hacia el oeste y la entrada estará a tu IZQUIERDA.',i:'↪️',lm:'Pasa la Recepción — gira DERECHA en el pasillo — IMCU 4800 a tu izquierda'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W PRAWO na korytarzu.',d:'IMCU 4800 jest na końcu korytarza. Idź na zachód, wejście będzie po twojej LEWEJ stronie.',i:'↪️',lm:'Miń recepcję — skręcaj PRAWO na korytarzu — IMCU 4800 po lewej'};
     checkInEN=null; checkInES=null; checkInPL=null;
@@ -1798,7 +1868,7 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     }
   }
 
-  var helpdeskEN={a:'Visit the Mostrador de Ayuda in the Main Lobby.',d:'The Mostrador de Ayuda is located near the Ogden Street entrance. Ask for a visitor pass. You will need to show this pass to the Security Officer at the Main Elevator.',i:'🪪',lm:'Get visitor pass at Mostrador de Ayuda — show to Security at Main Elevator'};
+  var helpdeskEN={a:'Visit the Help Desk in the Main Lobby.',d:'The Help Desk is located near the Ogden Street entrance. Ask for a visitor pass. You will need to show this pass to the Security Officer at the Main Elevator.',i:'🪪',lm:'Get visitor pass at Help Desk — show to Security at Main Elevator'};
   var helpdeskES={a:'Visita el Mostrador de Ayuda en el Lobby Principal.',d:'El Mostrador de Ayuda esta cerca de la entrada de la Calle Ogden. Solicite un pase de visitante. Debe mostrarlo al Oficial de Seguridad en el Elevador Principal.',i:'🪪',lm:'Obtenga el pase en el Mostrador de Ayuda — mostrar a Seguridad en el Elevador Principal'};
   var helpdeskPL={a:'Odwiedz punkt informacyjny w głównym holu.',d:'punkt informacyjny znajduje się przy wejściu od ulicy Ogden. Popros o przepustkę dla odwiedzających. Musisz ją pokazać oficerowi ochrony przy głównej windzie.',i:'🪪',lm:'Odbierz przepustkę w punkcie informacyjnym — pokaz Ochronie przy głównej windzie'};
   // ── Cantonese zh steps (mirrors en with Cantonese text) ──
@@ -2126,13 +2196,16 @@ function mku(id,fl,em,spec,nEN,nES,nPL,dEN,dES,dPL,lEN,lES,lPL,nZH,dZH){
 [mku('clinicG','2','🧠','Integrated Behavioral Health - Neurology - Neurosurgery - Musculoskeletal','Clinic G','Clínica G','Poradnia G','2nd Floor','Piso 2','II piętro','at the far East end of the hallway','al lado este al final del pasillo','na wschódnim końcu korytarza','G診所 — 神經科','二樓'),
  mku('clinicH','2','🫘','Integrated Behavioral Health - Nephrology','Clinic H','Clínica H','Poradnia H','2nd Floor','Piso 2','II piętro','at the very far East end of the hallway past Clinic G','al lado este del pasillo, junto a Clínica G','na wschódnim końcu korytarza za Poradnia G','H診所 — 腎科','二樓'),
  mku('clinicI','2','🦴','Integrated Behavioral Health - Orthopedics - Rheumatology - Plastics - Hand Surgery - Podiatry','Clinic I','Clínica I','Poradnia I','2nd Floor','Piso 2','II piętro','in the East section of the floor, across Clinic G','al lado este del piso, junto a Clínica G','we wschódniej czesci, naprzeciwko Poradni G','I診所 — 骨科','二樓'),
- mku('clinicJ','2','🩸','Dialysis','Clinic J - Dialysis','Clínica J - Diálisis','Oddział dializ (J)','2nd Floor','Piso 2','II piętro','on the East side of the floor','en el lado este del piso','po wschódniej stronie piętra','J診所 — 洗腎','二樓'),
+ mku('clinicJ','2','🩸','Hemodialysis - Dialysis','Clinic J - Hemo Dialysis','Clínica J - Hemodiálisis','Oddział hemodializ (J)','2nd Floor','Piso 2','II piętro','on the East side of the floor','en el lado este del piso','po wschódniej stronie piętra','J診所 — 洗腎','二樓'),
  mku('clinicM','2','🩻','Clinic M — CT Scan - Interventional Radiology/Special Procedures - X-Ray - Ultrasound','Clinic M','Clínica M','Pracownia radiologiczna (M)','2nd Floor','Piso 2','II piętro','','','','M診所 — 放射科','二樓'),
  mku('clinicL','2','🏥','Clinic L','Clinic L','Clínica L','Pracownia (L)','2nd Floor','Piso 2','II piętro','','','','L診所','二樓'),
  mku('clinicN','2','🏃','Physical Therapy - Occupational Therapy - Speech and Language Pathology - PT/OT','Clinic N — Physical and Occupational Therapy','Clínica N — Fisioterapia y Terapia Ocupacional','Fizjoterapia i terapia zajęciowa (N)','2nd Floor','Piso 2','II piętro','','','','N診所 — 物理及職業治療','二樓'),
  mku('clinicR','2','🫁','Endoscopy - Bronchoscopy - Fluoroscopy','Clinic R','Clínica R','Pracownia endoskopowa (R)','2nd Floor','Piso 2','II piętro','on the West side of the floor','en el lado oeste del piso','po zachodniej stronie piętra','R診所 — 內視鏡','二樓'),
  mku('neuroTesting','2','🧠','Neurological Testing - EEG - EMG - Neuro Diagnostics','Neuro Testing','Pruebas Neurológicas','Pracownia neurologiczna','2nd Floor','Piso 2','II piętro','','','','神經測試','二樓'),
  mku('clinicV','2','💓','Cardiology Testing','Clinic V - Cardiology Testing','Clínica V - Pruebas Cardiológicas','Poradnia kardiologiczna (V)','2nd Floor','Piso 2','II piętro','','','','V診所 — 心臟測試','二樓'),
+ mku('clinicT','2','🫁','Pulmonary Lab - Respiratory Therapy - Sleep Lab - Sleep Study - Pulmonary Function','Clinic T — Pulmonary Lab, Respiratory Therapy & Sleep Lab','Clínica T — Terapia Respiratoria y Sueño','Poradnia oddechowa i snu (T)','2nd Floor','Piso 2','II piętro','','','','T診所 — 呼吸及睡眠','二樓'),
+ mku('clinicU','2','💓','EKG - Electrocardiogram','Clinic U — EKG','Clínica U — EKG','Poradnia EKG (U)','2nd Floor','Piso 2','II piętro','','','','U診所 — 心電圖','二樓'),
+ mku('clinicQ','2','👂','Audiology - Hearing - Peritoneal Dialysis','Clinic Q — Audiology & Peritoneal Dialysis','Clínica Q — Audiología y Diálisis Peritoneal','Poradnia audiologiczna i dializa otrzewnowa (Q)','2nd Floor','Piso 2','II piętro','','','','Q診所 — 聽力及腹膜透析','二樓'),
  mku('respiratoryTherapy','2','🫁','Respiratory Therapy - Pulmonary Function - Pulmonary Rehabilitation','Respiratory Therapy','Terapia Respiratoria','Terapia oddechowa','2nd Floor','Piso 2','II piętro','','','','呼吸治療','二樓'),
  mku('sleepLab','2','😴','Sleep Study - Sleep Disorders - Sleep Center','Sleep Lab','Laboratorio del Sueño','Laboratorium snu','2nd Floor','Piso 2','II piętro','','','','睡眠實驗室','二樓'),
  mku('clinicP','2','☢️','Nuclear Medicine','Clinic P - Nuclear Medicine','Clínica P - Medicina Nuclear','Medycyna nuklearna (P)','2nd Floor','Piso 2','II piętro','','','','P診所 — 核子醫學','二樓'),
@@ -2153,10 +2226,12 @@ function mku(id,fl,em,spec,nEN,nES,nPL,dEN,dES,dPL,lEN,lES,lPL,nZH,dZH){
  mku('imcu4800','4','🏥','Intermediate Care Unit 4800','IMCU 4800','IMCU 4800','Oddział Intensywnej Terapii Pośredniej (IMCU 4800)','4th Floor','Piso 4','IV piętro','','','','IMCU 4800 — 中級護理','四樓'),
  mku('room4800','4','🏥','Inpatient Unit 4800','Room 4800','4to Sur — Obstetricia','Sala 4800','4th Floor','Piso 4','IV piętro','','','','4800病房','四樓'),
  mku('burnStepDown','4','🔥','Burn Step Down Unit','Burn Step Down','Unidad de Transición de Quemaduras','Oddział Pośredni Oparzeń','4th Floor','Piso 4','IV piętro','','','','燒傷過渡病房','四樓'),
- mku('womensHealth','4','👩‍⚕️',"Women's Health - Ob/Gyn","Women's Health",'Salud Femenina','Poradnia zdrowia kobiety','4th Floor','Piso 4','IV piętro','','','','女性健康科','四樓'),
+ mku('womensHealth','4','👩‍⚕️','OB/Prenatal Clinic - Gynecology - Women Health',"OB/Prenatal & Gynecology",'Salud Femenina','Poradnia zdrowia kobiety','4th Floor','Piso 4','IV piętro','','','','女性健康科','四樓'),
  mku('laborDelivery','4','🍼','Labor and Delivery - Nursery - Maternity','Labor and Delivery','Labor y Parto','Poród i oddział noworodkowy','4th Floor','Piso 4','IV piętro','','','','產房及分娩','四樓'),
- mku('pediatricClinic','4','🧒','Pediatric and Adolescent Clinic - PICU - Pediatric Ward','Pediatric and Adolescent Clinic','Clínica Pediátrica y Adolescentes','Poradnia pediatryczna i młodzieżowa','4th Floor','Piso 4','IV piętro','','','','兒科及青少年診所','四樓')
-].forEach(function(c){if(c.id==='clinicL')c.hidden=true;CLINICS.push(c);});
+ 
+mku('nicu','4','👶','Neonatal Intensive Care Unit - NICU - Newborn ICU','NICU - Neonatal ICU','NICU — Cuidados Intensivos Neonatales','NICU — Oddział Intensywnej Terapii Noworodkowej','4th Floor','Piso 4','IV piętro','','','','NICU — 新生兒ICU','四樓'),
+mku('pediatricClinic','4','🧒','Pediatric and Adolescent Clinic - PICU - Pediatric Ward','Pediatric and Adolescent Clinic','Clínica Pediátrica y Adolescentes','Poradnia pediatryczna i młodzieżowa','4th Floor','Piso 4','IV piętro','','','','兒科及青少年診所','四樓')
+].forEach(function(c){if(c.id==='clinicL'||c.id==='neuroTesting')c.hidden=true;CLINICS.push(c);});
 (function(){
   function mriSteps(entry){
     var s1en,s1es,s1pl,elvEN,elvES,elvPL;
@@ -2164,37 +2239,37 @@ function mku(id,fl,em,spec,nEN,nES,nPL,dEN,dES,dPL,lEN,lES,lPL,nZH,dZH){
       s1en={a:'Walk through the Ogden Street front doors.',d:'You will enter the Hospital Main Lobby.',i:'🚪',lm:'You are in the Main Lobby'};
       s1es={a:'Entre por las puertas de la Calle Ogden.',d:'Estarás en el Lobby Principal.',i:'🚪',lm:'Estás en el Lobby Principal'};
       s1pl={a:'Wejdź przez główne drzwi od ulicy Ogden.',d:'Wejdźiesz do Głównego Holu.',i:'🚪',lm:'Jesteś w głównym holu'};
-      elvEN={a:'Walk through the lobby towards the chapel into the hallway. Turn RIGHT — the Patient/Staff Elevator West (P/S WEST) is on your LEFT.',d:'Press LL for Lower Level.',i:'🛗',elv:'P/S West Elevator — Press LL'};
-      elvES={a:'Camine por el lobby hacia la capilla al pasillo. Gire a la DERECHA — el Elevador P/S OESTE está a tu IZQUIERDA.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Oeste — Presiona LL'};
+      elvEN={a:'Walk through the lobby towards the chapel into the hallway. Turn RIGHT — the Patient/Staff Elevator West (P/S WEST) is on your LEFT.',d:'Press LL for Lower Level.',i:'🛗',elv:'Patient/Staff West Elevator — Press LL'};
+      elvES={a:'Camine por el lobby hacia la capilla al pasillo. Gire a la DERECHA — el Elevador P/S OESTE está a tu IZQUIERDA.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Patient/Staff Oeste — Presiona LL'};
       elvPL={a:'Przejdź przez hol w kierunku kaplicy do korytarza. Skręcaj W PRAWO — Winda P/S ZACHODNIA jest po twojej LEWEJ.',d:'Naciśnij LL dla Dolnego Poziomu.',i:'🛗',elv:'Winda P/S Zachodnia — Naciśnij LL'};
     } else if(entry==='garage'){
       s1en={a:'Come in through the side door from the Parking Garage.',d:'Walk west into the main hallway.',i:'🅿️',lm:'Enter from Parking Garage'};
       s1es={a:'Entre por la puerta lateral del Estacionamiento.',d:'Camine hacia el oeste hacia el pasillo principal.',i:'🅿️',lm:'Entra por el Estacionamiento'};
       s1pl={a:'Wejdź przez boczne drzwi od Garazu.',d:'Idź na zachód do głównego korytarza.',i:'🅿️',lm:'Wejdź od Garazu'};
-      elvEN={a:'Walk west along the hallway past Clinic A, B, C, D, E, and F. The Patient/Staff Elevator West (P/S WEST) is on your LEFT, just past Clinic F.',d:'Press LL for Lower Level.',i:'🛗',elv:'P/S West Elevator — Press LL'};
-      elvES={a:'Siga por el pasillo hacia el oeste pasando las Clínicas A, B, C, D, E y F. El Elevador P/S OESTE está a tu IZQUIERDA, justo después de la Clínica F.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Oeste — Presiona LL'};
+      elvEN={a:'Walk west along the hallway past Clinic A, B, C, D, E, and F. The Patient/Staff Elevator West (P/S WEST) is on your LEFT, just past Clinic F.',d:'Press LL for Lower Level.',i:'🛗',elv:'Patient/Staff West Elevator — Press LL'};
+      elvES={a:'Siga por el pasillo hacia el oeste pasando las Clínicas A, B, C, D, E y F. El Elevador P/S OESTE está a tu IZQUIERDA, justo después de la Clínica F.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Patient/Staff Oeste — Presiona LL'};
       elvPL={a:'Idź na zachód korytarzem mijając Poradni A, B, C, D, E i F. Winda P/S ZACHODNIA jest po twojej LEWEJ, tuż za Poradnia F.',d:'Naciśnij LL dla Dolnego Poziomu.',i:'🛗',elv:'Winda P/S Zachodnia — Naciśnij LL'};
     } else if(entry==='er'){
       s1en={a:'Walk through the Emergency Room entrance.',d:'Walk east through the ER and into the main hallway.',i:'🚨',lm:'Enter from Emergency Room'};
       s1es={a:'Entre por la entrada de Urgencias.',d:'Camine hacia el este por urgencias al pasillo principal.',i:'🚨',lm:'Entra por Urgencias'};
       s1pl={a:'Wejdź przez wejście IP.',d:'Idź na wschód przez IP do głównego korytarza.',i:'🚨',lm:'Wejdź przez IP'};
-      elvEN={a:'Once in the main hallway, turn RIGHT (east). The Patient/Staff Elevator West (P/S WEST) is immediately on your RIGHT.',d:'Press LL for Lower Level.',i:'🛗',elv:'P/S West Elevator — Press LL'};
-      elvES={a:'En el pasillo principal, gira a la DERECHA (este). El Elevador P/S OESTE esta inmediatamente a tu DERECHA.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Oeste — Presiona LL'};
+      elvEN={a:'Once in the main hallway, turn RIGHT (east). The Patient/Staff Elevator West (P/S WEST) is immediately on your RIGHT.',d:'Press LL for Lower Level.',i:'🛗',elv:'Patient/Staff West Elevator — Press LL'};
+      elvES={a:'En el pasillo principal, gira a la DERECHA (este). El Elevador P/S OESTE esta inmediatamente a tu DERECHA.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Patient/Staff Oeste — Presiona LL'};
       elvPL={a:'W głównym korytarzu skręcaj W PRAWO (wschód). Winda P/S ZACHODNIA jest natychmiast po twojej PRAWEJ.',d:'Naciśnij LL dla Dolnego Poziomu.',i:'🛗',elv:'Winda P/S Zachodnia — Naciśnij LL'};
     } else if(entry==='polk'){
       s1en={a:'Enter through the Polk Street Entrance.',d:'Walk north through the Professional Building walkway, then turn RIGHT into the hospital corridor.',i:'🚌',lm:'Enter Polk St — walk north into hospital'};
       s1es={a:'Entra por la entrada de la Calle Polk.',d:'Camine hacia el norte por el pasillo del Edificio Profesional y luego gira a la DERECHA al corredor del hospital.',i:'🚌',lm:'Entra por Polk St — camina al norte al hospital'};
       s1pl={a:'Wejdź przez wejście od ulicy Polk.',d:'Idź na północ przez korytarz Budynku Profesjonalnego, a następnie skręcaj W PRAWO do korytarza szpitala.',i:'🚌',lm:'Wejdź przez Polk St — idź północ do szpitala'};
-      elvEN={a:'Walk west along the hospital corridor. The Patient/Staff Elevator West (P/S WEST) is on your RIGHT, just before Clinic F.',d:'Press LL for Lower Level.',i:'🛗',elv:'P/S West Elevator — Press LL'};
-      elvES={a:'Camine hacia el oeste por el corredor del hospital. El Elevador P/S OESTE está a tu DERECHA, justo antes de la Clínica F.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Oeste — Presiona LL'};
+      elvEN={a:'Walk west along the hospital corridor. The Patient/Staff Elevator West (P/S WEST) is on your RIGHT, just before Clinic F.',d:'Press LL for Lower Level.',i:'🛗',elv:'Patient/Staff West Elevator — Press LL'};
+      elvES={a:'Camine hacia el oeste por el corredor del hospital. El Elevador P/S OESTE está a tu DERECHA, justo antes de la Clínica F.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Patient/Staff Oeste — Presiona LL'};
       elvPL={a:'Idź na zachód korytarzem szpitalnym. Winda P/S ZACHODNIA jest po twojej PRAWEJ, tuz przed Poradnia F.',d:'Naciśnij LL dla Dolnego Poziomu.',i:'🛗',elv:'Winda P/S Zachodnia — Naciśnij LL'};
     } else {
       // damen
       s1en={a:'Enter through the Damen Avenue Entrance.',d:'Walk east through the Professional Building walkway, then turn LEFT into the hospital corridor.',i:'🚌',lm:'Enter Damen Ave — walk east into hospital'};
       s1es={a:'Entra por la entrada de la Avenida Damen.',d:'Siga por el pasillo hacia el este del Edificio Profesional y luego gira a la IZQUIERDA al corredor del hospital.',i:'🚌',lm:'Entra por Damen Ave — camina al este al hospital'};
       s1pl={a:'Wejdź przez wejście od Alei Damen.',d:'Idź na wschód przez korytarz Budynku Profesjonalnego, a następnie skręcaj W LEWO do korytarza szpitalnego.',i:'🚌',lm:'Wejdź przez Damen Ave — idź wschód do szpitala'};
-      elvEN={a:'Walk east along the hospital corridor. The Patient/Staff Elevator West (P/S WEST) is on your LEFT, just before Clinic F.',d:'Press LL for Lower Level.',i:'🛗',elv:'P/S West Elevator — Press LL'};
-      elvES={a:'Camine hacia el este por el corredor del hospital. El Elevador P/S OESTE está a tu IZQUIERDA, justo antes de la Clínica F.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Oeste — Presiona LL'};
+      elvEN={a:'Walk east along the hospital corridor. The Patient/Staff Elevator West (P/S WEST) is on your LEFT, just before Clinic F.',d:'Press LL for Lower Level.',i:'🛗',elv:'Patient/Staff West Elevator — Press LL'};
+      elvES={a:'Camine hacia el este por el corredor del hospital. El Elevador P/S OESTE está a tu IZQUIERDA, justo antes de la Clínica F.',d:'Presiona LL para el Nivel Inferior.',i:'🛗',elv:'Elevador Patient/Staff Oeste — Presiona LL'};
       elvPL={a:'Idź na wschód korytarzem szpitalnym. Winda P/S ZACHODNIA jest po twojej LEWEJ, tuz przed Poradnia F.',d:'Naciśnij LL dla Dolnego Poziomu.',i:'🛗',elv:'Winda P/S Zachodnia — Naciśnij LL'};
     }
     var navEN={a:'Take the elevator down to the Lower Level.',d:'The doors will open. Step out into the hallway.',i:'🔢',lm:'You are now on the Lower Level'};
@@ -2232,6 +2307,7 @@ function mku(id,fl,em,spec,nEN,nES,nPL,dEN,dES,dPL,lEN,lES,lPL,nZH,dZH){
   CLINICS.push({id:'mri',floor:'ll',emoji:'🧲',specialties:'MRI - Magnetic Resonance Imaging',
     en:{name:'MRI',desc:'Lower Level'},es:{name:'MRI',desc:'Nivel Inferior'},pl:{name:'MRI',desc:'Poziom niższy'},zh:{name:'磁力共振（MRI）',desc:'地下層'},
     steps:{ogden:mriSteps('ogden'),garage:mriSteps('garage'),er:mriSteps('er'),polk:mriSteps('polk'),damen:mriSteps('damen')}});
+  CLINICS.push({id:'radiationTherapy',floor:'ll',emoji:'☢️',specialties:'Radiation Therapy - Radiation Oncology - Cancer Treatment',hidden:false,en:{name:'Radiation Therapy',desc:'Lower Level'},es:{name:'Radioterapia',desc:'Nivel Inferior'},pl:{name:'Radioterapia',desc:'Poziom niższy'},zh:{name:'放射治療',desc:'地下層'},steps:{}});
 })();
 // ── PROFESSIONAL BUILDING (PB) CLINICS ──
 [mku('ophthalmology','1','👁️','Ophthalmology Clinic — PB 1st Floor','Ophthalmology Clinic','Clínica de Oftalmología','Poradnia okulistyczna','PB 1st Floor','PB Piso 1','BP piętro I','','','','眼科診所','PB一樓'),
@@ -2246,7 +2322,7 @@ function mku(id,fl,em,spec,nEN,nES,nPL,dEN,dES,dPL,lEN,lES,lPL,nZH,dZH){
  mku('endocrinology','pb4','⚗️','Endocrinology — PB 4th Floor','Endocrinology','Endocrinologia','Endokrynologia','PB 4th Floor','PB Piso 4','BP piętro IV','','','','內分泌科','PB四樓'),
  mku('generalSurgeryPB','pb4','🔪','General Surgery — PB 4th Floor','General Surgery','Cirugía General','Chirurgia ogólna','PB 4th Floor','PB Piso 4','BP piętro IV','','','','普外科（一般外科）','PB四樓'),
  mku('plasticsSurgeryPB','pb4','✂️','Plastics Surgery — PB 4th Floor','Plastics Surgery','Cirugía Plástica','Chirurgia plastyczna','PB 4th Floor','PB Piso 4','BP piętro IV','','','','整形外科','PB四樓')
-].forEach(function(c){CLINICS.push(c);});
+].forEach(function(c){if(c.id==='room4800')c.hidden=true;CLINICS.push(c);});
 
 // ═══ POLK/DAMEN STEPS for floor-1 hardcoded clinics ═══
 // Inject polk and damen steps into every floor-1 clinic that doesn't have them
@@ -2322,7 +2398,7 @@ function activateRoute(entry,destId,floor){
   var r4=document.getElementById('rt4-'+destId);
   var m4=document.getElementById('mk4-'+destId);
   var yah4=document.getElementById('yah4-all');
-  // P/S East elevator route for garage going to 2nd floor
+  // Patient/Staff East elevator route for garage going to 2nd floor
   var rps=document.getElementById('rt-garage-pseast');
   // Clear all first
   [r1,m1,yah,rps,r2,m2,yah2,r3,m3,yah3,r4,m4,yah4].forEach(function(el){if(el)el.classList.remove('on');});
@@ -2346,7 +2422,7 @@ function activateRoute(entry,destId,floor){
       if(pbRoute){pbRoute.classList.add('on');}
       if(pbMk){pbMk.classList.add('on');}
     } else if(entry==='polk'||entry==='damen'){
-      // Polk/Damen: 2nd floor and LL use P/S West, upper floors use main elevator
+      // Polk/Damen: 2nd floor and LL use Patient/Staff West, upper floors use main elevator
       if(f==='2'||f==='ll'){
         var rPDps=document.getElementById('rt-'+entry+'-pswest');
         var mps=document.getElementById('mk-pswest');
@@ -2470,6 +2546,7 @@ function filterClinics(q){
 function renderDD(list){
   var fc={'1':'var(--teal)','2':'#2563EB','3':'#7C3AED','4':'#C0392B','ll':'#444'};
   if(floorFilter!=='all')list=list.filter(function(c){return c.floor===floorFilter;});
+  list=list.slice().sort(function(a,b){var na=(a[lang]||a.en).name,nb=(b[lang]||b.en).name;return na<nb?-1:na>nb?1:0;});
   document.getElementById('cdd').innerHTML=list.map(function(c){
     var i=CLINICS.indexOf(c);
     var col=fc[c.floor]||'var(--teal)';
@@ -2511,7 +2588,7 @@ function showDirections(){
     switchFloor('1');
   } else if(isLL){
     fmtabRow.style.display='flex';
-    // Floor 1 is PART of the LL route (patient walks to P/S West elevator on Floor 1)
+    // Floor 1 is PART of the LL route (patient walks to Patient/Staff West elevator on Floor 1)
     // Keep Floor 1 enabled; disable floors 2-4 which are not on this route
     ['2','3','4'].forEach(function(fl){
       var tab=document.getElementById('fmtab-'+fl);
@@ -2774,13 +2851,13 @@ var UI_STRINGS={
     optOgden:'🚌 Ogden Street Entrance',optGarage:'🅿️ Parking Garage Entrance',optER:'🚨 Emergency Room Entrance',optDamen:'🚌 Damen Avenue Entrance',optPolk:'🚌 Polk Street Entrance',
     btnGo:'Get My Directions',btnSpeak:'Read Directions Out Loud',
     tip1:'Follow the orange line on the map to find your way.',
-    tip2:'For clinics/services in Stroger Hospital, P/S East & West elevators serve floors 1–2 only. For 3rd or 4th floor clinics, all patients must use the Main Elevator.',
-    tip3:'Mostrador de Ayuda is in the Main Lobby near the Ogden entrance.',
+    tip2:'For clinics/services in Stroger Hospital, Patient/Staff East & West elevators serve floors 1–2 only. For 3rd or 4th floor clinics, all patients must use the Main Elevator.',
+    tip3:'The Help Desk is in the Main Lobby near the Ogden entrance.',
     tip4:'Came by car? Use the side door from the Parking Garage.',
     tip5:'For clinics/services in PB 2nd–4th floors, go to the Self Check-in Kiosks on PB 1st Floor before getting on the PB Elevator.',
     secHelp:'NEED HELP?',
-    helpH1:'Mostrador de Ayuda',helpP1:'In the Main Lobby, 1st Floor — Staff available 7AM-9PM daily',
-    helpH2:'Elevator Guide',helpP2:'Main elevator: floors 1-4 (all patients). Patient/Staff East (by garage) and West: floors 1-2 only. For 3rd and 4th floor clinics, all patients — including those entering from the garage or ER — must use the Main Elevator. Service elevators: staff badge required.',
+    helpH1:'Help Desk',helpP1:'In the Main Lobby, 1st Floor — Staff available 7AM-9PM daily',
+    helpH2:'Elevator Guide',helpP2:'Main elevator: floors 1-4 (all patients). Patient/Staff East (by garage) and Patient/Staff West: floors 1–2 only. For 3rd and 4th floor clinics, all patients — including those entering from the garage or ER — must use the Main Elevator. Service elevators: staff badge required.',
     helpH3:'Accessibility',helpP3:'Wheelchair and assistance: Call (312) 864-6000',
     helpH4:'Interpreter Services',helpP4:'Interpreters in various languages are available in person, phone, and devices',
     helpH5:'Getting Here by CTA',helpP5:'Bus 49 (Western) and Bus 20 (Madison) stop nearby. Pink Line: Polk Station.',
@@ -2808,7 +2885,7 @@ var UI_STRINGS={
     tip5:'Para clínicas en los pisos 2–4 del Edificio Profesional, vaya a los Quioscos de Registro Automático en el 1er piso antes de subir.',
     secHelp:'¿NECESITAS AYUDA?',
     helpH1:'Mostrador de Ayuda',helpP1:'En el Lobby Principal, 1er Piso — Personal disponible de 7AM a 9PM diariamente',
-    helpH2:'Guía de Elevadores',helpP2:'Elevador principal: pisos 1-4 (todos los pacientes). Elevador Este (junto al garaje) y Elevador Oeste: solo pisos 1–2. Para clínicas en el 3er y 4to piso, todos los pacientes deben usar el Elevador Principal. Elevadores de servicio: solo para personal.',
+    helpH2:'Guía de Elevadores',helpP2:'Elevador principal: pisos 1-4 (todos los pacientes). Elevador Patient/Staff Este (junto al garaje) y Elevador Patient/Staff Oeste: solo pisos 1–2. Para clínicas en el 3er y 4to piso, todos los pacientes deben usar el Elevador Principal. Elevadores de servicio: solo para personal.',
     helpH3:'Accesibilidad',helpP3:'Silla de ruedas y asistencia: Llame al (312) 864-6000',
     helpH4:'Servicios de Interpretación',helpP4:'Intérpretes en varios idiomas disponibles en persona, por teléfono y en dispositivos',
     helpH5:'Cómo Llegar en CTA',helpP5:'Las rutas 49 (Western) y 20 (Madison) paran cerca. Línea Rosa: Estación Polk.',
