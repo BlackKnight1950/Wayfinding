@@ -1855,7 +1855,7 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn LEFT at the hallway.',d:'Walk east down the hallway. Women\'s Health is at the far end of the floor and entrance will be on your LEFT.',i:'↩️',lm:'Pass Reception Desk — turn LEFT at the hallway — Women\'s Health on your left'};
     navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'Camine hacia el este. Salud Femenina está al final del pasillo y la entrada estará a tu IZQUIERDA.',i:'↩️',lm:'Pasa la Recepción — gira IZQUIERDA en el pasillo — Salud Femenina a tu izquierda'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W LEWO na korytarzu.',d:'Idź na wschód. Zdrowie Kobiet jest na końcu korytarza, wejście będzie po twojej LEWEJ stronie.',i:'↩️',lm:'Miń Recepcje — skręcaj LEWO na korytarzu — Zdrowie Kobiet po lewej'};
-  } else if (!isF2 && destId==='laborDelivery') {
+  } else if (!isF2 && (destId==='laborDelivery'||destId==='nicu')) {
     checkInEN={a:'Speak with the staff at the unit front desk.',d:'Tell them your name and appointment time.',i:'🏥',lm:'📍 Speak with staff at front desk'};
     checkInES={a:'Hable con el personal en el mostrador de la unidad.',d:'Digales su nombre y hora de cita.',i:'🏥',lm:'📍 Hablar con el personal'};
     checkInPL={a:'Porozmawiaj z personelem przy recepcji oddziału.',d:'Podaj im swoje imię i godzinę wizyty.',i:'🏥',lm:'📍 Porozmawiaj z personelem'};
@@ -2116,7 +2116,7 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     navStepZH={a:'出電梯，經過四樓服務台，然後在走廊向左轉。',d:'4800號房間在走廊盡頭。向東走，入口在您右側。',i:'↩️',lm:'過服務台—向左轉—4800號房在右側'};
   } else if (!isF2 && destId==='womensHealth') {
     navStepZH={a:'出電梯，經過四樓服務台，然後在走廊向左轉。',d:'沿走廊向東走。婦女健康中心在走廊盡頭，入口在您左側。',i:'↩️',lm:'過服務台—向左轉—婦女健康在左側'};
-  } else if (!isF2 && destId==='laborDelivery') {
+  } else if (!isF2 && (destId==='laborDelivery'||destId==='nicu')) {
     navStepZH={a:'出電梯，經過四樓服務台，然後在走廊向左轉。',d:'沿走廊向東走。分娩病房入口在您左側。',i:'↩️',lm:'過服務台—向左轉朝東—分娩病房在左側'};
   } else if (!isF2 && destId==='pediatricClinic') {
     navStepZH={a:'出電梯，走向服務台，然後向左轉。',d:'兒科及青少年診所入口就在您面前。',i:'↩️',lm:'走向服務台—向左轉—兒科診所入口在前方'};
