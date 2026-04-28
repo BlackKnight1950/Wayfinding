@@ -1855,13 +1855,20 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn LEFT at the hallway.',d:'Walk east down the hallway. Women\'s Health is at the far end of the floor and entrance will be on your LEFT.',i:'↩️',lm:'Pass Reception Desk — turn LEFT at the hallway — Women\'s Health on your left'};
     navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'Camine hacia el este. Salud Femenina está al final del pasillo y la entrada estará a tu IZQUIERDA.',i:'↩️',lm:'Pasa la Recepción — gira IZQUIERDA en el pasillo — Salud Femenina a tu izquierda'};
     navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W LEWO na korytarzu.',d:'Idź na wschód. Zdrowie Kobiet jest na końcu korytarza, wejście będzie po twojej LEWEJ stronie.',i:'↩️',lm:'Miń Recepcje — skręcaj LEWO na korytarzu — Zdrowie Kobiet po lewej'};
-  } else if (!isF2 && (destId==='laborDelivery'||destId==='nicu')) {
+  } else if (!isF2 && destId==='nicu') {
     checkInEN={a:'Speak with the staff at the unit front desk.',d:'Tell them your name and appointment time.',i:'🏥',lm:'📍 Speak with staff at front desk'};
     checkInES={a:'Hable con el personal en el mostrador de la unidad.',d:'Digales su nombre y hora de cita.',i:'🏥',lm:'📍 Hablar con el personal'};
     checkInPL={a:'Porozmawiaj z personelem przy recepcji oddziału.',d:'Podaj im swoje imię i godzinę wizyty.',i:'🏥',lm:'📍 Porozmawiaj z personelem'};
-    navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn LEFT at the hallway.',d:'Walk east down the hallway. Labor and Delivery entrance will be on your LEFT.',i:'↩️',lm:'Pass Reception Desk — turn LEFT East — Labor and Delivery on your left'};
-    navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'Siga por el pasillo hacia el este. La entrada de Labor y Parto estará a tu IZQUIERDA.',i:'↩️',lm:'Pasa la Recepción — IZQUIERDA al Este — Labor y Parto a tu izquierda'};
-    navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W LEWO na korytarzu.',d:'Idź na wschód korytarzem. Wejście do Porodu i Oddzialu Noworodkowego będzie po twojej LEWEJ stronie.',i:'↩️',lm:'Miń Recepcje — LEWO na Wschód — Porod i Oddzial Noworodkowy po lewej'};
+    navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn LEFT at the hallway.',d:'Walk east down the hallway, entrance to Labor and Delivery and NICU will be on your right.',i:'↩️',lm:'Pass Reception Desk — turn LEFT East — Labor & Delivery and NICU on your right'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'Siga por el pasillo hacia el este, la entrada de Labor y Parto y NICU estará a su derecha.',i:'↩️',lm:'Pasa la Recepción — IZQUIERDA al Este — Labor y Parto y NICU a tu derecha'};
+    navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W LEWO na korytarzu.',d:'Idź na wschód korytarzem, wejście do Porodu, Oddziału Noworodkowego i NICU będzie po twojej prawej stronie.',i:'↩️',lm:'Miń Recepcje — LEWO na Wschód — Poród, Oddział Noworodkowy i NICU po prawej'};
+  } else if (!isF2 && destId==='laborDelivery') {
+    checkInEN={a:'Speak with the staff at the unit front desk.',d:'Tell them your name and appointment time.',i:'🏥',lm:'📍 Speak with staff at front desk'};
+    checkInES={a:'Hable con el personal en el mostrador de la unidad.',d:'Digales su nombre y hora de cita.',i:'🏥',lm:'📍 Hablar con el personal'};
+    checkInPL={a:'Porozmawiaj z personelem przy recepcji oddziału.',d:'Podaj im swoje imię i godzinę wizyty.',i:'🏥',lm:'📍 Porozmawiaj z personelem'};
+    navStepEN={a:'Exit the elevator, pass the 4th Floor Reception Desk, then turn LEFT at the hallway.',d:'Walk east down the hallway, entrance to Labor and Delivery and NICU will be on your right.',i:'↩️',lm:'Pass Reception Desk — turn LEFT East — Labor and Delivery and NICU on your right'};
+    navStepES={a:'Salga del elevador, pasa la Recepción del 4to Piso y gira a la IZQUIERDA en el pasillo.',d:'Siga por el pasillo hacia el este, la entrada de Labor y Parto y NICU estará a su derecha.',i:'↩️',lm:'Pasa la Recepción — IZQUIERDA al Este — Labor y Parto y NICU a tu derecha'};
+    navStepPL={a:'Wyjdź z windy, miń Recepcje 4. piętra, potem skręcaj W LEWO na korytarzu.',d:'Idź na wschód korytarzem, wejście do Porodu, Oddziału Noworodkowego i NICU będzie po twojej prawej stronie.',i:'↩️',lm:'Miń Recepcje — LEWO na Wschód — Poród, Oddział Noworodkowy i NICU po prawej'};
   } else if (!isF2 && destId==='pediatricClinic') {
     navStepEN={a:'Exit the elevator, walk to the Reception Desk, then turn LEFT.',d:'Pediatric and Adolescent Clinic entrance is in front of you.',i:'↩️',lm:'Walk to Reception Desk — turn LEFT — Pediatric and Adolescent Clinic entrance in front of you'};
     navStepES={a:'Salga del elevador, camina hacia la Recepción del 4to Piso, luego gira a la IZQUIERDA.',d:'La entrada de la Clínica Pediatrica y Adolescentes esta frente a ti.',i:'↩️',lm:'Camina a la Recepción — IZQUIERDA — entrada Clínica Pediatrica frente a ti'};
@@ -2116,8 +2123,10 @@ function elvSteps(entry, floorNum, nameEN, nameES, namePL, locEN, locES, locPL, 
     navStepZH={a:'出電梯，經過四樓服務台，然後在走廊向左轉。',d:'4800號房間在走廊盡頭。向東走，入口在您右側。',i:'↩️',lm:'過服務台—向左轉—4800號房在右側'};
   } else if (!isF2 && destId==='womensHealth') {
     navStepZH={a:'出電梯，經過四樓服務台，然後在走廊向左轉。',d:'沿走廊向東走。婦女健康中心在走廊盡頭，入口在您左側。',i:'↩️',lm:'過服務台—向左轉—婦女健康在左側'};
-  } else if (!isF2 && (destId==='laborDelivery'||destId==='nicu')) {
-    navStepZH={a:'出電梯，經過四樓服務台，然後在走廊向左轉。',d:'沿走廊向東走。分娩病房入口在您左側。',i:'↩️',lm:'過服務台—向左轉朝東—分娩病房在左側'};
+  } else if (!isF2 && destId==='nicu') {
+    navStepZH={a:'出電梯，經過四樓服務台，然後在走廊向左轉。',d:'沿走廊向東走，分娩病房及NICU入口在您右側。',i:'↩️',lm:'過服務台—向左轉朝東—分娩病房及NICU在右側'};
+  } else if (!isF2 && destId==='laborDelivery') {
+    navStepZH={a:'出電梯，經過四樓服務台，然後在走廊向左轉。',d:'沿走廊向東走，分娩病房及NICU入口在您右側。',i:'↩️',lm:'過服務台—向左轉朝東—分娩病房及NICU在右側'};
   } else if (!isF2 && destId==='pediatricClinic') {
     navStepZH={a:'出電梯，走向服務台，然後向左轉。',d:'兒科及青少年診所入口就在您面前。',i:'↩️',lm:'走向服務台—向左轉—兒科診所入口在前方'};
   } else {
@@ -2306,7 +2315,7 @@ function mku(id,fl,em,spec,nEN,nES,nPL,dEN,dES,dPL,lEN,lES,lPL,nZH,dZH){
  
 mku('nicu','4','👶','Neonatal Intensive Care Unit - NICU - Newborn ICU','NICU - Neonatal ICU','NICU — Cuidados Intensivos Neonatales','NICU — Oddział Intensywnej Terapii Noworodkowej','4th Floor','Piso 4','IV piętro','','','','NICU — 新生兒ICU','四樓'),
 mku('pediatricClinic','4','🧒','Pediatric and Adolescent Clinic - PICU - Pediatric Ward','Pediatric and Adolescent Clinic','Clínica Pediátrica y Adolescentes','Poradnia pediatryczna i młodzieżowa','4th Floor','Piso 4','IV piętro','','','','兒科及青少年診所','四樓')
-].forEach(function(c){if(c.id==='clinicL'||c.id==='neuroTesting'||c.id==='respiratoryTherapy'||c.id==='sleepLab')c.hidden=true;CLINICS.push(c);});
+].forEach(function(c){if(c.id==='clinicL'||c.id==='neuroTesting'||c.id==='respiratoryTherapy'||c.id==='sleepLab'||c.id==='room4800')c.hidden=true;CLINICS.push(c);});
 (function(){
   function mriSteps(entry){
     var s1en,s1es,s1pl,elvEN,elvES,elvPL;
